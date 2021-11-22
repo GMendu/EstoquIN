@@ -6,7 +6,7 @@ namespace EstoquIN.Model
 {
     class DadosCliente
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Cnpj { get; set; }
         public string Razao { get; set; }
         public string Inscricao { get; set; }

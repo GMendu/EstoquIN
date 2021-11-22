@@ -60,6 +60,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigDB\EstoqDBContext.cs" />
+    <Compile Include="Migrations\202111222009395_arroz.cs" />
+    <Compile Include="Migrations\202111222009395_arroz.designer.cs">
+      <DependentUpon>202111222009395_arroz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DadosCliente.cs" />
     <Compile Include="Model\DadosCompras.cs" />
     <Compile Include="Model\DadosFornec.cs" />
@@ -131,6 +136,9 @@
     <Compile Include="View\Vendas.Designer.cs">
       <DependentUpon>Vendas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Migrations\202111222009395_arroz.resx">
+      <DependentUpon>202111222009395_arroz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

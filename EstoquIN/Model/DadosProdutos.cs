@@ -6,7 +6,7 @@ namespace EstoquIN.Model
 {
     class DadosProdutos
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
         public double Peso { get; set; }
         public double ValorVarejo { get; set; }

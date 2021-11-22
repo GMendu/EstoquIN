@@ -30,6 +30,8 @@ namespace EstoquIN.View
         private void InitializeComponent()
         {
             this.groupInfoCliente = new System.Windows.Forms.GroupBox();
+            this.txtClienteEndereco = new System.Windows.Forms.TextBox();
+            this.lblClienteEndereco = new System.Windows.Forms.Label();
             this.lblClienteObs = new System.Windows.Forms.Label();
             this.txtClienteObs = new System.Windows.Forms.RichTextBox();
             this.lblClienteCnpj = new System.Windows.Forms.Label();
@@ -42,7 +44,7 @@ namespace EstoquIN.View
             this.lblClienteInscricao = new System.Windows.Forms.Label();
             this.btnClienteAdicionar = new FontAwesome.Sharp.IconButton();
             this.btnClienteEditar = new FontAwesome.Sharp.IconButton();
-            this.dataFornec = new System.Windows.Forms.DataGridView();
+            this.dataClientes = new System.Windows.Forms.DataGridView();
             this.btnClienteCancelar = new FontAwesome.Sharp.IconButton();
             this.groupContatoCliente = new System.Windows.Forms.GroupBox();
             this.lblClienteContatoTelefone = new System.Windows.Forms.Label();
@@ -52,10 +54,8 @@ namespace EstoquIN.View
             this.lblClienteContatoNome = new System.Windows.Forms.Label();
             this.txtClienteContatoNome = new System.Windows.Forms.TextBox();
             this.btnClienteExcluir = new FontAwesome.Sharp.IconButton();
-            this.txtClienteEndereco = new System.Windows.Forms.TextBox();
-            this.lblClienteEndereco = new System.Windows.Forms.Label();
             this.groupInfoCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataFornec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataClientes)).BeginInit();
             this.groupContatoCliente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +75,7 @@ namespace EstoquIN.View
             this.groupInfoCliente.Controls.Add(this.txtClienteInscricao);
             this.groupInfoCliente.Controls.Add(this.lblClienteInscricao);
             this.groupInfoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupInfoCliente.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupInfoCliente.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupInfoCliente.ForeColor = System.Drawing.Color.White;
             this.groupInfoCliente.Location = new System.Drawing.Point(11, 10);
             this.groupInfoCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -85,6 +85,26 @@ namespace EstoquIN.View
             this.groupInfoCliente.TabIndex = 21;
             this.groupInfoCliente.TabStop = false;
             this.groupInfoCliente.Text = "Informações empresariais";
+            // 
+            // txtClienteEndereco
+            // 
+            this.txtClienteEndereco.Location = new System.Drawing.Point(19, 280);
+            this.txtClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtClienteEndereco.MaxLength = 100;
+            this.txtClienteEndereco.Name = "txtClienteEndereco";
+            this.txtClienteEndereco.Size = new System.Drawing.Size(211, 34);
+            this.txtClienteEndereco.TabIndex = 17;
+            // 
+            // lblClienteEndereco
+            // 
+            this.lblClienteEndereco.AutoSize = true;
+            this.lblClienteEndereco.ForeColor = System.Drawing.Color.White;
+            this.lblClienteEndereco.Location = new System.Drawing.Point(19, 249);
+            this.lblClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClienteEndereco.Name = "lblClienteEndereco";
+            this.lblClienteEndereco.Size = new System.Drawing.Size(93, 28);
+            this.lblClienteEndereco.TabIndex = 16;
+            this.lblClienteEndereco.Text = "Endereço";
             // 
             // lblClienteObs
             // 
@@ -193,7 +213,7 @@ namespace EstoquIN.View
             // 
             this.btnClienteAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnClienteAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClienteAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnClienteAdicionar.ForeColor = System.Drawing.Color.White;
             this.btnClienteAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClienteAdicionar.IconColor = System.Drawing.Color.Black;
@@ -205,12 +225,13 @@ namespace EstoquIN.View
             this.btnClienteAdicionar.TabIndex = 24;
             this.btnClienteAdicionar.Text = "Adicionar";
             this.btnClienteAdicionar.UseVisualStyleBackColor = false;
+            this.btnClienteAdicionar.Click += new System.EventHandler(this.btnClienteAdicionar_Click);
             // 
             // btnClienteEditar
             // 
             this.btnClienteEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnClienteEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteEditar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClienteEditar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnClienteEditar.ForeColor = System.Drawing.Color.White;
             this.btnClienteEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClienteEditar.IconColor = System.Drawing.Color.Black;
@@ -222,24 +243,25 @@ namespace EstoquIN.View
             this.btnClienteEditar.TabIndex = 25;
             this.btnClienteEditar.Text = "Editar";
             this.btnClienteEditar.UseVisualStyleBackColor = false;
+            this.btnClienteEditar.Click += new System.EventHandler(this.btnClienteEditar_Click);
             // 
-            // dataFornec
+            // dataClientes
             // 
-            this.dataFornec.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.dataFornec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataFornec.Location = new System.Drawing.Point(11, 348);
-            this.dataFornec.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dataFornec.Name = "dataFornec";
-            this.dataFornec.RowHeadersWidth = 51;
-            this.dataFornec.RowTemplate.Height = 25;
-            this.dataFornec.Size = new System.Drawing.Size(937, 184);
-            this.dataFornec.TabIndex = 23;
+            this.dataClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.dataClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataClientes.Location = new System.Drawing.Point(11, 348);
+            this.dataClientes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dataClientes.Name = "dataClientes";
+            this.dataClientes.RowHeadersWidth = 51;
+            this.dataClientes.RowTemplate.Height = 25;
+            this.dataClientes.Size = new System.Drawing.Size(937, 184);
+            this.dataClientes.TabIndex = 23;
             // 
             // btnClienteCancelar
             // 
             this.btnClienteCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnClienteCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteCancelar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClienteCancelar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnClienteCancelar.ForeColor = System.Drawing.Color.White;
             this.btnClienteCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClienteCancelar.IconColor = System.Drawing.Color.Black;
@@ -251,6 +273,7 @@ namespace EstoquIN.View
             this.btnClienteCancelar.TabIndex = 26;
             this.btnClienteCancelar.Text = "Cancelar";
             this.btnClienteCancelar.UseVisualStyleBackColor = false;
+            this.btnClienteCancelar.Click += new System.EventHandler(this.btnClienteCancelar_Click);
             // 
             // groupContatoCliente
             // 
@@ -262,7 +285,7 @@ namespace EstoquIN.View
             this.groupContatoCliente.Controls.Add(this.lblClienteContatoNome);
             this.groupContatoCliente.Controls.Add(this.txtClienteContatoNome);
             this.groupContatoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupContatoCliente.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupContatoCliente.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupContatoCliente.ForeColor = System.Drawing.Color.White;
             this.groupContatoCliente.Location = new System.Drawing.Point(620, 10);
             this.groupContatoCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -337,7 +360,7 @@ namespace EstoquIN.View
             // 
             this.btnClienteExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnClienteExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteExcluir.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClienteExcluir.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnClienteExcluir.ForeColor = System.Drawing.Color.White;
             this.btnClienteExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClienteExcluir.IconColor = System.Drawing.Color.Black;
@@ -349,26 +372,7 @@ namespace EstoquIN.View
             this.btnClienteExcluir.TabIndex = 27;
             this.btnClienteExcluir.Text = "Excluir";
             this.btnClienteExcluir.UseVisualStyleBackColor = false;
-            // 
-            // txtClienteEndereco
-            // 
-            this.txtClienteEndereco.Location = new System.Drawing.Point(19, 280);
-            this.txtClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtClienteEndereco.MaxLength = 100;
-            this.txtClienteEndereco.Name = "txtClienteEndereco";
-            this.txtClienteEndereco.Size = new System.Drawing.Size(211, 34);
-            this.txtClienteEndereco.TabIndex = 17;
-            // 
-            // lblClienteEndereco
-            // 
-            this.lblClienteEndereco.AutoSize = true;
-            this.lblClienteEndereco.ForeColor = System.Drawing.Color.White;
-            this.lblClienteEndereco.Location = new System.Drawing.Point(19, 249);
-            this.lblClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblClienteEndereco.Name = "lblClienteEndereco";
-            this.lblClienteEndereco.Size = new System.Drawing.Size(93, 28);
-            this.lblClienteEndereco.TabIndex = 16;
-            this.lblClienteEndereco.Text = "Endereço";
+            this.btnClienteExcluir.Click += new System.EventHandler(this.btnClienteExcluir_Click);
             // 
             // Clientes
             // 
@@ -381,7 +385,7 @@ namespace EstoquIN.View
             this.Controls.Add(this.groupInfoCliente);
             this.Controls.Add(this.btnClienteAdicionar);
             this.Controls.Add(this.btnClienteEditar);
-            this.Controls.Add(this.dataFornec);
+            this.Controls.Add(this.dataClientes);
             this.Controls.Add(this.btnClienteCancelar);
             this.Controls.Add(this.groupContatoCliente);
             this.Controls.Add(this.btnClienteExcluir);
@@ -389,7 +393,7 @@ namespace EstoquIN.View
             this.Text = "Clientes";
             this.groupInfoCliente.ResumeLayout(false);
             this.groupInfoCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataFornec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataClientes)).EndInit();
             this.groupContatoCliente.ResumeLayout(false);
             this.groupContatoCliente.PerformLayout();
             this.ResumeLayout(false);
@@ -411,7 +415,7 @@ namespace EstoquIN.View
         private System.Windows.Forms.Label lblClienteInscricao;
         private FontAwesome.Sharp.IconButton btnClienteAdicionar;
         private FontAwesome.Sharp.IconButton btnClienteEditar;
-        private System.Windows.Forms.DataGridView dataFornec;
+        private System.Windows.Forms.DataGridView dataClientes;
         private FontAwesome.Sharp.IconButton btnClienteCancelar;
         private System.Windows.Forms.GroupBox groupContatoCliente;
         private System.Windows.Forms.Label lblClienteContatoTelefone;

@@ -10,14 +10,14 @@ namespace EstoquIN.ConfigDB
 {
     class EstoqDBContext:DbContext
     {
-        public DbSet<DadosCliente> dbcliente { get; set; }
-        public DbSet<DadosCompras> dbcompras { get; set; }
-        public DbSet<DadosVendas> dbvendas { get; set; }
-        public DbSet<DadosFornec> dbfornec { get; set; }
-        public DbSet<DadosInsumos> dbinsumos { get; set; }
-        public DbSet<DadosProdutos> dbprodutos { get; set; }
-        public DbSet<DadosUsuario> dbusuario { get; set; }
-        public DbSet<DadosInsumosFornec> dbinsumosfornec { get; set; }
-        public DbSet<DadosProdInsumos> dbprodinsumos { get; set; }
+        public DbSet<DadosCliente> DBclientes { get; set; }
+        public DbSet<DadosCompras> DBcompras { get; set; }
+        public DbSet<DadosVendas> DBvendas { get; set; }
+        public DbSet<DadosFornec> DBfornec { get; set; }
+        public DbSet<DadosInsumos> DBinsumos { get; set; }
+        public DbSet<DadosProdutos> DBprodutos { get; set; }
+        public DbSet<DadosUsuario> DBusuario { get; set; }
+        public DbSet<DadosInsumosFornec> DBinsumosfornec { get; set; }
+        public DbSet<DadosProdInsumos> DBprodinsumos { get; set; }
     }
 }
