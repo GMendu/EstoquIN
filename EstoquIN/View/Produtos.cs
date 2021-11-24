@@ -44,22 +44,73 @@ namespace EstoquIN.View
 
         private void btnProdutoAdicionar_Click(object sender, EventArgs e)
         {
-
+            if (txtProdutoNome.Text != string.Empty || txtProdutosCodBar.Text != string.Empty)
+            {
+                var produto = new DadosProdutos()
+                {
+                    Nome = txtProdutoNome.Text,
+                    Peso = int.Parse(txtProdutoPeso.Text),
+                    ValorVarejo = double.Parse(txtValorVarejo.Text),
+                    ValorAtacado = double.Parse(txtValorAtacado.Text),
+                    CodBarras = txtProdutosCodBar.Text,
+                    Obs = txtProdutoObs.Text,
+                };
+                context.DBprodutos.Add(produto);
+                context.SaveChanges();
+            }
+            else
+            {
+                MessageBox.Show("informe um nome ou código de barras");
+            }
+            RefreshGrid();
+            ClearBoxes();
         }
 
         private void btnProdutoEditar_Click(object sender, EventArgs e)
         {
+            if (btnProdutoEditar.Text == "Editar")
+            {
+                txtProdutoNome.Text = dataProduto.SelectedCells[1].Value.ToString();
+                txtProdutoPeso.Text = dataProduto.SelectedCells[2].Value.ToString();
+                txtValorVarejo.Text = dataProduto.SelectedCells[3].Value.ToString();
+                txtValorAtacado.Text = dataProduto.SelectedCells[4].Value.ToString();
+                txtProdutoObs.Text = dataProduto.SelectedCells[6].Value.ToString();
+                txtProdutosCodBar.Text = dataProduto.SelectedCells[5].Value.ToString();
+                btnProdutoEditar.Text = "Salvar";
+            }
+            else if (btnProdutoEditar.Text == "Salvar")
+            {
+                var editarProd = context.DBprodutos.Find((int)dataProduto.SelectedCells[0].Value);
 
+                editarProd.Nome = txtProdutoNome.Text;
+                editarProd.Peso = int.Parse(txtProdutoPeso.Text);
+                editarProd.ValorVarejo = double.Parse(txtValorVarejo.Text);
+                editarProd.ValorAtacado = double.Parse(txtValorAtacado.Text);
+                editarProd.CodBarras = txtProdutosCodBar.Text;
+                editarProd.Obs = txtProdutoObs.Text;
+
+                context.SaveChanges();
+                RefreshGrid();
+
+                btnProdutoEditar.Text = "Editar";
+                ClearBoxes();
+
+
+            }
         }
 
         private void btnProdutoCancelar_Click(object sender, EventArgs e)
         {
-
+            ClearBoxes();
         }
 
         private void btnProdutoExcluir_Click(object sender, EventArgs e)
         {
-
+            var t = context.DBprodutos.Find((int)dataProduto.SelectedCells[0].Value);
+            context.DBprodutos.Remove(t);
+            context.SaveChanges();
+            RefreshGrid();
+            ClearBoxes();
         }
     }
 }
