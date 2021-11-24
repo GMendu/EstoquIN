@@ -266,12 +266,19 @@ namespace EstoquIN.View
             // 
             // dataCompra
             // 
+            this.dataCompra.AllowUserToAddRows = false;
+            this.dataCompra.AllowUserToDeleteRows = false;
+            this.dataCompra.AllowUserToResizeColumns = false;
+            this.dataCompra.AllowUserToResizeRows = false;
+            this.dataCompra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataCompra.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCompra.Location = new System.Drawing.Point(10, 331);
             this.dataCompra.Name = "dataCompra";
+            this.dataCompra.RowHeadersVisible = false;
             this.dataCompra.RowHeadersWidth = 51;
             this.dataCompra.RowTemplate.Height = 25;
+            this.dataCompra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataCompra.Size = new System.Drawing.Size(938, 199);
             this.dataCompra.TabIndex = 37;
             // 

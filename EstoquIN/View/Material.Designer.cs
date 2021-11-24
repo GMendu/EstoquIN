@@ -45,11 +45,18 @@ namespace EstoquIN.View
             // 
             // dataMaterial
             // 
+            this.dataMaterial.AllowUserToAddRows = false;
+            this.dataMaterial.AllowUserToDeleteRows = false;
+            this.dataMaterial.AllowUserToResizeColumns = false;
+            this.dataMaterial.AllowUserToResizeRows = false;
+            this.dataMaterial.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataMaterial.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataMaterial.Location = new System.Drawing.Point(650, 12);
             this.dataMaterial.Name = "dataMaterial";
+            this.dataMaterial.RowHeadersVisible = false;
             this.dataMaterial.RowTemplate.Height = 25;
+            this.dataMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataMaterial.Size = new System.Drawing.Size(298, 518);
             this.dataMaterial.TabIndex = 0;
             // 
@@ -157,11 +164,18 @@ namespace EstoquIN.View
             // 
             // dataMaterialFornec
             // 
+            this.dataMaterialFornec.AllowUserToAddRows = false;
+            this.dataMaterialFornec.AllowUserToDeleteRows = false;
+            this.dataMaterialFornec.AllowUserToResizeColumns = false;
+            this.dataMaterialFornec.AllowUserToResizeRows = false;
+            this.dataMaterialFornec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataMaterialFornec.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataMaterialFornec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataMaterialFornec.Location = new System.Drawing.Point(12, 12);
             this.dataMaterialFornec.Name = "dataMaterialFornec";
+            this.dataMaterialFornec.RowHeadersVisible = false;
             this.dataMaterialFornec.RowTemplate.Height = 25;
+            this.dataMaterialFornec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataMaterialFornec.Size = new System.Drawing.Size(261, 518);
             this.dataMaterialFornec.TabIndex = 25;
             // 

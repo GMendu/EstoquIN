@@ -247,13 +247,20 @@ namespace EstoquIN.View
             // 
             // dataClientes
             // 
+            this.dataClientes.AllowUserToAddRows = false;
+            this.dataClientes.AllowUserToDeleteRows = false;
+            this.dataClientes.AllowUserToResizeColumns = false;
+            this.dataClientes.AllowUserToResizeRows = false;
+            this.dataClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataClientes.Location = new System.Drawing.Point(11, 348);
             this.dataClientes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataClientes.Name = "dataClientes";
+            this.dataClientes.RowHeadersVisible = false;
             this.dataClientes.RowHeadersWidth = 51;
             this.dataClientes.RowTemplate.Height = 25;
+            this.dataClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataClientes.Size = new System.Drawing.Size(937, 184);
             this.dataClientes.TabIndex = 23;
             // 
