@@ -12,5 +12,7 @@ namespace EstoquIN.Model
         public double ValorVarejo { get; set; }
         public double ValorAtacado { get; set; }
         public string CodBarras { get; set; }
+
+        public string Obs { get; set; }
     }
 }

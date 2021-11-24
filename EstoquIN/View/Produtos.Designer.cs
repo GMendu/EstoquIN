@@ -61,18 +61,19 @@ namespace EstoquIN.View
             this.btnProdutoExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProdutoExcluir.IconColor = System.Drawing.Color.Black;
             this.btnProdutoExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutoExcluir.Location = new System.Drawing.Point(676, 267);
+            this.btnProdutoExcluir.Location = new System.Drawing.Point(797, 280);
             this.btnProdutoExcluir.Name = "btnProdutoExcluir";
-            this.btnProdutoExcluir.Size = new System.Drawing.Size(136, 29);
+            this.btnProdutoExcluir.Size = new System.Drawing.Size(151, 42);
             this.btnProdutoExcluir.TabIndex = 34;
             this.btnProdutoExcluir.Text = "Excluir";
             this.btnProdutoExcluir.UseVisualStyleBackColor = false;
+            this.btnProdutoExcluir.Click += new System.EventHandler(this.btnProdutoExcluir_Click);
             // 
             // lblProdutoObs
             // 
             this.lblProdutoObs.AutoSize = true;
             this.lblProdutoObs.ForeColor = System.Drawing.Color.White;
-            this.lblProdutoObs.Location = new System.Drawing.Point(214, 149);
+            this.lblProdutoObs.Location = new System.Drawing.Point(332, 164);
             this.lblProdutoObs.Name = "lblProdutoObs";
             this.lblProdutoObs.Size = new System.Drawing.Size(127, 28);
             this.lblProdutoObs.TabIndex = 11;
@@ -80,7 +81,7 @@ namespace EstoquIN.View
             // 
             // txtProdutoObs
             // 
-            this.txtProdutoObs.Location = new System.Drawing.Point(212, 172);
+            this.txtProdutoObs.Location = new System.Drawing.Point(325, 195);
             this.txtProdutoObs.MaxLength = 65000;
             this.txtProdutoObs.Name = "txtProdutoObs";
             this.txtProdutoObs.Size = new System.Drawing.Size(292, 101);
@@ -91,7 +92,7 @@ namespace EstoquIN.View
             // 
             this.lblProdutoNome.AutoSize = true;
             this.lblProdutoNome.ForeColor = System.Drawing.Color.White;
-            this.lblProdutoNome.Location = new System.Drawing.Point(17, 38);
+            this.lblProdutoNome.Location = new System.Drawing.Point(15, 31);
             this.lblProdutoNome.Name = "lblProdutoNome";
             this.lblProdutoNome.Size = new System.Drawing.Size(66, 28);
             this.lblProdutoNome.TabIndex = 0;
@@ -99,14 +100,14 @@ namespace EstoquIN.View
             // 
             // txtValorVarejo
             // 
-            this.txtValorVarejo.Location = new System.Drawing.Point(212, 62);
+            this.txtValorVarejo.Location = new System.Drawing.Point(325, 62);
             this.txtValorVarejo.Name = "txtValorVarejo";
             this.txtValorVarejo.Size = new System.Drawing.Size(292, 34);
             this.txtValorVarejo.TabIndex = 3;
             // 
             // txtValorAtacado
             // 
-            this.txtValorAtacado.Location = new System.Drawing.Point(212, 117);
+            this.txtValorAtacado.Location = new System.Drawing.Point(325, 127);
             this.txtValorAtacado.Name = "txtValorAtacado";
             this.txtValorAtacado.Size = new System.Drawing.Size(292, 34);
             this.txtValorAtacado.TabIndex = 9;
@@ -115,17 +116,17 @@ namespace EstoquIN.View
             // 
             this.txtProdutoNome.BackColor = System.Drawing.SystemColors.Menu;
             this.txtProdutoNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtProdutoNome.Location = new System.Drawing.Point(15, 63);
+            this.txtProdutoNome.Location = new System.Drawing.Point(15, 62);
             this.txtProdutoNome.MaxLength = 45;
             this.txtProdutoNome.Name = "txtProdutoNome";
-            this.txtProdutoNome.Size = new System.Drawing.Size(182, 34);
+            this.txtProdutoNome.Size = new System.Drawing.Size(290, 34);
             this.txtProdutoNome.TabIndex = 1;
             // 
             // lblValorAtacado
             // 
             this.lblValorAtacado.AutoSize = true;
             this.lblValorAtacado.ForeColor = System.Drawing.Color.White;
-            this.lblValorAtacado.Location = new System.Drawing.Point(214, 92);
+            this.lblValorAtacado.Location = new System.Drawing.Point(332, 92);
             this.lblValorAtacado.Name = "lblValorAtacado";
             this.lblValorAtacado.Size = new System.Drawing.Size(163, 28);
             this.lblValorAtacado.TabIndex = 8;
@@ -135,7 +136,7 @@ namespace EstoquIN.View
             // 
             this.lblValorVarejo.AutoSize = true;
             this.lblValorVarejo.ForeColor = System.Drawing.Color.White;
-            this.lblValorVarejo.Location = new System.Drawing.Point(214, 38);
+            this.lblValorVarejo.Location = new System.Drawing.Point(332, 30);
             this.lblValorVarejo.Name = "lblValorVarejo";
             this.lblValorVarejo.Size = new System.Drawing.Size(145, 28);
             this.lblValorVarejo.TabIndex = 2;
@@ -143,16 +144,16 @@ namespace EstoquIN.View
             // 
             // txtProdutoPeso
             // 
-            this.txtProdutoPeso.Location = new System.Drawing.Point(15, 117);
+            this.txtProdutoPeso.Location = new System.Drawing.Point(15, 127);
             this.txtProdutoPeso.Name = "txtProdutoPeso";
-            this.txtProdutoPeso.Size = new System.Drawing.Size(182, 34);
+            this.txtProdutoPeso.Size = new System.Drawing.Size(290, 34);
             this.txtProdutoPeso.TabIndex = 7;
             // 
             // lblProdutoPeso
             // 
             this.lblProdutoPeso.AutoSize = true;
             this.lblProdutoPeso.ForeColor = System.Drawing.Color.White;
-            this.lblProdutoPeso.Location = new System.Drawing.Point(17, 92);
+            this.lblProdutoPeso.Location = new System.Drawing.Point(15, 99);
             this.lblProdutoPeso.Name = "lblProdutoPeso";
             this.lblProdutoPeso.Size = new System.Drawing.Size(52, 28);
             this.lblProdutoPeso.TabIndex = 6;
@@ -167,12 +168,13 @@ namespace EstoquIN.View
             this.btnProdutoAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProdutoAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnProdutoAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutoAdicionar.Location = new System.Drawing.Point(531, 231);
+            this.btnProdutoAdicionar.Location = new System.Drawing.Point(648, 231);
             this.btnProdutoAdicionar.Name = "btnProdutoAdicionar";
-            this.btnProdutoAdicionar.Size = new System.Drawing.Size(136, 29);
+            this.btnProdutoAdicionar.Size = new System.Drawing.Size(143, 43);
             this.btnProdutoAdicionar.TabIndex = 31;
             this.btnProdutoAdicionar.Text = "Adicionar";
             this.btnProdutoAdicionar.UseVisualStyleBackColor = false;
+            this.btnProdutoAdicionar.Click += new System.EventHandler(this.btnProdutoAdicionar_Click);
             // 
             // btnProdutoEditar
             // 
@@ -183,22 +185,23 @@ namespace EstoquIN.View
             this.btnProdutoEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProdutoEditar.IconColor = System.Drawing.Color.Black;
             this.btnProdutoEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutoEditar.Location = new System.Drawing.Point(531, 267);
+            this.btnProdutoEditar.Location = new System.Drawing.Point(648, 280);
             this.btnProdutoEditar.Name = "btnProdutoEditar";
-            this.btnProdutoEditar.Size = new System.Drawing.Size(136, 29);
+            this.btnProdutoEditar.Size = new System.Drawing.Size(143, 42);
             this.btnProdutoEditar.TabIndex = 32;
             this.btnProdutoEditar.Text = "Editar";
             this.btnProdutoEditar.UseVisualStyleBackColor = false;
+            this.btnProdutoEditar.Click += new System.EventHandler(this.btnProdutoEditar_Click);
             // 
             // dataProduto
             // 
             this.dataProduto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataProduto.Location = new System.Drawing.Point(9, 302);
+            this.dataProduto.Location = new System.Drawing.Point(9, 328);
             this.dataProduto.Name = "dataProduto";
             this.dataProduto.RowHeadersWidth = 51;
             this.dataProduto.RowTemplate.Height = 25;
-            this.dataProduto.Size = new System.Drawing.Size(803, 159);
+            this.dataProduto.Size = new System.Drawing.Size(939, 202);
             this.dataProduto.TabIndex = 30;
             // 
             // groupProdutoInfo
@@ -221,23 +224,23 @@ namespace EstoquIN.View
             this.groupProdutoInfo.ForeColor = System.Drawing.Color.White;
             this.groupProdutoInfo.Location = new System.Drawing.Point(9, 9);
             this.groupProdutoInfo.Name = "groupProdutoInfo";
-            this.groupProdutoInfo.Size = new System.Drawing.Size(515, 288);
+            this.groupProdutoInfo.Size = new System.Drawing.Size(633, 313);
             this.groupProdutoInfo.TabIndex = 28;
             this.groupProdutoInfo.TabStop = false;
             this.groupProdutoInfo.Text = "Informações do Produto";
             // 
             // txtProdutosCodBar
             // 
-            this.txtProdutosCodBar.Location = new System.Drawing.Point(15, 176);
+            this.txtProdutosCodBar.Location = new System.Drawing.Point(15, 195);
             this.txtProdutosCodBar.MaxLength = 100;
             this.txtProdutosCodBar.Name = "txtProdutosCodBar";
-            this.txtProdutosCodBar.Size = new System.Drawing.Size(182, 34);
+            this.txtProdutosCodBar.Size = new System.Drawing.Size(290, 34);
             this.txtProdutosCodBar.TabIndex = 13;
             // 
             // lblProdutosCodBar
             // 
             this.lblProdutosCodBar.AutoSize = true;
-            this.lblProdutosCodBar.Location = new System.Drawing.Point(15, 149);
+            this.lblProdutosCodBar.Location = new System.Drawing.Point(15, 164);
             this.lblProdutosCodBar.Name = "lblProdutosCodBar";
             this.lblProdutosCodBar.Size = new System.Drawing.Size(163, 28);
             this.lblProdutosCodBar.TabIndex = 12;
@@ -252,12 +255,13 @@ namespace EstoquIN.View
             this.btnProdutoCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProdutoCancelar.IconColor = System.Drawing.Color.Black;
             this.btnProdutoCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutoCancelar.Location = new System.Drawing.Point(676, 231);
+            this.btnProdutoCancelar.Location = new System.Drawing.Point(797, 231);
             this.btnProdutoCancelar.Name = "btnProdutoCancelar";
-            this.btnProdutoCancelar.Size = new System.Drawing.Size(136, 29);
+            this.btnProdutoCancelar.Size = new System.Drawing.Size(151, 43);
             this.btnProdutoCancelar.TabIndex = 33;
             this.btnProdutoCancelar.Text = "Cancelar";
             this.btnProdutoCancelar.UseVisualStyleBackColor = false;
+            this.btnProdutoCancelar.Click += new System.EventHandler(this.btnProdutoCancelar_Click);
             // 
             // groupProdutoFornecedor
             // 
@@ -265,9 +269,9 @@ namespace EstoquIN.View
             this.groupProdutoFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupProdutoFornecedor.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupProdutoFornecedor.ForeColor = System.Drawing.Color.White;
-            this.groupProdutoFornecedor.Location = new System.Drawing.Point(531, 9);
+            this.groupProdutoFornecedor.Location = new System.Drawing.Point(648, 7);
             this.groupProdutoFornecedor.Name = "groupProdutoFornecedor";
-            this.groupProdutoFornecedor.Size = new System.Drawing.Size(282, 218);
+            this.groupProdutoFornecedor.Size = new System.Drawing.Size(300, 218);
             this.groupProdutoFornecedor.TabIndex = 29;
             this.groupProdutoFornecedor.TabStop = false;
             this.groupProdutoFornecedor.Text = "Possível Fornecedor";
