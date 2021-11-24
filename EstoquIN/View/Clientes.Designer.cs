@@ -88,7 +88,7 @@ namespace EstoquIN.View
             // 
             // txtClienteEndereco
             // 
-            this.txtClienteEndereco.Location = new System.Drawing.Point(19, 280);
+            this.txtClienteEndereco.Location = new System.Drawing.Point(17, 198);
             this.txtClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteEndereco.MaxLength = 100;
             this.txtClienteEndereco.Name = "txtClienteEndereco";
@@ -99,7 +99,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteEndereco.AutoSize = true;
             this.lblClienteEndereco.ForeColor = System.Drawing.Color.White;
-            this.lblClienteEndereco.Location = new System.Drawing.Point(19, 249);
+            this.lblClienteEndereco.Location = new System.Drawing.Point(19, 170);
             this.lblClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteEndereco.Name = "lblClienteEndereco";
             this.lblClienteEndereco.Size = new System.Drawing.Size(93, 28);
@@ -110,7 +110,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteObs.AutoSize = true;
             this.lblClienteObs.ForeColor = System.Drawing.Color.White;
-            this.lblClienteObs.Location = new System.Drawing.Point(249, 172);
+            this.lblClienteObs.Location = new System.Drawing.Point(248, 170);
             this.lblClienteObs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteObs.Name = "lblClienteObs";
             this.lblClienteObs.Size = new System.Drawing.Size(123, 28);
@@ -171,7 +171,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteNomeFantasia.AutoSize = true;
             this.lblClienteNomeFantasia.ForeColor = System.Drawing.Color.White;
-            this.lblClienteNomeFantasia.Location = new System.Drawing.Point(249, 106);
+            this.lblClienteNomeFantasia.Location = new System.Drawing.Point(248, 104);
             this.lblClienteNomeFantasia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteNomeFantasia.Name = "lblClienteNomeFantasia";
             this.lblClienteNomeFantasia.Size = new System.Drawing.Size(141, 28);
