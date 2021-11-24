@@ -49,9 +49,9 @@ namespace EstoquIN.View
                 var produto = new DadosProdutos()
                 {
                     Nome = txtProdutoNome.Text,
-                    Peso = int.Parse(txtProdutoPeso.Text),
-                    ValorVarejo = double.Parse(txtValorVarejo.Text),
-                    ValorAtacado = double.Parse(txtValorAtacado.Text),
+                    Peso = txtProdutoPeso.Text,
+                    ValorVarejo = txtValorVarejo.Text,
+                    ValorAtacado = txtValorAtacado.Text,
                     CodBarras = txtProdutosCodBar.Text,
                     Obs = txtProdutoObs.Text,
                 };
@@ -83,9 +83,9 @@ namespace EstoquIN.View
                 var editarProd = context.DBprodutos.Find((int)dataProduto.SelectedCells[0].Value);
 
                 editarProd.Nome = txtProdutoNome.Text;
-                editarProd.Peso = int.Parse(txtProdutoPeso.Text);
-                editarProd.ValorVarejo = double.Parse(txtValorVarejo.Text);
-                editarProd.ValorAtacado = double.Parse(txtValorAtacado.Text);
+                editarProd.Peso = txtProdutoPeso.Text;
+                editarProd.ValorVarejo = txtValorVarejo.Text;
+                editarProd.ValorAtacado = txtValorAtacado.Text;
                 editarProd.CodBarras = txtProdutosCodBar.Text;
                 editarProd.Obs = txtProdutoObs.Text;
 

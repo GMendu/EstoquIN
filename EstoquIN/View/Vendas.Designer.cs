@@ -78,23 +78,23 @@ namespace EstoquIN.View
             this.groupVendaInfo.ForeColor = System.Drawing.Color.White;
             this.groupVendaInfo.Location = new System.Drawing.Point(9, 9);
             this.groupVendaInfo.Name = "groupVendaInfo";
-            this.groupVendaInfo.Size = new System.Drawing.Size(515, 288);
+            this.groupVendaInfo.Size = new System.Drawing.Size(625, 326);
             this.groupVendaInfo.TabIndex = 28;
             this.groupVendaInfo.TabStop = false;
             this.groupVendaInfo.Text = "Venda do Produto";
             // 
             // txtVendaValorUnit
             // 
-            this.txtVendaValorUnit.Location = new System.Drawing.Point(362, 120);
+            this.txtVendaValorUnit.Location = new System.Drawing.Point(435, 139);
             this.txtVendaValorUnit.Name = "txtVendaValorUnit";
-            this.txtVendaValorUnit.Size = new System.Drawing.Size(115, 34);
+            this.txtVendaValorUnit.Size = new System.Drawing.Size(161, 34);
             this.txtVendaValorUnit.TabIndex = 20;
             // 
             // lblVendaValorUnit
             // 
             this.lblVendaValorUnit.AutoSize = true;
             this.lblVendaValorUnit.ForeColor = System.Drawing.Color.White;
-            this.lblVendaValorUnit.Location = new System.Drawing.Point(362, 94);
+            this.lblVendaValorUnit.Location = new System.Drawing.Point(430, 106);
             this.lblVendaValorUnit.Name = "lblVendaValorUnit";
             this.lblVendaValorUnit.Size = new System.Drawing.Size(133, 28);
             this.lblVendaValorUnit.TabIndex = 19;
@@ -103,24 +103,24 @@ namespace EstoquIN.View
             // cbVendaFormaPagamento
             // 
             this.cbVendaFormaPagamento.FormattingEnabled = true;
-            this.cbVendaFormaPagamento.Location = new System.Drawing.Point(17, 191);
+            this.cbVendaFormaPagamento.Location = new System.Drawing.Point(14, 209);
             this.cbVendaFormaPagamento.Name = "cbVendaFormaPagamento";
-            this.cbVendaFormaPagamento.Size = new System.Drawing.Size(171, 36);
+            this.cbVendaFormaPagamento.Size = new System.Drawing.Size(232, 36);
             this.cbVendaFormaPagamento.TabIndex = 18;
             // 
             // dateVendaData
             // 
             this.dateVendaData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateVendaData.Location = new System.Drawing.Point(225, 189);
+            this.dateVendaData.Location = new System.Drawing.Point(252, 211);
             this.dateVendaData.Name = "dateVendaData";
-            this.dateVendaData.Size = new System.Drawing.Size(103, 34);
+            this.dateVendaData.Size = new System.Drawing.Size(143, 34);
             this.dateVendaData.TabIndex = 17;
             // 
             // lblVendaData
             // 
             this.lblVendaData.AutoSize = true;
             this.lblVendaData.ForeColor = System.Drawing.Color.White;
-            this.lblVendaData.Location = new System.Drawing.Point(225, 162);
+            this.lblVendaData.Location = new System.Drawing.Point(256, 180);
             this.lblVendaData.Name = "lblVendaData";
             this.lblVendaData.Size = new System.Drawing.Size(53, 28);
             this.lblVendaData.TabIndex = 16;
@@ -130,7 +130,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaQuantidade.AutoSize = true;
             this.lblVendaQuantidade.ForeColor = System.Drawing.Color.White;
-            this.lblVendaQuantidade.Location = new System.Drawing.Point(362, 38);
+            this.lblVendaQuantidade.Location = new System.Drawing.Point(430, 38);
             this.lblVendaQuantidade.Name = "lblVendaQuantidade";
             this.lblVendaQuantidade.Size = new System.Drawing.Size(115, 28);
             this.lblVendaQuantidade.TabIndex = 15;
@@ -138,25 +138,25 @@ namespace EstoquIN.View
             // 
             // txtVendaQuantidade
             // 
-            this.txtVendaQuantidade.Location = new System.Drawing.Point(362, 61);
+            this.txtVendaQuantidade.Location = new System.Drawing.Point(435, 69);
             this.txtVendaQuantidade.Name = "txtVendaQuantidade";
-            this.txtVendaQuantidade.Size = new System.Drawing.Size(115, 34);
+            this.txtVendaQuantidade.Size = new System.Drawing.Size(161, 34);
             this.txtVendaQuantidade.TabIndex = 14;
             // 
             // cbVendaProdutoFornecido
             // 
             this.cbVendaProdutoFornecido.FormattingEnabled = true;
-            this.cbVendaProdutoFornecido.Location = new System.Drawing.Point(15, 119);
+            this.cbVendaProdutoFornecido.Location = new System.Drawing.Point(14, 139);
             this.cbVendaProdutoFornecido.Name = "cbVendaProdutoFornecido";
-            this.cbVendaProdutoFornecido.Size = new System.Drawing.Size(314, 36);
+            this.cbVendaProdutoFornecido.Size = new System.Drawing.Size(381, 36);
             this.cbVendaProdutoFornecido.TabIndex = 13;
             // 
             // cbVendaFornecedor
             // 
             this.cbVendaFornecedor.FormattingEnabled = true;
-            this.cbVendaFornecedor.Location = new System.Drawing.Point(15, 61);
+            this.cbVendaFornecedor.Location = new System.Drawing.Point(17, 69);
             this.cbVendaFornecedor.Name = "cbVendaFornecedor";
-            this.cbVendaFornecedor.Size = new System.Drawing.Size(314, 36);
+            this.cbVendaFornecedor.Size = new System.Drawing.Size(378, 36);
             this.cbVendaFornecedor.TabIndex = 12;
             // 
             // lblVendaFornecedor
@@ -171,16 +171,16 @@ namespace EstoquIN.View
             // 
             // txtVendaValorTotal
             // 
-            this.txtVendaValorTotal.Location = new System.Drawing.Point(362, 189);
+            this.txtVendaValorTotal.Location = new System.Drawing.Point(435, 209);
             this.txtVendaValorTotal.Name = "txtVendaValorTotal";
-            this.txtVendaValorTotal.Size = new System.Drawing.Size(115, 34);
+            this.txtVendaValorTotal.Size = new System.Drawing.Size(161, 34);
             this.txtVendaValorTotal.TabIndex = 9;
             // 
             // lblVendaValorTotal
             // 
             this.lblVendaValorTotal.AutoSize = true;
             this.lblVendaValorTotal.ForeColor = System.Drawing.Color.White;
-            this.lblVendaValorTotal.Location = new System.Drawing.Point(362, 162);
+            this.lblVendaValorTotal.Location = new System.Drawing.Point(430, 176);
             this.lblVendaValorTotal.Name = "lblVendaValorTotal";
             this.lblVendaValorTotal.Size = new System.Drawing.Size(104, 28);
             this.lblVendaValorTotal.TabIndex = 8;
@@ -190,7 +190,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaProdutoFornecido.AutoSize = true;
             this.lblVendaProdutoFornecido.ForeColor = System.Drawing.Color.White;
-            this.lblVendaProdutoFornecido.Location = new System.Drawing.Point(17, 94);
+            this.lblVendaProdutoFornecido.Location = new System.Drawing.Point(17, 108);
             this.lblVendaProdutoFornecido.Name = "lblVendaProdutoFornecido";
             this.lblVendaProdutoFornecido.Size = new System.Drawing.Size(84, 28);
             this.lblVendaProdutoFornecido.TabIndex = 2;
@@ -200,7 +200,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaFormaPagamento.AutoSize = true;
             this.lblVendaFormaPagamento.ForeColor = System.Drawing.Color.White;
-            this.lblVendaFormaPagamento.Location = new System.Drawing.Point(17, 162);
+            this.lblVendaFormaPagamento.Location = new System.Drawing.Point(17, 178);
             this.lblVendaFormaPagamento.Name = "lblVendaFormaPagamento";
             this.lblVendaFormaPagamento.Size = new System.Drawing.Size(199, 28);
             this.lblVendaFormaPagamento.TabIndex = 6;
@@ -215,9 +215,9 @@ namespace EstoquIN.View
             this.btnVendaAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnVendaAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnVendaAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaAdicionar.Location = new System.Drawing.Point(531, 231);
+            this.btnVendaAdicionar.Location = new System.Drawing.Point(640, 247);
             this.btnVendaAdicionar.Name = "btnVendaAdicionar";
-            this.btnVendaAdicionar.Size = new System.Drawing.Size(136, 29);
+            this.btnVendaAdicionar.Size = new System.Drawing.Size(151, 41);
             this.btnVendaAdicionar.TabIndex = 31;
             this.btnVendaAdicionar.Text = "Adicionar";
             this.btnVendaAdicionar.UseVisualStyleBackColor = false;
@@ -231,9 +231,9 @@ namespace EstoquIN.View
             this.btnVendaEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnVendaEditar.IconColor = System.Drawing.Color.Black;
             this.btnVendaEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaEditar.Location = new System.Drawing.Point(531, 267);
+            this.btnVendaEditar.Location = new System.Drawing.Point(640, 294);
             this.btnVendaEditar.Name = "btnVendaEditar";
-            this.btnVendaEditar.Size = new System.Drawing.Size(136, 29);
+            this.btnVendaEditar.Size = new System.Drawing.Size(151, 41);
             this.btnVendaEditar.TabIndex = 32;
             this.btnVendaEditar.Text = "Editar";
             this.btnVendaEditar.UseVisualStyleBackColor = false;
@@ -242,11 +242,11 @@ namespace EstoquIN.View
             // 
             this.dataVenda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataVenda.Location = new System.Drawing.Point(9, 302);
+            this.dataVenda.Location = new System.Drawing.Point(9, 341);
             this.dataVenda.Name = "dataVenda";
             this.dataVenda.RowHeadersWidth = 51;
             this.dataVenda.RowTemplate.Height = 25;
-            this.dataVenda.Size = new System.Drawing.Size(803, 159);
+            this.dataVenda.Size = new System.Drawing.Size(939, 189);
             this.dataVenda.TabIndex = 30;
             // 
             // btnVendaCancelar
@@ -258,9 +258,9 @@ namespace EstoquIN.View
             this.btnVendaCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnVendaCancelar.IconColor = System.Drawing.Color.Black;
             this.btnVendaCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaCancelar.Location = new System.Drawing.Point(676, 231);
+            this.btnVendaCancelar.Location = new System.Drawing.Point(797, 247);
             this.btnVendaCancelar.Name = "btnVendaCancelar";
-            this.btnVendaCancelar.Size = new System.Drawing.Size(136, 29);
+            this.btnVendaCancelar.Size = new System.Drawing.Size(151, 41);
             this.btnVendaCancelar.TabIndex = 33;
             this.btnVendaCancelar.Text = "Cancelar";
             this.btnVendaCancelar.UseVisualStyleBackColor = false;
@@ -274,9 +274,9 @@ namespace EstoquIN.View
             this.btnVendaExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnVendaExcluir.IconColor = System.Drawing.Color.Black;
             this.btnVendaExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaExcluir.Location = new System.Drawing.Point(676, 267);
+            this.btnVendaExcluir.Location = new System.Drawing.Point(797, 294);
             this.btnVendaExcluir.Name = "btnVendaExcluir";
-            this.btnVendaExcluir.Size = new System.Drawing.Size(136, 29);
+            this.btnVendaExcluir.Size = new System.Drawing.Size(151, 41);
             this.btnVendaExcluir.TabIndex = 34;
             this.btnVendaExcluir.Text = "Excluir";
             this.btnVendaExcluir.UseVisualStyleBackColor = false;
@@ -288,9 +288,9 @@ namespace EstoquIN.View
             this.groupVendaStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupVendaStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupVendaStatus.ForeColor = System.Drawing.Color.White;
-            this.groupVendaStatus.Location = new System.Drawing.Point(532, 11);
+            this.groupVendaStatus.Location = new System.Drawing.Point(640, 9);
             this.groupVendaStatus.Name = "groupVendaStatus";
-            this.groupVendaStatus.Size = new System.Drawing.Size(279, 215);
+            this.groupVendaStatus.Size = new System.Drawing.Size(308, 232);
             this.groupVendaStatus.TabIndex = 35;
             this.groupVendaStatus.TabStop = false;
             this.groupVendaStatus.Text = "Status da Venda";

@@ -9,9 +9,9 @@ namespace EstoquIN.Model
         public int Id { get; set; }
         public DateTime Data { get; set; }
         public string FormPag { get; set; }
-        public int Quant { get; set; }
-        public double ValorTotal { get; set; }
-        public double ValorUnit { get; set; }
+        public string Quant { get; set; }
+        public string ValorTotal { get; set; }
+        public string ValorUnit { get; set; }
         public bool Status { get; set; }
         public string NotaFiscal { get; set; }
 

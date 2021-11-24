@@ -14,5 +14,25 @@ namespace EstoquIN.View
         {
             InitializeComponent();
         }
+
+        private void btnConfigExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfigAdicionar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfigEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfigCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

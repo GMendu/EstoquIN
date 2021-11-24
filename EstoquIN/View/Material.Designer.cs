@@ -47,10 +47,10 @@ namespace EstoquIN.View
             // 
             this.dataMaterial.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataMaterial.Location = new System.Drawing.Point(665, 12);
+            this.dataMaterial.Location = new System.Drawing.Point(650, 12);
             this.dataMaterial.Name = "dataMaterial";
             this.dataMaterial.RowTemplate.Height = 25;
-            this.dataMaterial.Size = new System.Drawing.Size(283, 518);
+            this.dataMaterial.Size = new System.Drawing.Size(298, 518);
             this.dataMaterial.TabIndex = 0;
             // 
             // groupMaterialInfo
