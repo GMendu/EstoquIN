@@ -119,8 +119,8 @@ namespace EstoquIN.View
 
         private void btnFornecExcluir_Click(object sender, EventArgs e)
         {
-            var t = context.DBclientes.Find((int)dataFornec.SelectedCells[0].Value);
-            context.DBclientes.Remove(t);
+            var t = context.DBfornec.Find((int)dataFornec.SelectedCells[0].Value);
+            context.DBfornec.Remove(t);
             context.SaveChanges();
             RefreshGrid();
             ClearBoxes();

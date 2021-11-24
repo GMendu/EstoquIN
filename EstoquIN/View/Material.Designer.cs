@@ -47,10 +47,10 @@ namespace EstoquIN.View
             // 
             this.dataMaterial.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataMaterial.Location = new System.Drawing.Point(555, 26);
+            this.dataMaterial.Location = new System.Drawing.Point(665, 12);
             this.dataMaterial.Name = "dataMaterial";
             this.dataMaterial.RowTemplate.Height = 25;
-            this.dataMaterial.Size = new System.Drawing.Size(247, 424);
+            this.dataMaterial.Size = new System.Drawing.Size(283, 518);
             this.dataMaterial.TabIndex = 0;
             // 
             // groupMaterialInfo
@@ -60,9 +60,9 @@ namespace EstoquIN.View
             this.groupMaterialInfo.Controls.Add(this.txtMaterialNome);
             this.groupMaterialInfo.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupMaterialInfo.ForeColor = System.Drawing.Color.White;
-            this.groupMaterialInfo.Location = new System.Drawing.Point(262, 26);
+            this.groupMaterialInfo.Location = new System.Drawing.Point(279, 12);
             this.groupMaterialInfo.Name = "groupMaterialInfo";
-            this.groupMaterialInfo.Size = new System.Drawing.Size(288, 172);
+            this.groupMaterialInfo.Size = new System.Drawing.Size(366, 156);
             this.groupMaterialInfo.TabIndex = 1;
             this.groupMaterialInfo.TabStop = false;
             this.groupMaterialInfo.Text = "Material";
@@ -71,7 +71,7 @@ namespace EstoquIN.View
             // 
             this.lblMaterialNome.AutoSize = true;
             this.lblMaterialNome.ForeColor = System.Drawing.Color.White;
-            this.lblMaterialNome.Location = new System.Drawing.Point(21, 52);
+            this.lblMaterialNome.Location = new System.Drawing.Point(31, 48);
             this.lblMaterialNome.Name = "lblMaterialNome";
             this.lblMaterialNome.Size = new System.Drawing.Size(66, 28);
             this.lblMaterialNome.TabIndex = 2;
@@ -96,12 +96,13 @@ namespace EstoquIN.View
             this.btnMaterialAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnMaterialAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialAdicionar.Location = new System.Drawing.Point(263, 204);
+            this.btnMaterialAdicionar.Location = new System.Drawing.Point(279, 174);
             this.btnMaterialAdicionar.Name = "btnMaterialAdicionar";
-            this.btnMaterialAdicionar.Size = new System.Drawing.Size(141, 29);
+            this.btnMaterialAdicionar.Size = new System.Drawing.Size(175, 60);
             this.btnMaterialAdicionar.TabIndex = 21;
             this.btnMaterialAdicionar.Text = "Adicionar";
             this.btnMaterialAdicionar.UseVisualStyleBackColor = false;
+            this.btnMaterialAdicionar.Click += new System.EventHandler(this.btnMaterialAdicionar_Click);
             // 
             // btnMaterialEditar
             // 
@@ -112,12 +113,13 @@ namespace EstoquIN.View
             this.btnMaterialEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialEditar.IconColor = System.Drawing.Color.Black;
             this.btnMaterialEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialEditar.Location = new System.Drawing.Point(262, 238);
+            this.btnMaterialEditar.Location = new System.Drawing.Point(279, 244);
             this.btnMaterialEditar.Name = "btnMaterialEditar";
-            this.btnMaterialEditar.Size = new System.Drawing.Size(141, 29);
+            this.btnMaterialEditar.Size = new System.Drawing.Size(175, 60);
             this.btnMaterialEditar.TabIndex = 22;
             this.btnMaterialEditar.Text = "Editar";
             this.btnMaterialEditar.UseVisualStyleBackColor = false;
+            this.btnMaterialEditar.Click += new System.EventHandler(this.btnMaterialEditar_Click);
             // 
             // btnMaterialCancelar
             // 
@@ -128,12 +130,13 @@ namespace EstoquIN.View
             this.btnMaterialCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialCancelar.IconColor = System.Drawing.Color.Black;
             this.btnMaterialCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialCancelar.Location = new System.Drawing.Point(408, 204);
+            this.btnMaterialCancelar.Location = new System.Drawing.Point(469, 174);
             this.btnMaterialCancelar.Name = "btnMaterialCancelar";
-            this.btnMaterialCancelar.Size = new System.Drawing.Size(142, 29);
+            this.btnMaterialCancelar.Size = new System.Drawing.Size(176, 60);
             this.btnMaterialCancelar.TabIndex = 23;
             this.btnMaterialCancelar.Text = "Cancelar";
             this.btnMaterialCancelar.UseVisualStyleBackColor = false;
+            this.btnMaterialCancelar.Click += new System.EventHandler(this.btnMaterialCancelar_Click);
             // 
             // btnMaterialExcluir
             // 
@@ -144,21 +147,22 @@ namespace EstoquIN.View
             this.btnMaterialExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialExcluir.IconColor = System.Drawing.Color.Black;
             this.btnMaterialExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialExcluir.Location = new System.Drawing.Point(409, 238);
+            this.btnMaterialExcluir.Location = new System.Drawing.Point(469, 244);
             this.btnMaterialExcluir.Name = "btnMaterialExcluir";
-            this.btnMaterialExcluir.Size = new System.Drawing.Size(141, 29);
+            this.btnMaterialExcluir.Size = new System.Drawing.Size(175, 60);
             this.btnMaterialExcluir.TabIndex = 24;
             this.btnMaterialExcluir.Text = "Excluir";
             this.btnMaterialExcluir.UseVisualStyleBackColor = false;
+            this.btnMaterialExcluir.Click += new System.EventHandler(this.btnMaterialExcluir_Click);
             // 
             // dataMaterialFornec
             // 
             this.dataMaterialFornec.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataMaterialFornec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataMaterialFornec.Location = new System.Drawing.Point(10, 26);
+            this.dataMaterialFornec.Location = new System.Drawing.Point(12, 12);
             this.dataMaterialFornec.Name = "dataMaterialFornec";
             this.dataMaterialFornec.RowTemplate.Height = 25;
-            this.dataMaterialFornec.Size = new System.Drawing.Size(247, 424);
+            this.dataMaterialFornec.Size = new System.Drawing.Size(261, 518);
             this.dataMaterialFornec.TabIndex = 25;
             // 
             // Material
