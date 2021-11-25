@@ -55,6 +55,9 @@ namespace EstoquIN.View
             this.txtFornecContatoNome = new System.Windows.Forms.TextBox();
             this.btnFornecExcluir = new FontAwesome.Sharp.IconButton();
             this.dataFornecMaterial = new System.Windows.Forms.DataGridView();
+            this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ColumnMaterialId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMaterialNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupInfoFornec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataFornec)).BeginInit();
             this.groupContatoFornec.SuspendLayout();
@@ -365,6 +368,10 @@ namespace EstoquIN.View
             this.dataFornecMaterial.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataFornecMaterial.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataFornecMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataFornecMaterial.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Checkbox,
+            this.ColumnMaterialId,
+            this.ColumnMaterialNome});
             this.dataFornecMaterial.Location = new System.Drawing.Point(9, 371);
             this.dataFornecMaterial.Name = "dataFornecMaterial";
             this.dataFornecMaterial.RowHeadersVisible = false;
@@ -372,6 +379,25 @@ namespace EstoquIN.View
             this.dataFornecMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataFornecMaterial.Size = new System.Drawing.Size(330, 159);
             this.dataFornecMaterial.TabIndex = 21;
+            // 
+            // Checkbox
+            // 
+            this.Checkbox.FillWeight = 20F;
+            this.Checkbox.HeaderText = "###";
+            this.Checkbox.Name = "Checkbox";
+            // 
+            // ColumnMaterialId
+            // 
+            this.ColumnMaterialId.DataPropertyName = "Id";
+            this.ColumnMaterialId.FillWeight = 20F;
+            this.ColumnMaterialId.HeaderText = "Id";
+            this.ColumnMaterialId.Name = "ColumnMaterialId";
+            // 
+            // ColumnMaterialNome
+            // 
+            this.ColumnMaterialNome.DataPropertyName = "Nome";
+            this.ColumnMaterialNome.HeaderText = "Nome";
+            this.ColumnMaterialNome.Name = "ColumnMaterialNome";
             // 
             // Fornecedores
             // 
@@ -427,5 +453,8 @@ namespace EstoquIN.View
         private System.Windows.Forms.TextBox txtFornecEndereco;
         private System.Windows.Forms.Label lblFornecEndereco;
         private System.Windows.Forms.DataGridView dataFornecMaterial;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaterialId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaterialNome;
     }
 }

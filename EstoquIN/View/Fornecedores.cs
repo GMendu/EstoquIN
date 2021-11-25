@@ -31,6 +31,14 @@ namespace EstoquIN.View
             bi.DataSource = query.ToList();
             dataFornec.DataSource = bi;
             dataFornec.Refresh();
+
+            BindingSource bs = new BindingSource();
+            var queri = from c in context.DBinsumos
+                        orderby c.Id descending
+                        select new { c.Id, c.Nome };
+            bs.DataSource = queri.ToList();
+            dataFornecMaterial.DataSource = bs;
+            dataFornecMaterial.Refresh();
         }
 
         private void ClearBoxes()
