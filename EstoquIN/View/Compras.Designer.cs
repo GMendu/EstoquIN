@@ -30,11 +30,12 @@ namespace EstoquIN.View
         private void InitializeComponent()
         {
             this.groupCompraStatus = new System.Windows.Forms.GroupBox();
+            this.btnCompraUpload = new FontAwesome.Sharp.IconButton();
+            this.picNotaFiscal = new System.Windows.Forms.PictureBox();
             this.checkCompraStatus = new System.Windows.Forms.CheckBox();
             this.groupCompraInfo = new System.Windows.Forms.GroupBox();
             this.txtCompraValorUnit = new System.Windows.Forms.TextBox();
             this.lblCompraValorUnit = new System.Windows.Forms.Label();
-            this.cbCompraFormaPagamento = new System.Windows.Forms.ComboBox();
             this.dateCompraData = new System.Windows.Forms.DateTimePicker();
             this.lblCompraData = new System.Windows.Forms.Label();
             this.lblCompraQuantidade = new System.Windows.Forms.Label();
@@ -51,7 +52,9 @@ namespace EstoquIN.View
             this.dataCompra = new System.Windows.Forms.DataGridView();
             this.btnCompraCancelar = new FontAwesome.Sharp.IconButton();
             this.btnCompraExcluir = new FontAwesome.Sharp.IconButton();
+            this.txtCompraFormaPagamento = new System.Windows.Forms.TextBox();
             this.groupCompraStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNotaFiscal)).BeginInit();
             this.groupCompraInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCompra)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +62,8 @@ namespace EstoquIN.View
             // groupCompraStatus
             // 
             this.groupCompraStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupCompraStatus.Controls.Add(this.btnCompraUpload);
+            this.groupCompraStatus.Controls.Add(this.picNotaFiscal);
             this.groupCompraStatus.Controls.Add(this.checkCompraStatus);
             this.groupCompraStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupCompraStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -69,6 +74,31 @@ namespace EstoquIN.View
             this.groupCompraStatus.TabIndex = 42;
             this.groupCompraStatus.TabStop = false;
             this.groupCompraStatus.Text = "Status da Compra";
+            // 
+            // btnCompraUpload
+            // 
+            this.btnCompraUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompraUpload.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCompraUpload.IconColor = System.Drawing.Color.Black;
+            this.btnCompraUpload.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCompraUpload.Location = new System.Drawing.Point(206, 162);
+            this.btnCompraUpload.Name = "btnCompraUpload";
+            this.btnCompraUpload.Size = new System.Drawing.Size(92, 39);
+            this.btnCompraUpload.TabIndex = 2;
+            this.btnCompraUpload.Text = "Upload";
+            this.btnCompraUpload.UseVisualStyleBackColor = true;
+            this.btnCompraUpload.Click += new System.EventHandler(this.btnCompraUpload_Click);
+            // 
+            // picNotaFiscal
+            // 
+            this.picNotaFiscal.BackColor = System.Drawing.Color.DodgerBlue;
+            this.picNotaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picNotaFiscal.Location = new System.Drawing.Point(14, 47);
+            this.picNotaFiscal.Name = "picNotaFiscal";
+            this.picNotaFiscal.Size = new System.Drawing.Size(186, 154);
+            this.picNotaFiscal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNotaFiscal.TabIndex = 1;
+            this.picNotaFiscal.TabStop = false;
             // 
             // checkCompraStatus
             // 
@@ -83,9 +113,9 @@ namespace EstoquIN.View
             // groupCompraInfo
             // 
             this.groupCompraInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupCompraInfo.Controls.Add(this.txtCompraFormaPagamento);
             this.groupCompraInfo.Controls.Add(this.txtCompraValorUnit);
             this.groupCompraInfo.Controls.Add(this.lblCompraValorUnit);
-            this.groupCompraInfo.Controls.Add(this.cbCompraFormaPagamento);
             this.groupCompraInfo.Controls.Add(this.dateCompraData);
             this.groupCompraInfo.Controls.Add(this.lblCompraData);
             this.groupCompraInfo.Controls.Add(this.lblCompraQuantidade);
@@ -123,14 +153,6 @@ namespace EstoquIN.View
             this.lblCompraValorUnit.Size = new System.Drawing.Size(133, 28);
             this.lblCompraValorUnit.TabIndex = 19;
             this.lblCompraValorUnit.Text = "Valor Unitario";
-            // 
-            // cbCompraFormaPagamento
-            // 
-            this.cbCompraFormaPagamento.FormattingEnabled = true;
-            this.cbCompraFormaPagamento.Location = new System.Drawing.Point(15, 224);
-            this.cbCompraFormaPagamento.Name = "cbCompraFormaPagamento";
-            this.cbCompraFormaPagamento.Size = new System.Drawing.Size(212, 36);
-            this.cbCompraFormaPagamento.TabIndex = 18;
             // 
             // dateCompraData
             // 
@@ -316,8 +338,16 @@ namespace EstoquIN.View
             this.btnCompraExcluir.UseVisualStyleBackColor = false;
             this.btnCompraExcluir.Click += new System.EventHandler(this.btnCompraExcluir_Click);
             // 
+            // txtCompraFormaPagamento
+            // 
+            this.txtCompraFormaPagamento.Location = new System.Drawing.Point(15, 221);
+            this.txtCompraFormaPagamento.Name = "txtCompraFormaPagamento";
+            this.txtCompraFormaPagamento.Size = new System.Drawing.Size(216, 34);
+            this.txtCompraFormaPagamento.TabIndex = 21;
+            // 
             // Compras
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
@@ -333,6 +363,7 @@ namespace EstoquIN.View
             this.Text = "Compras";
             this.groupCompraStatus.ResumeLayout(false);
             this.groupCompraStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNotaFiscal)).EndInit();
             this.groupCompraInfo.ResumeLayout(false);
             this.groupCompraInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCompra)).EndInit();
@@ -347,7 +378,6 @@ namespace EstoquIN.View
         private System.Windows.Forms.GroupBox groupCompraInfo;
         private System.Windows.Forms.TextBox txtCompraValorUnit;
         private System.Windows.Forms.Label lblCompraValorUnit;
-        private System.Windows.Forms.ComboBox cbCompraFormaPagamento;
         private System.Windows.Forms.DateTimePicker dateCompraData;
         private System.Windows.Forms.Label lblCompraData;
         private System.Windows.Forms.Label lblCompraQuantidade;
@@ -364,5 +394,8 @@ namespace EstoquIN.View
         private System.Windows.Forms.DataGridView dataCompra;
         private FontAwesome.Sharp.IconButton btnCompraCancelar;
         private FontAwesome.Sharp.IconButton btnCompraExcluir;
+        private System.Windows.Forms.PictureBox picNotaFiscal;
+        private FontAwesome.Sharp.IconButton btnCompraUpload;
+        private System.Windows.Forms.TextBox txtCompraFormaPagamento;
     }
 }
