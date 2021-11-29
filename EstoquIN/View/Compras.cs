@@ -36,8 +36,11 @@ namespace EstoquIN.View
         {
             BindingSource bi = new BindingSource();
             var query = from e in context.DBcompras
+                        from f in context.DBfornec
+                        from g in context.DBinsumos
                         orderby e.Id descending
-                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, e.fornec, e.insumos};
+                        where f.Id == e.DadosFornecId & g.Id == e.DadosInsumosId
+                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, f.NomeFantasia, g.Nome};
             bi.DataSource = query.ToList();
             dataCompra.DataSource = bi;
             dataCompra.Refresh();
