@@ -7,7 +7,7 @@ namespace EstoquIN.Model
     class DadosCompras
     {
         public int Id { get; set; }
-        public DateTime Data { get; set; }
+        public DateTime? Data { get; set; }
         public string FormPag { get; set; }
         public string Quant { get; set; }
         public string ValorTotal { get; set; }
@@ -17,9 +17,9 @@ namespace EstoquIN.Model
 
         //estrangeiras
         public int DadosInsumosId { get; set; }
-        public DadosInsumos insumos { get; set; }
+        public DadosInsumos Insumos { get; set; }
         public int DadosFornecId { get; set; }
-        public DadosFornec fornec { get; set; }
+        public DadosFornec Fornec { get; set; }
 
     }
 }

@@ -30,15 +30,15 @@ namespace EstoquIN.View
         private void InitializeComponent()
         {
             this.groupVendaInfo = new System.Windows.Forms.GroupBox();
+            this.txtVendaFormaPagamento = new System.Windows.Forms.TextBox();
             this.txtVendaValorUnit = new System.Windows.Forms.TextBox();
             this.lblVendaValorUnit = new System.Windows.Forms.Label();
-            this.cbVendaFormaPagamento = new System.Windows.Forms.ComboBox();
             this.dateVendaData = new System.Windows.Forms.DateTimePicker();
             this.lblVendaData = new System.Windows.Forms.Label();
             this.lblVendaQuantidade = new System.Windows.Forms.Label();
             this.txtVendaQuantidade = new System.Windows.Forms.TextBox();
-            this.cbVendaProdutoFornecido = new System.Windows.Forms.ComboBox();
-            this.cbVendaFornecedor = new System.Windows.Forms.ComboBox();
+            this.cbVendaProdutoCliente = new System.Windows.Forms.ComboBox();
+            this.cbVendaCliente = new System.Windows.Forms.ComboBox();
             this.lblVendaFornecedor = new System.Windows.Forms.Label();
             this.txtVendaValorTotal = new System.Windows.Forms.TextBox();
             this.lblVendaValorTotal = new System.Windows.Forms.Label();
@@ -50,24 +50,28 @@ namespace EstoquIN.View
             this.btnVendaCancelar = new FontAwesome.Sharp.IconButton();
             this.btnVendaExcluir = new FontAwesome.Sharp.IconButton();
             this.groupVendaStatus = new System.Windows.Forms.GroupBox();
+            this.btnVendaUpload = new FontAwesome.Sharp.IconButton();
             this.checkVendaStatus = new System.Windows.Forms.CheckBox();
+            this.picVendaNotaFiscal = new System.Windows.Forms.PictureBox();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupVendaInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataVenda)).BeginInit();
             this.groupVendaStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picVendaNotaFiscal)).BeginInit();
             this.SuspendLayout();
             // 
             // groupVendaInfo
             // 
             this.groupVendaInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupVendaInfo.Controls.Add(this.txtVendaFormaPagamento);
             this.groupVendaInfo.Controls.Add(this.txtVendaValorUnit);
             this.groupVendaInfo.Controls.Add(this.lblVendaValorUnit);
-            this.groupVendaInfo.Controls.Add(this.cbVendaFormaPagamento);
             this.groupVendaInfo.Controls.Add(this.dateVendaData);
             this.groupVendaInfo.Controls.Add(this.lblVendaData);
             this.groupVendaInfo.Controls.Add(this.lblVendaQuantidade);
             this.groupVendaInfo.Controls.Add(this.txtVendaQuantidade);
-            this.groupVendaInfo.Controls.Add(this.cbVendaProdutoFornecido);
-            this.groupVendaInfo.Controls.Add(this.cbVendaFornecedor);
+            this.groupVendaInfo.Controls.Add(this.cbVendaProdutoCliente);
+            this.groupVendaInfo.Controls.Add(this.cbVendaCliente);
             this.groupVendaInfo.Controls.Add(this.lblVendaFornecedor);
             this.groupVendaInfo.Controls.Add(this.txtVendaValorTotal);
             this.groupVendaInfo.Controls.Add(this.lblVendaValorTotal);
@@ -82,6 +86,13 @@ namespace EstoquIN.View
             this.groupVendaInfo.TabIndex = 28;
             this.groupVendaInfo.TabStop = false;
             this.groupVendaInfo.Text = "Venda do Produto";
+            // 
+            // txtVendaFormaPagamento
+            // 
+            this.txtVendaFormaPagamento.Location = new System.Drawing.Point(14, 209);
+            this.txtVendaFormaPagamento.Name = "txtVendaFormaPagamento";
+            this.txtVendaFormaPagamento.Size = new System.Drawing.Size(216, 34);
+            this.txtVendaFormaPagamento.TabIndex = 22;
             // 
             // txtVendaValorUnit
             // 
@@ -99,14 +110,6 @@ namespace EstoquIN.View
             this.lblVendaValorUnit.Size = new System.Drawing.Size(133, 28);
             this.lblVendaValorUnit.TabIndex = 19;
             this.lblVendaValorUnit.Text = "Valor Unitario";
-            // 
-            // cbVendaFormaPagamento
-            // 
-            this.cbVendaFormaPagamento.FormattingEnabled = true;
-            this.cbVendaFormaPagamento.Location = new System.Drawing.Point(14, 209);
-            this.cbVendaFormaPagamento.Name = "cbVendaFormaPagamento";
-            this.cbVendaFormaPagamento.Size = new System.Drawing.Size(232, 36);
-            this.cbVendaFormaPagamento.TabIndex = 18;
             // 
             // dateVendaData
             // 
@@ -143,21 +146,21 @@ namespace EstoquIN.View
             this.txtVendaQuantidade.Size = new System.Drawing.Size(161, 34);
             this.txtVendaQuantidade.TabIndex = 14;
             // 
-            // cbVendaProdutoFornecido
+            // cbVendaProdutoCliente
             // 
-            this.cbVendaProdutoFornecido.FormattingEnabled = true;
-            this.cbVendaProdutoFornecido.Location = new System.Drawing.Point(14, 139);
-            this.cbVendaProdutoFornecido.Name = "cbVendaProdutoFornecido";
-            this.cbVendaProdutoFornecido.Size = new System.Drawing.Size(381, 36);
-            this.cbVendaProdutoFornecido.TabIndex = 13;
+            this.cbVendaProdutoCliente.FormattingEnabled = true;
+            this.cbVendaProdutoCliente.Location = new System.Drawing.Point(14, 139);
+            this.cbVendaProdutoCliente.Name = "cbVendaProdutoCliente";
+            this.cbVendaProdutoCliente.Size = new System.Drawing.Size(381, 36);
+            this.cbVendaProdutoCliente.TabIndex = 13;
             // 
-            // cbVendaFornecedor
+            // cbVendaCliente
             // 
-            this.cbVendaFornecedor.FormattingEnabled = true;
-            this.cbVendaFornecedor.Location = new System.Drawing.Point(17, 69);
-            this.cbVendaFornecedor.Name = "cbVendaFornecedor";
-            this.cbVendaFornecedor.Size = new System.Drawing.Size(378, 36);
-            this.cbVendaFornecedor.TabIndex = 12;
+            this.cbVendaCliente.FormattingEnabled = true;
+            this.cbVendaCliente.Location = new System.Drawing.Point(17, 69);
+            this.cbVendaCliente.Name = "cbVendaCliente";
+            this.cbVendaCliente.Size = new System.Drawing.Size(378, 36);
+            this.cbVendaCliente.TabIndex = 12;
             // 
             // lblVendaFornecedor
             // 
@@ -221,6 +224,7 @@ namespace EstoquIN.View
             this.btnVendaAdicionar.TabIndex = 31;
             this.btnVendaAdicionar.Text = "Adicionar";
             this.btnVendaAdicionar.UseVisualStyleBackColor = false;
+            this.btnVendaAdicionar.Click += new System.EventHandler(this.btnVendaAdicionar_Click);
             // 
             // btnVendaEditar
             // 
@@ -237,6 +241,7 @@ namespace EstoquIN.View
             this.btnVendaEditar.TabIndex = 32;
             this.btnVendaEditar.Text = "Editar";
             this.btnVendaEditar.UseVisualStyleBackColor = false;
+            this.btnVendaEditar.Click += new System.EventHandler(this.btnVendaEditar_Click);
             // 
             // dataVenda
             // 
@@ -247,6 +252,8 @@ namespace EstoquIN.View
             this.dataVenda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataVenda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataVenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnId});
             this.dataVenda.Location = new System.Drawing.Point(9, 341);
             this.dataVenda.Name = "dataVenda";
             this.dataVenda.RowHeadersVisible = false;
@@ -271,6 +278,7 @@ namespace EstoquIN.View
             this.btnVendaCancelar.TabIndex = 33;
             this.btnVendaCancelar.Text = "Cancelar";
             this.btnVendaCancelar.UseVisualStyleBackColor = false;
+            this.btnVendaCancelar.Click += new System.EventHandler(this.btnVendaCancelar_Click);
             // 
             // btnVendaExcluir
             // 
@@ -287,11 +295,14 @@ namespace EstoquIN.View
             this.btnVendaExcluir.TabIndex = 34;
             this.btnVendaExcluir.Text = "Excluir";
             this.btnVendaExcluir.UseVisualStyleBackColor = false;
+            this.btnVendaExcluir.Click += new System.EventHandler(this.btnVendaExcluir_Click);
             // 
             // groupVendaStatus
             // 
             this.groupVendaStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupVendaStatus.Controls.Add(this.btnVendaUpload);
             this.groupVendaStatus.Controls.Add(this.checkVendaStatus);
+            this.groupVendaStatus.Controls.Add(this.picVendaNotaFiscal);
             this.groupVendaStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupVendaStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupVendaStatus.ForeColor = System.Drawing.Color.White;
@@ -302,6 +313,20 @@ namespace EstoquIN.View
             this.groupVendaStatus.TabStop = false;
             this.groupVendaStatus.Text = "Status da Venda";
             // 
+            // btnVendaUpload
+            // 
+            this.btnVendaUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendaUpload.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnVendaUpload.IconColor = System.Drawing.Color.Black;
+            this.btnVendaUpload.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVendaUpload.Location = new System.Drawing.Point(206, 170);
+            this.btnVendaUpload.Name = "btnVendaUpload";
+            this.btnVendaUpload.Size = new System.Drawing.Size(92, 39);
+            this.btnVendaUpload.TabIndex = 37;
+            this.btnVendaUpload.Text = "Upload";
+            this.btnVendaUpload.UseVisualStyleBackColor = true;
+            this.btnVendaUpload.Click += new System.EventHandler(this.btnVendaUpload_Click);
+            // 
             // checkVendaStatus
             // 
             this.checkVendaStatus.AutoSize = true;
@@ -311,6 +336,24 @@ namespace EstoquIN.View
             this.checkVendaStatus.TabIndex = 0;
             this.checkVendaStatus.Text = "Venda finalizada";
             this.checkVendaStatus.UseVisualStyleBackColor = true;
+            // 
+            // picVendaNotaFiscal
+            // 
+            this.picVendaNotaFiscal.BackColor = System.Drawing.Color.DodgerBlue;
+            this.picVendaNotaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picVendaNotaFiscal.Location = new System.Drawing.Point(14, 55);
+            this.picVendaNotaFiscal.Name = "picVendaNotaFiscal";
+            this.picVendaNotaFiscal.Size = new System.Drawing.Size(186, 154);
+            this.picVendaNotaFiscal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picVendaNotaFiscal.TabIndex = 36;
+            this.picVendaNotaFiscal.TabStop = false;
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
             // 
             // Vendas
             // 
@@ -332,6 +375,7 @@ namespace EstoquIN.View
             ((System.ComponentModel.ISupportInitialize)(this.dataVenda)).EndInit();
             this.groupVendaStatus.ResumeLayout(false);
             this.groupVendaStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picVendaNotaFiscal)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -349,9 +393,8 @@ namespace EstoquIN.View
         private System.Windows.Forms.DataGridView dataVenda;
         private FontAwesome.Sharp.IconButton btnVendaCancelar;
         private FontAwesome.Sharp.IconButton btnVendaExcluir;
-        private System.Windows.Forms.ComboBox cbVendaFornecedor;
-        private System.Windows.Forms.ComboBox cbVendaProdutoFornecido;
-        private System.Windows.Forms.ComboBox cbVendaFormaPagamento;
+        private System.Windows.Forms.ComboBox cbVendaCliente;
+        private System.Windows.Forms.ComboBox cbVendaProdutoCliente;
         private System.Windows.Forms.DateTimePicker dateVendaData;
         private System.Windows.Forms.Label lblVendaData;
         private System.Windows.Forms.Label lblVendaQuantidade;
@@ -360,5 +403,9 @@ namespace EstoquIN.View
         private System.Windows.Forms.Label lblVendaValorUnit;
         private System.Windows.Forms.GroupBox groupVendaStatus;
         private System.Windows.Forms.CheckBox checkVendaStatus;
+        private FontAwesome.Sharp.IconButton btnVendaUpload;
+        private System.Windows.Forms.PictureBox picVendaNotaFiscal;
+        private System.Windows.Forms.TextBox txtVendaFormaPagamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
     }
 }

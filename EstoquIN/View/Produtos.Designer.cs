@@ -48,6 +48,7 @@ namespace EstoquIN.View
             this.lblProdutosCodBar = new System.Windows.Forms.Label();
             this.btnProdutoCancelar = new FontAwesome.Sharp.IconButton();
             this.groupProdutoFornecedor = new System.Windows.Forms.GroupBox();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataProduto)).BeginInit();
             this.groupProdutoInfo.SuspendLayout();
             this.SuspendLayout();
@@ -202,6 +203,8 @@ namespace EstoquIN.View
             this.dataProduto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataProduto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataProduto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnId});
             this.dataProduto.Location = new System.Drawing.Point(9, 328);
             this.dataProduto.Name = "dataProduto";
             this.dataProduto.RowHeadersVisible = false;
@@ -283,6 +286,13 @@ namespace EstoquIN.View
             this.groupProdutoFornecedor.TabStop = false;
             this.groupProdutoFornecedor.Text = "Possível Fornecedor";
             // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
+            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,5 +336,6 @@ namespace EstoquIN.View
         private System.Windows.Forms.GroupBox groupProdutoFornecedor;
         private System.Windows.Forms.TextBox txtProdutosCodBar;
         private System.Windows.Forms.Label lblProdutosCodBar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
     }
 }

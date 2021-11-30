@@ -64,6 +64,10 @@
     <Compile Include="Migrations\202111241956394_ver3.designer.cs">
       <DependentUpon>202111241956394_ver3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111301742461_v3.cs" />
+    <Compile Include="Migrations\202111301742461_v3.designer.cs">
+      <DependentUpon>202111301742461_v3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DadosCliente.cs" />
     <Compile Include="Model\DadosCompras.cs" />
@@ -132,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="Migrations\202111241956394_ver3.resx">
       <DependentUpon>202111241956394_ver3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111301742461_v3.resx">
+      <DependentUpon>202111301742461_v3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

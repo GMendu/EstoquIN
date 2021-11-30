@@ -20,18 +20,23 @@ namespace EstoquIN.View
             InitializeComponent();
             context = new EstoqDBContext();
             RefreshGrid();
+      
+        }
+        public void RefreshCombo()
+        {
+            cbCompraFornecedor.Items.Clear();
             var fornecs = context.DBfornec.ToList();
             foreach (DadosFornec dado in fornecs)
             {
                 cbCompraFornecedor.Items.Add(dado.NomeFantasia);
             }
+            cbCompraProdutoFornecido.Items.Clear();
             var insums = context.DBinsumos.ToList();
             foreach (DadosInsumos insu in insums)
             {
                 cbCompraProdutoFornecido.Items.Add(insu.Nome);
             }
         }
-
         private void RefreshGrid()
         {
             BindingSource bi = new BindingSource();
@@ -40,15 +45,16 @@ namespace EstoquIN.View
                         from g in context.DBinsumos
                         orderby e.Id descending
                         where f.Id == e.DadosFornecId & g.Id == e.DadosInsumosId
-                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, f.NomeFantasia, g.Nome};
+                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, e.Insumos, e.Fornec, f.NomeFantasia, g.Nome};
             bi.DataSource = query.ToList();
             dataCompra.DataSource = bi;
             dataCompra.Refresh();
+            RefreshCombo();
         }
         private void ClearBoxes()
         {
-            cbCompraFornecedor.Text = null;
-            cbCompraProdutoFornecido.Text = null;
+            cbCompraFornecedor.ResetText();
+            cbCompraProdutoFornecido.ResetText();
             txtCompraFormaPagamento.Text = null;
             dateCompraData.Text = null;
             txtCompraQuantidade.Text = null;
@@ -61,12 +67,12 @@ namespace EstoquIN.View
 
         private void btnCompraAdicionar_Click(object sender, EventArgs e)
         {
-            if (cbCompraFornecedor.Text != string.Empty & cbCompraProdutoFornecido.Text != string.Empty || txtCompraQuantidade.Text != string.Empty)
+            if (cbCompraFornecedor.SelectedItem != null & cbCompraProdutoFornecido.SelectedItem != null || txtCompraQuantidade.Text != string.Empty)
             {
                 var compra = new DadosCompras()
                 {
-                    fornec = (cbCompraFornecedor.SelectedItem as DadosFornec),
-                    insumos = (cbCompraProdutoFornecido.SelectedItem as DadosInsumos),
+                    //DadosFornecId = ((DadosFornec)cbCompraFornecedor.SelectedItem).Id,
+                    //DadosInsumosId = ((DadosInsumos)cbCompraProdutoFornecido.SelectedItem).Id,
                     FormPag = txtCompraFormaPagamento.Text,
                     Data = dateCompraData.Value,
                     Quant = txtCompraQuantidade.Text,
@@ -74,7 +80,7 @@ namespace EstoquIN.View
                     ValorUnit = txtCompraValorUnit.Text,
                     Status = checkCompraStatus.Checked,
                     NotaFiscal = picNotaFiscal.ImageLocation,
-            };
+                };
                 context.DBcompras.Add(compra);
                 context.SaveChanges();
             }
@@ -107,8 +113,8 @@ namespace EstoquIN.View
             {
                 var editarCompras = context.DBcompras.Find((int)dataCompra.SelectedCells[0].Value);
 
-                editarCompras.fornec = (cbCompraFornecedor.SelectedItem as DadosFornec);
-                editarCompras.insumos = (cbCompraProdutoFornecido.SelectedItem as DadosInsumos);
+                editarCompras.Fornec = (cbCompraFornecedor.SelectedItem as DadosFornec);
+                editarCompras.Insumos = (cbCompraProdutoFornecido.SelectedItem as DadosInsumos);
                 editarCompras.Data = dateCompraData.Value;
                 editarCompras.FormPag = txtCompraFormaPagamento.Text;
                 editarCompras.Quant = txtCompraQuantidade.Text;

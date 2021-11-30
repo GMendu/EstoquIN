@@ -34,6 +34,7 @@ namespace EstoquIN.View
             this.picNotaFiscal = new System.Windows.Forms.PictureBox();
             this.checkCompraStatus = new System.Windows.Forms.CheckBox();
             this.groupCompraInfo = new System.Windows.Forms.GroupBox();
+            this.txtCompraFormaPagamento = new System.Windows.Forms.TextBox();
             this.txtCompraValorUnit = new System.Windows.Forms.TextBox();
             this.lblCompraValorUnit = new System.Windows.Forms.Label();
             this.dateCompraData = new System.Windows.Forms.DateTimePicker();
@@ -52,7 +53,7 @@ namespace EstoquIN.View
             this.dataCompra = new System.Windows.Forms.DataGridView();
             this.btnCompraCancelar = new FontAwesome.Sharp.IconButton();
             this.btnCompraExcluir = new FontAwesome.Sharp.IconButton();
-            this.txtCompraFormaPagamento = new System.Windows.Forms.TextBox();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupCompraStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNotaFiscal)).BeginInit();
             this.groupCompraInfo.SuspendLayout();
@@ -137,6 +138,13 @@ namespace EstoquIN.View
             this.groupCompraInfo.TabStop = false;
             this.groupCompraInfo.Text = "Compra de material";
             // 
+            // txtCompraFormaPagamento
+            // 
+            this.txtCompraFormaPagamento.Location = new System.Drawing.Point(15, 221);
+            this.txtCompraFormaPagamento.Name = "txtCompraFormaPagamento";
+            this.txtCompraFormaPagamento.Size = new System.Drawing.Size(216, 34);
+            this.txtCompraFormaPagamento.TabIndex = 21;
+            // 
             // txtCompraValorUnit
             // 
             this.txtCompraValorUnit.Location = new System.Drawing.Point(447, 134);
@@ -211,9 +219,9 @@ namespace EstoquIN.View
             this.lblCompraFornecedor.ForeColor = System.Drawing.Color.White;
             this.lblCompraFornecedor.Location = new System.Drawing.Point(18, 32);
             this.lblCompraFornecedor.Name = "lblCompraFornecedor";
-            this.lblCompraFornecedor.Size = new System.Drawing.Size(72, 28);
+            this.lblCompraFornecedor.Size = new System.Drawing.Size(112, 28);
             this.lblCompraFornecedor.TabIndex = 0;
-            this.lblCompraFornecedor.Text = "Cliente";
+            this.lblCompraFornecedor.Text = "Fornecedor";
             // 
             // txtCompraValorTotal
             // 
@@ -240,7 +248,7 @@ namespace EstoquIN.View
             this.lblCompraProdutoFornecido.Name = "lblCompraProdutoFornecido";
             this.lblCompraProdutoFornecido.Size = new System.Drawing.Size(84, 28);
             this.lblCompraProdutoFornecido.TabIndex = 2;
-            this.lblCompraProdutoFornecido.Text = "Produto";
+            this.lblCompraProdutoFornecido.Text = "Material";
             // 
             // lblCompraFormaPagamento
             // 
@@ -295,6 +303,8 @@ namespace EstoquIN.View
             this.dataCompra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataCompra.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCompra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnId});
             this.dataCompra.Location = new System.Drawing.Point(10, 331);
             this.dataCompra.Name = "dataCompra";
             this.dataCompra.RowHeadersVisible = false;
@@ -338,12 +348,12 @@ namespace EstoquIN.View
             this.btnCompraExcluir.UseVisualStyleBackColor = false;
             this.btnCompraExcluir.Click += new System.EventHandler(this.btnCompraExcluir_Click);
             // 
-            // txtCompraFormaPagamento
+            // ColumnId
             // 
-            this.txtCompraFormaPagamento.Location = new System.Drawing.Point(15, 221);
-            this.txtCompraFormaPagamento.Name = "txtCompraFormaPagamento";
-            this.txtCompraFormaPagamento.Size = new System.Drawing.Size(216, 34);
-            this.txtCompraFormaPagamento.TabIndex = 21;
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
             // 
             // Compras
             // 
@@ -397,5 +407,6 @@ namespace EstoquIN.View
         private System.Windows.Forms.PictureBox picNotaFiscal;
         private FontAwesome.Sharp.IconButton btnCompraUpload;
         private System.Windows.Forms.TextBox txtCompraFormaPagamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
     }
 }

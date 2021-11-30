@@ -54,6 +54,17 @@ namespace EstoquIN.View
             this.lblClienteContatoNome = new System.Windows.Forms.Label();
             this.txtClienteContatoNome = new System.Windows.Forms.TextBox();
             this.btnClienteExcluir = new FontAwesome.Sharp.IconButton();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnRazao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnInscricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNomeFantasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnObs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnContatoNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnContatoEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnContatoTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnFreqCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupInfoCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataClientes)).BeginInit();
             this.groupContatoCliente.SuspendLayout();
@@ -254,6 +265,18 @@ namespace EstoquIN.View
             this.dataClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnId,
+            this.ColumnCnpj,
+            this.ColumnRazao,
+            this.ColumnInscricao,
+            this.ColumnNomeFantasia,
+            this.ColumnObs,
+            this.ColumnContatoNome,
+            this.ColumnContatoEmail,
+            this.ColumnContatoTelefone,
+            this.ColumnEndereco,
+            this.ColumnFreqCompra});
             this.dataClientes.Location = new System.Drawing.Point(11, 348);
             this.dataClientes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataClientes.Name = "dataClientes";
@@ -381,6 +404,73 @@ namespace EstoquIN.View
             this.btnClienteExcluir.UseVisualStyleBackColor = false;
             this.btnClienteExcluir.Click += new System.EventHandler(this.btnClienteExcluir_Click);
             // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
+            // 
+            // ColumnCnpj
+            // 
+            this.ColumnCnpj.DataPropertyName = "Cnpj";
+            this.ColumnCnpj.HeaderText = "Cnpj";
+            this.ColumnCnpj.Name = "ColumnCnpj";
+            // 
+            // ColumnRazao
+            // 
+            this.ColumnRazao.DataPropertyName = "Razao";
+            this.ColumnRazao.HeaderText = "Razão Social";
+            this.ColumnRazao.Name = "ColumnRazao";
+            // 
+            // ColumnInscricao
+            // 
+            this.ColumnInscricao.DataPropertyName = "Inscricao";
+            this.ColumnInscricao.HeaderText = "Inscricao";
+            this.ColumnInscricao.Name = "ColumnInscricao";
+            // 
+            // ColumnNomeFantasia
+            // 
+            this.ColumnNomeFantasia.DataPropertyName = "NomeFantasia";
+            this.ColumnNomeFantasia.HeaderText = "Nome Fantasia";
+            this.ColumnNomeFantasia.Name = "ColumnNomeFantasia";
+            // 
+            // ColumnObs
+            // 
+            this.ColumnObs.DataPropertyName = "Obs";
+            this.ColumnObs.HeaderText = "Observação";
+            this.ColumnObs.Name = "ColumnObs";
+            // 
+            // ColumnContatoNome
+            // 
+            this.ColumnContatoNome.DataPropertyName = "ContatoNome";
+            this.ColumnContatoNome.HeaderText = "Contato Nome";
+            this.ColumnContatoNome.Name = "ColumnContatoNome";
+            // 
+            // ColumnContatoEmail
+            // 
+            this.ColumnContatoEmail.DataPropertyName = "ContatoEmail";
+            this.ColumnContatoEmail.HeaderText = "Contato Email";
+            this.ColumnContatoEmail.Name = "ColumnContatoEmail";
+            // 
+            // ColumnContatoTelefone
+            // 
+            this.ColumnContatoTelefone.DataPropertyName = "ContatoTelefone";
+            this.ColumnContatoTelefone.HeaderText = "Contato Telefone";
+            this.ColumnContatoTelefone.Name = "ColumnContatoTelefone";
+            // 
+            // ColumnEndereco
+            // 
+            this.ColumnEndereco.DataPropertyName = "Endereco";
+            this.ColumnEndereco.HeaderText = "Endereço";
+            this.ColumnEndereco.Name = "ColumnEndereco";
+            // 
+            // ColumnFreqCompra
+            // 
+            this.ColumnFreqCompra.DataPropertyName = "freq_compra";
+            this.ColumnFreqCompra.HeaderText = "Frequência de compras";
+            this.ColumnFreqCompra.Name = "ColumnFreqCompra";
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -434,5 +524,16 @@ namespace EstoquIN.View
         private FontAwesome.Sharp.IconButton btnClienteExcluir;
         private System.Windows.Forms.TextBox txtClienteEndereco;
         private System.Windows.Forms.Label lblClienteEndereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCnpj;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRazao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnInscricao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNomeFantasia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnObs;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnContatoNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnContatoEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnContatoTelefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEndereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFreqCompra;
     }
 }
