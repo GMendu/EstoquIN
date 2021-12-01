@@ -47,13 +47,13 @@ namespace EstoquIN.View
             this.btnVendaAdicionar = new FontAwesome.Sharp.IconButton();
             this.btnVendaEditar = new FontAwesome.Sharp.IconButton();
             this.dataVenda = new System.Windows.Forms.DataGridView();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVendaCancelar = new FontAwesome.Sharp.IconButton();
             this.btnVendaExcluir = new FontAwesome.Sharp.IconButton();
             this.groupVendaStatus = new System.Windows.Forms.GroupBox();
             this.btnVendaUpload = new FontAwesome.Sharp.IconButton();
             this.checkVendaStatus = new System.Windows.Forms.CheckBox();
             this.picVendaNotaFiscal = new System.Windows.Forms.PictureBox();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupVendaInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataVenda)).BeginInit();
             this.groupVendaStatus.SuspendLayout();
@@ -263,6 +263,13 @@ namespace EstoquIN.View
             this.dataVenda.Size = new System.Drawing.Size(939, 189);
             this.dataVenda.TabIndex = 30;
             // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
+            // 
             // btnVendaCancelar
             // 
             this.btnVendaCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
@@ -348,19 +355,12 @@ namespace EstoquIN.View
             this.picVendaNotaFiscal.TabIndex = 36;
             this.picVendaNotaFiscal.TabStop = false;
             // 
-            // ColumnId
-            // 
-            this.ColumnId.DataPropertyName = "Id";
-            this.ColumnId.FillWeight = 25F;
-            this.ColumnId.HeaderText = "Id";
-            this.ColumnId.Name = "ColumnId";
-            // 
             // Vendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(960, 542);
+            this.ClientSize = new System.Drawing.Size(1377, 772);
             this.Controls.Add(this.groupVendaStatus);
             this.Controls.Add(this.groupVendaInfo);
             this.Controls.Add(this.btnVendaAdicionar);

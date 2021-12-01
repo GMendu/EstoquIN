@@ -79,7 +79,7 @@ namespace EstoquIN
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(189, 656);
+            this.panelMenu.Size = new System.Drawing.Size(205, 842);
             this.panelMenu.TabIndex = 0;
             // 
             // btnMaterial
@@ -97,7 +97,7 @@ namespace EstoquIN
             this.btnMaterial.Location = new System.Drawing.Point(0, 433);
             this.btnMaterial.Name = "btnMaterial";
             this.btnMaterial.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnMaterial.Size = new System.Drawing.Size(189, 52);
+            this.btnMaterial.Size = new System.Drawing.Size(205, 52);
             this.btnMaterial.TabIndex = 8;
             this.btnMaterial.Text = "Material";
             this.btnMaterial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -119,7 +119,7 @@ namespace EstoquIN
             this.btnCompras.Location = new System.Drawing.Point(0, 381);
             this.btnCompras.Name = "btnCompras";
             this.btnCompras.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnCompras.Size = new System.Drawing.Size(189, 52);
+            this.btnCompras.Size = new System.Drawing.Size(205, 52);
             this.btnCompras.TabIndex = 7;
             this.btnCompras.Text = "Compras";
             this.btnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -138,10 +138,10 @@ namespace EstoquIN
             this.btnConfiguracoes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnConfiguracoes.IconSize = 32;
             this.btnConfiguracoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfiguracoes.Location = new System.Drawing.Point(0, 604);
+            this.btnConfiguracoes.Location = new System.Drawing.Point(0, 790);
             this.btnConfiguracoes.Name = "btnConfiguracoes";
             this.btnConfiguracoes.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnConfiguracoes.Size = new System.Drawing.Size(189, 52);
+            this.btnConfiguracoes.Size = new System.Drawing.Size(205, 52);
             this.btnConfiguracoes.TabIndex = 6;
             this.btnConfiguracoes.Text = "Configurações";
             this.btnConfiguracoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -163,7 +163,7 @@ namespace EstoquIN
             this.btnRelatorios.Location = new System.Drawing.Point(0, 329);
             this.btnRelatorios.Name = "btnRelatorios";
             this.btnRelatorios.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnRelatorios.Size = new System.Drawing.Size(189, 52);
+            this.btnRelatorios.Size = new System.Drawing.Size(205, 52);
             this.btnRelatorios.TabIndex = 5;
             this.btnRelatorios.Text = "Relatórios";
             this.btnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -185,7 +185,7 @@ namespace EstoquIN
             this.btnFornecedores.Location = new System.Drawing.Point(0, 277);
             this.btnFornecedores.Name = "btnFornecedores";
             this.btnFornecedores.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnFornecedores.Size = new System.Drawing.Size(189, 52);
+            this.btnFornecedores.Size = new System.Drawing.Size(205, 52);
             this.btnFornecedores.TabIndex = 4;
             this.btnFornecedores.Text = "Fornecedores";
             this.btnFornecedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -207,7 +207,7 @@ namespace EstoquIN
             this.btnProdutos.Location = new System.Drawing.Point(0, 225);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnProdutos.Size = new System.Drawing.Size(189, 52);
+            this.btnProdutos.Size = new System.Drawing.Size(205, 52);
             this.btnProdutos.TabIndex = 3;
             this.btnProdutos.Text = "Produtos";
             this.btnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -229,7 +229,7 @@ namespace EstoquIN
             this.btnVendas.Location = new System.Drawing.Point(0, 173);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnVendas.Size = new System.Drawing.Size(189, 52);
+            this.btnVendas.Size = new System.Drawing.Size(205, 52);
             this.btnVendas.TabIndex = 2;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -251,7 +251,7 @@ namespace EstoquIN
             this.btnClientes.Location = new System.Drawing.Point(0, 121);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnClientes.Size = new System.Drawing.Size(189, 52);
+            this.btnClientes.Size = new System.Drawing.Size(205, 52);
             this.btnClientes.TabIndex = 1;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -265,7 +265,7 @@ namespace EstoquIN
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(189, 121);
+            this.panelLogo.Size = new System.Drawing.Size(205, 121);
             this.panelLogo.TabIndex = 0;
             // 
             // BtnHome
@@ -288,9 +288,9 @@ namespace EstoquIN
             this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(189, 0);
+            this.panelTitleBar.Location = new System.Drawing.Point(205, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(977, 65);
+            this.panelTitleBar.Size = new System.Drawing.Size(1393, 65);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -303,7 +303,7 @@ namespace EstoquIN
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnMinimizar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMinimizar.Location = new System.Drawing.Point(885, 3);
+            this.btnMinimizar.Location = new System.Drawing.Point(1301, 3);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(27, 32);
             this.btnMinimizar.TabIndex = 4;
@@ -320,7 +320,7 @@ namespace EstoquIN
             this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximizar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnMaximizar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMaximizar.Location = new System.Drawing.Point(916, 3);
+            this.btnMaximizar.Location = new System.Drawing.Point(1332, 3);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(27, 32);
             this.btnMaximizar.TabIndex = 3;
@@ -337,7 +337,7 @@ namespace EstoquIN
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnFechar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFechar.Location = new System.Drawing.Point(948, 3);
+            this.btnFechar.Location = new System.Drawing.Point(1364, 3);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(27, 32);
             this.btnFechar.TabIndex = 2;
@@ -373,9 +373,9 @@ namespace EstoquIN
             // 
             this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(89)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(189, 65);
+            this.panelShadow.Location = new System.Drawing.Point(205, 65);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(977, 8);
+            this.panelShadow.Size = new System.Drawing.Size(1393, 8);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -385,9 +385,9 @@ namespace EstoquIN
             this.panelDesktop.Controls.Add(this.txtMenuRelogio);
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(189, 73);
+            this.panelDesktop.Location = new System.Drawing.Point(205, 73);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(977, 583);
+            this.panelDesktop.Size = new System.Drawing.Size(1393, 769);
             this.panelDesktop.TabIndex = 3;
             // 
             // iconPictureBox1
@@ -422,7 +422,7 @@ namespace EstoquIN
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(126, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(334, 174);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(273, 219);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -439,13 +439,15 @@ namespace EstoquIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1166, 656);
+            this.ClientSize = new System.Drawing.Size(1598, 842);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Name = "FormMainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnHome)).EndInit();

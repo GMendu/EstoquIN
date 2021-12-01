@@ -16,5 +16,10 @@ namespace EstoquIN.Model
         public string ContatoEmail { get; set; }
         public string ContatoTelefone { get; set; }
         public string Endereco { get; set; }
+
+        public override string ToString()
+        {
+            return NomeFantasia;
+        }
     }
 }

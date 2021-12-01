@@ -54,6 +54,15 @@ namespace EstoquIN.View
             this.btnCompraCancelar = new FontAwesome.Sharp.IconButton();
             this.btnCompraExcluir = new FontAwesome.Sharp.IconButton();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ColumnFornec = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnInsu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnQuant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnValorUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnFormPag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNota = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupCompraStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNotaFiscal)).BeginInit();
             this.groupCompraInfo.SuspendLayout();
@@ -69,9 +78,9 @@ namespace EstoquIN.View
             this.groupCompraStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupCompraStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupCompraStatus.ForeColor = System.Drawing.Color.White;
-            this.groupCompraStatus.Location = new System.Drawing.Point(644, 9);
+            this.groupCompraStatus.Location = new System.Drawing.Point(773, 9);
             this.groupCompraStatus.Name = "groupCompraStatus";
-            this.groupCompraStatus.Size = new System.Drawing.Size(304, 218);
+            this.groupCompraStatus.Size = new System.Drawing.Size(592, 346);
             this.groupCompraStatus.TabIndex = 42;
             this.groupCompraStatus.TabStop = false;
             this.groupCompraStatus.Text = "Status da Compra";
@@ -79,12 +88,13 @@ namespace EstoquIN.View
             // btnCompraUpload
             // 
             this.btnCompraUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompraUpload.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnCompraUpload.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCompraUpload.IconColor = System.Drawing.Color.Black;
             this.btnCompraUpload.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompraUpload.Location = new System.Drawing.Point(206, 162);
+            this.btnCompraUpload.Location = new System.Drawing.Point(6, 271);
             this.btnCompraUpload.Name = "btnCompraUpload";
-            this.btnCompraUpload.Size = new System.Drawing.Size(92, 39);
+            this.btnCompraUpload.Size = new System.Drawing.Size(185, 69);
             this.btnCompraUpload.TabIndex = 2;
             this.btnCompraUpload.Text = "Upload";
             this.btnCompraUpload.UseVisualStyleBackColor = true;
@@ -94,9 +104,9 @@ namespace EstoquIN.View
             // 
             this.picNotaFiscal.BackColor = System.Drawing.Color.DodgerBlue;
             this.picNotaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picNotaFiscal.Location = new System.Drawing.Point(14, 47);
+            this.picNotaFiscal.Location = new System.Drawing.Point(197, 15);
             this.picNotaFiscal.Name = "picNotaFiscal";
-            this.picNotaFiscal.Size = new System.Drawing.Size(186, 154);
+            this.picNotaFiscal.Size = new System.Drawing.Size(389, 325);
             this.picNotaFiscal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picNotaFiscal.TabIndex = 1;
             this.picNotaFiscal.TabStop = false;
@@ -133,30 +143,30 @@ namespace EstoquIN.View
             this.groupCompraInfo.ForeColor = System.Drawing.Color.White;
             this.groupCompraInfo.Location = new System.Drawing.Point(10, 9);
             this.groupCompraInfo.Name = "groupCompraInfo";
-            this.groupCompraInfo.Size = new System.Drawing.Size(628, 316);
+            this.groupCompraInfo.Size = new System.Drawing.Size(757, 393);
             this.groupCompraInfo.TabIndex = 36;
             this.groupCompraInfo.TabStop = false;
             this.groupCompraInfo.Text = "Compra de material";
             // 
             // txtCompraFormaPagamento
             // 
-            this.txtCompraFormaPagamento.Location = new System.Drawing.Point(15, 221);
+            this.txtCompraFormaPagamento.Location = new System.Drawing.Point(49, 306);
             this.txtCompraFormaPagamento.Name = "txtCompraFormaPagamento";
             this.txtCompraFormaPagamento.Size = new System.Drawing.Size(216, 34);
             this.txtCompraFormaPagamento.TabIndex = 21;
             // 
             // txtCompraValorUnit
             // 
-            this.txtCompraValorUnit.Location = new System.Drawing.Point(447, 134);
+            this.txtCompraValorUnit.Location = new System.Drawing.Point(551, 203);
             this.txtCompraValorUnit.Name = "txtCompraValorUnit";
-            this.txtCompraValorUnit.Size = new System.Drawing.Size(163, 34);
+            this.txtCompraValorUnit.Size = new System.Drawing.Size(142, 34);
             this.txtCompraValorUnit.TabIndex = 20;
             // 
             // lblCompraValorUnit
             // 
             this.lblCompraValorUnit.AutoSize = true;
             this.lblCompraValorUnit.ForeColor = System.Drawing.Color.White;
-            this.lblCompraValorUnit.Location = new System.Drawing.Point(448, 103);
+            this.lblCompraValorUnit.Location = new System.Drawing.Point(546, 172);
             this.lblCompraValorUnit.Name = "lblCompraValorUnit";
             this.lblCompraValorUnit.Size = new System.Drawing.Size(133, 28);
             this.lblCompraValorUnit.TabIndex = 19;
@@ -165,7 +175,7 @@ namespace EstoquIN.View
             // dateCompraData
             // 
             this.dateCompraData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateCompraData.Location = new System.Drawing.Point(253, 222);
+            this.dateCompraData.Location = new System.Drawing.Point(317, 304);
             this.dateCompraData.Name = "dateCompraData";
             this.dateCompraData.Size = new System.Drawing.Size(154, 34);
             this.dateCompraData.TabIndex = 17;
@@ -174,7 +184,7 @@ namespace EstoquIN.View
             // 
             this.lblCompraData.AutoSize = true;
             this.lblCompraData.ForeColor = System.Drawing.Color.White;
-            this.lblCompraData.Location = new System.Drawing.Point(248, 191);
+            this.lblCompraData.Location = new System.Drawing.Point(312, 273);
             this.lblCompraData.Name = "lblCompraData";
             this.lblCompraData.Size = new System.Drawing.Size(53, 28);
             this.lblCompraData.TabIndex = 16;
@@ -184,7 +194,7 @@ namespace EstoquIN.View
             // 
             this.lblCompraQuantidade.AutoSize = true;
             this.lblCompraQuantidade.ForeColor = System.Drawing.Color.White;
-            this.lblCompraQuantidade.Location = new System.Drawing.Point(448, 30);
+            this.lblCompraQuantidade.Location = new System.Drawing.Point(546, 69);
             this.lblCompraQuantidade.Name = "lblCompraQuantidade";
             this.lblCompraQuantidade.Size = new System.Drawing.Size(115, 28);
             this.lblCompraQuantidade.TabIndex = 15;
@@ -192,32 +202,32 @@ namespace EstoquIN.View
             // 
             // txtCompraQuantidade
             // 
-            this.txtCompraQuantidade.Location = new System.Drawing.Point(447, 63);
+            this.txtCompraQuantidade.Location = new System.Drawing.Point(549, 101);
             this.txtCompraQuantidade.Name = "txtCompraQuantidade";
-            this.txtCompraQuantidade.Size = new System.Drawing.Size(163, 34);
+            this.txtCompraQuantidade.Size = new System.Drawing.Size(144, 34);
             this.txtCompraQuantidade.TabIndex = 14;
             // 
             // cbCompraProdutoFornecido
             // 
             this.cbCompraProdutoFornecido.FormattingEnabled = true;
-            this.cbCompraProdutoFornecido.Location = new System.Drawing.Point(15, 132);
+            this.cbCompraProdutoFornecido.Location = new System.Drawing.Point(49, 203);
             this.cbCompraProdutoFornecido.Name = "cbCompraProdutoFornecido";
-            this.cbCompraProdutoFornecido.Size = new System.Drawing.Size(392, 36);
+            this.cbCompraProdutoFornecido.Size = new System.Drawing.Size(422, 36);
             this.cbCompraProdutoFornecido.TabIndex = 13;
             // 
             // cbCompraFornecedor
             // 
             this.cbCompraFornecedor.FormattingEnabled = true;
-            this.cbCompraFornecedor.Location = new System.Drawing.Point(15, 61);
+            this.cbCompraFornecedor.Location = new System.Drawing.Point(49, 101);
             this.cbCompraFornecedor.Name = "cbCompraFornecedor";
-            this.cbCompraFornecedor.Size = new System.Drawing.Size(392, 36);
+            this.cbCompraFornecedor.Size = new System.Drawing.Size(422, 36);
             this.cbCompraFornecedor.TabIndex = 12;
             // 
             // lblCompraFornecedor
             // 
             this.lblCompraFornecedor.AutoSize = true;
             this.lblCompraFornecedor.ForeColor = System.Drawing.Color.White;
-            this.lblCompraFornecedor.Location = new System.Drawing.Point(18, 32);
+            this.lblCompraFornecedor.Location = new System.Drawing.Point(44, 69);
             this.lblCompraFornecedor.Name = "lblCompraFornecedor";
             this.lblCompraFornecedor.Size = new System.Drawing.Size(112, 28);
             this.lblCompraFornecedor.TabIndex = 0;
@@ -225,16 +235,16 @@ namespace EstoquIN.View
             // 
             // txtCompraValorTotal
             // 
-            this.txtCompraValorTotal.Location = new System.Drawing.Point(447, 224);
+            this.txtCompraValorTotal.Location = new System.Drawing.Point(549, 306);
             this.txtCompraValorTotal.Name = "txtCompraValorTotal";
-            this.txtCompraValorTotal.Size = new System.Drawing.Size(163, 34);
+            this.txtCompraValorTotal.Size = new System.Drawing.Size(144, 34);
             this.txtCompraValorTotal.TabIndex = 9;
             // 
             // lblCompraValorTotal
             // 
             this.lblCompraValorTotal.AutoSize = true;
             this.lblCompraValorTotal.ForeColor = System.Drawing.Color.White;
-            this.lblCompraValorTotal.Location = new System.Drawing.Point(448, 191);
+            this.lblCompraValorTotal.Location = new System.Drawing.Point(557, 275);
             this.lblCompraValorTotal.Name = "lblCompraValorTotal";
             this.lblCompraValorTotal.Size = new System.Drawing.Size(104, 28);
             this.lblCompraValorTotal.TabIndex = 8;
@@ -244,7 +254,7 @@ namespace EstoquIN.View
             // 
             this.lblCompraProdutoFornecido.AutoSize = true;
             this.lblCompraProdutoFornecido.ForeColor = System.Drawing.Color.White;
-            this.lblCompraProdutoFornecido.Location = new System.Drawing.Point(18, 101);
+            this.lblCompraProdutoFornecido.Location = new System.Drawing.Point(50, 172);
             this.lblCompraProdutoFornecido.Name = "lblCompraProdutoFornecido";
             this.lblCompraProdutoFornecido.Size = new System.Drawing.Size(84, 28);
             this.lblCompraProdutoFornecido.TabIndex = 2;
@@ -254,7 +264,7 @@ namespace EstoquIN.View
             // 
             this.lblCompraFormaPagamento.AutoSize = true;
             this.lblCompraFormaPagamento.ForeColor = System.Drawing.Color.White;
-            this.lblCompraFormaPagamento.Location = new System.Drawing.Point(18, 190);
+            this.lblCompraFormaPagamento.Location = new System.Drawing.Point(44, 275);
             this.lblCompraFormaPagamento.Name = "lblCompraFormaPagamento";
             this.lblCompraFormaPagamento.Size = new System.Drawing.Size(199, 28);
             this.lblCompraFormaPagamento.TabIndex = 6;
@@ -264,14 +274,14 @@ namespace EstoquIN.View
             // 
             this.btnCompraAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnCompraAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompraAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnCompraAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.btnCompraAdicionar.ForeColor = System.Drawing.Color.White;
             this.btnCompraAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCompraAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnCompraAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompraAdicionar.Location = new System.Drawing.Point(644, 237);
+            this.btnCompraAdicionar.Location = new System.Drawing.Point(773, 361);
             this.btnCompraAdicionar.Name = "btnCompraAdicionar";
-            this.btnCompraAdicionar.Size = new System.Drawing.Size(149, 41);
+            this.btnCompraAdicionar.Size = new System.Drawing.Size(160, 41);
             this.btnCompraAdicionar.TabIndex = 38;
             this.btnCompraAdicionar.Text = "Adicionar";
             this.btnCompraAdicionar.UseVisualStyleBackColor = false;
@@ -281,14 +291,14 @@ namespace EstoquIN.View
             // 
             this.btnCompraEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnCompraEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompraEditar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnCompraEditar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.btnCompraEditar.ForeColor = System.Drawing.Color.White;
             this.btnCompraEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCompraEditar.IconColor = System.Drawing.Color.Black;
             this.btnCompraEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompraEditar.Location = new System.Drawing.Point(644, 284);
+            this.btnCompraEditar.Location = new System.Drawing.Point(939, 361);
             this.btnCompraEditar.Name = "btnCompraEditar";
-            this.btnCompraEditar.Size = new System.Drawing.Size(149, 41);
+            this.btnCompraEditar.Size = new System.Drawing.Size(145, 41);
             this.btnCompraEditar.TabIndex = 39;
             this.btnCompraEditar.Text = "Editar";
             this.btnCompraEditar.UseVisualStyleBackColor = false;
@@ -304,28 +314,37 @@ namespace EstoquIN.View
             this.dataCompra.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCompra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnId});
-            this.dataCompra.Location = new System.Drawing.Point(10, 331);
+            this.ColumnId,
+            this.ColumnStatus,
+            this.ColumnFornec,
+            this.ColumnInsu,
+            this.ColumnQuant,
+            this.ColumnValorUnit,
+            this.ColumnValorTotal,
+            this.ColumnFormPag,
+            this.ColumnData,
+            this.ColumnNota});
+            this.dataCompra.Location = new System.Drawing.Point(10, 408);
             this.dataCompra.Name = "dataCompra";
             this.dataCompra.RowHeadersVisible = false;
             this.dataCompra.RowHeadersWidth = 51;
             this.dataCompra.RowTemplate.Height = 25;
             this.dataCompra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataCompra.Size = new System.Drawing.Size(938, 199);
+            this.dataCompra.Size = new System.Drawing.Size(1355, 352);
             this.dataCompra.TabIndex = 37;
             // 
             // btnCompraCancelar
             // 
             this.btnCompraCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnCompraCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompraCancelar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnCompraCancelar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.btnCompraCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCompraCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCompraCancelar.IconColor = System.Drawing.Color.Black;
             this.btnCompraCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompraCancelar.Location = new System.Drawing.Point(799, 237);
+            this.btnCompraCancelar.Location = new System.Drawing.Point(1090, 361);
             this.btnCompraCancelar.Name = "btnCompraCancelar";
-            this.btnCompraCancelar.Size = new System.Drawing.Size(149, 41);
+            this.btnCompraCancelar.Size = new System.Drawing.Size(143, 41);
             this.btnCompraCancelar.TabIndex = 40;
             this.btnCompraCancelar.Text = "Cancelar";
             this.btnCompraCancelar.UseVisualStyleBackColor = false;
@@ -333,16 +352,16 @@ namespace EstoquIN.View
             // 
             // btnCompraExcluir
             // 
-            this.btnCompraExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnCompraExcluir.BackColor = System.Drawing.Color.Maroon;
             this.btnCompraExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompraExcluir.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnCompraExcluir.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.btnCompraExcluir.ForeColor = System.Drawing.Color.White;
             this.btnCompraExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCompraExcluir.IconColor = System.Drawing.Color.Black;
             this.btnCompraExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompraExcluir.Location = new System.Drawing.Point(799, 284);
+            this.btnCompraExcluir.Location = new System.Drawing.Point(1239, 361);
             this.btnCompraExcluir.Name = "btnCompraExcluir";
-            this.btnCompraExcluir.Size = new System.Drawing.Size(149, 41);
+            this.btnCompraExcluir.Size = new System.Drawing.Size(126, 41);
             this.btnCompraExcluir.TabIndex = 41;
             this.btnCompraExcluir.Text = "Excluir";
             this.btnCompraExcluir.UseVisualStyleBackColor = false;
@@ -355,13 +374,83 @@ namespace EstoquIN.View
             this.ColumnId.HeaderText = "Id";
             this.ColumnId.Name = "ColumnId";
             // 
+            // ColumnStatus
+            // 
+            this.ColumnStatus.DataPropertyName = "Status";
+            this.ColumnStatus.FillWeight = 40F;
+            this.ColumnStatus.HeaderText = "Status";
+            this.ColumnStatus.Name = "ColumnStatus";
+            // 
+            // ColumnFornec
+            // 
+            this.ColumnFornec.DataPropertyName = "Fornec";
+            this.ColumnFornec.HeaderText = "Fornecedor";
+            this.ColumnFornec.Name = "ColumnFornec";
+            // 
+            // ColumnInsu
+            // 
+            this.ColumnInsu.DataPropertyName = "Insumos";
+            this.ColumnInsu.HeaderText = "Material";
+            this.ColumnInsu.Name = "ColumnInsu";
+            // 
+            // ColumnQuant
+            // 
+            this.ColumnQuant.DataPropertyName = "Quant";
+            this.ColumnQuant.FillWeight = 40F;
+            this.ColumnQuant.HeaderText = "Quant.";
+            this.ColumnQuant.Name = "ColumnQuant";
+            this.ColumnQuant.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnQuant.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnValorUnit
+            // 
+            this.ColumnValorUnit.DataPropertyName = "ValorUnit";
+            this.ColumnValorUnit.FillWeight = 40F;
+            this.ColumnValorUnit.HeaderText = "V. Unit";
+            this.ColumnValorUnit.Name = "ColumnValorUnit";
+            this.ColumnValorUnit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnValorUnit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnValorTotal
+            // 
+            this.ColumnValorTotal.DataPropertyName = "ValorTotal";
+            this.ColumnValorTotal.FillWeight = 40F;
+            this.ColumnValorTotal.HeaderText = "V. Total";
+            this.ColumnValorTotal.Name = "ColumnValorTotal";
+            this.ColumnValorTotal.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnValorTotal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnFormPag
+            // 
+            this.ColumnFormPag.DataPropertyName = "FormPag";
+            this.ColumnFormPag.HeaderText = "For. Pag.";
+            this.ColumnFormPag.Name = "ColumnFormPag";
+            this.ColumnFormPag.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnFormPag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnData
+            // 
+            this.ColumnData.DataPropertyName = "Data";
+            this.ColumnData.HeaderText = "Data";
+            this.ColumnData.Name = "ColumnData";
+            this.ColumnData.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnData.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnNota
+            // 
+            this.ColumnNota.DataPropertyName = "NotaFiscal";
+            this.ColumnNota.HeaderText = "Nota Fiscal";
+            this.ColumnNota.Name = "ColumnNota";
+            this.ColumnNota.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnNota.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // Compras
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(960, 542);
+            this.ClientSize = new System.Drawing.Size(1377, 772);
             this.Controls.Add(this.groupCompraStatus);
             this.Controls.Add(this.groupCompraInfo);
             this.Controls.Add(this.btnCompraAdicionar);
@@ -408,5 +497,14 @@ namespace EstoquIN.View
         private FontAwesome.Sharp.IconButton btnCompraUpload;
         private System.Windows.Forms.TextBox txtCompraFormaPagamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFornec;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnInsu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQuant;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValorUnit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValorTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFormPag;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNota;
     }
 }

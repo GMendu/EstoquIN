@@ -43,12 +43,12 @@ namespace EstoquIN.View
             this.btnProdutoAdicionar = new FontAwesome.Sharp.IconButton();
             this.btnProdutoEditar = new FontAwesome.Sharp.IconButton();
             this.dataProduto = new System.Windows.Forms.DataGridView();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupProdutoInfo = new System.Windows.Forms.GroupBox();
             this.txtProdutosCodBar = new System.Windows.Forms.TextBox();
             this.lblProdutosCodBar = new System.Windows.Forms.Label();
             this.btnProdutoCancelar = new FontAwesome.Sharp.IconButton();
             this.groupProdutoFornecedor = new System.Windows.Forms.GroupBox();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataProduto)).BeginInit();
             this.groupProdutoInfo.SuspendLayout();
             this.SuspendLayout();
@@ -214,6 +214,13 @@ namespace EstoquIN.View
             this.dataProduto.Size = new System.Drawing.Size(939, 202);
             this.dataProduto.TabIndex = 30;
             // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
+            // 
             // groupProdutoInfo
             // 
             this.groupProdutoInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
@@ -286,19 +293,12 @@ namespace EstoquIN.View
             this.groupProdutoFornecedor.TabStop = false;
             this.groupProdutoFornecedor.Text = "Possível Fornecedor";
             // 
-            // ColumnId
-            // 
-            this.ColumnId.DataPropertyName = "Id";
-            this.ColumnId.FillWeight = 25F;
-            this.ColumnId.HeaderText = "Id";
-            this.ColumnId.Name = "ColumnId";
-            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(960, 542);
+            this.ClientSize = new System.Drawing.Size(1377, 772);
             this.Controls.Add(this.btnProdutoExcluir);
             this.Controls.Add(this.btnProdutoAdicionar);
             this.Controls.Add(this.btnProdutoEditar);

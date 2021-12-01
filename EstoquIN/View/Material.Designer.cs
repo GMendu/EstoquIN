@@ -30,6 +30,7 @@ namespace EstoquIN.View
         private void InitializeComponent()
         {
             this.dataMaterial = new System.Windows.Forms.DataGridView();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupMaterialInfo = new System.Windows.Forms.GroupBox();
             this.lblMaterialNome = new System.Windows.Forms.Label();
             this.txtMaterialNome = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@ namespace EstoquIN.View
             this.btnMaterialExcluir = new FontAwesome.Sharp.IconButton();
             this.dataMaterialFornec = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataMaterial)).BeginInit();
             this.groupMaterialInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataMaterialFornec)).BeginInit();
@@ -63,6 +63,13 @@ namespace EstoquIN.View
             this.dataMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataMaterial.Size = new System.Drawing.Size(298, 518);
             this.dataMaterial.TabIndex = 0;
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
             // 
             // groupMaterialInfo
             // 
@@ -192,19 +199,12 @@ namespace EstoquIN.View
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // ColumnId
-            // 
-            this.ColumnId.DataPropertyName = "Id";
-            this.ColumnId.FillWeight = 25F;
-            this.ColumnId.HeaderText = "Id";
-            this.ColumnId.Name = "ColumnId";
-            // 
             // Material
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(960, 542);
+            this.ClientSize = new System.Drawing.Size(1377, 772);
             this.Controls.Add(this.dataMaterialFornec);
             this.Controls.Add(this.btnMaterialAdicionar);
             this.Controls.Add(this.btnMaterialEditar);

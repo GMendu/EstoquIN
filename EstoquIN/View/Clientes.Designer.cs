@@ -45,15 +45,6 @@ namespace EstoquIN.View
             this.btnClienteAdicionar = new FontAwesome.Sharp.IconButton();
             this.btnClienteEditar = new FontAwesome.Sharp.IconButton();
             this.dataClientes = new System.Windows.Forms.DataGridView();
-            this.btnClienteCancelar = new FontAwesome.Sharp.IconButton();
-            this.groupContatoCliente = new System.Windows.Forms.GroupBox();
-            this.lblClienteContatoTelefone = new System.Windows.Forms.Label();
-            this.txtClienteContatoTelefone = new System.Windows.Forms.TextBox();
-            this.lblClienteContatoEmail = new System.Windows.Forms.Label();
-            this.txtClienteContatoEmail = new System.Windows.Forms.TextBox();
-            this.lblClienteContatoNome = new System.Windows.Forms.Label();
-            this.txtClienteContatoNome = new System.Windows.Forms.TextBox();
-            this.btnClienteExcluir = new FontAwesome.Sharp.IconButton();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCnpj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnRazao = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +56,15 @@ namespace EstoquIN.View
             this.ColumnContatoTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFreqCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClienteCancelar = new FontAwesome.Sharp.IconButton();
+            this.groupContatoCliente = new System.Windows.Forms.GroupBox();
+            this.lblClienteContatoTelefone = new System.Windows.Forms.Label();
+            this.txtClienteContatoTelefone = new System.Windows.Forms.TextBox();
+            this.lblClienteContatoEmail = new System.Windows.Forms.Label();
+            this.txtClienteContatoEmail = new System.Windows.Forms.TextBox();
+            this.lblClienteContatoNome = new System.Windows.Forms.Label();
+            this.txtClienteContatoNome = new System.Windows.Forms.TextBox();
+            this.btnClienteExcluir = new FontAwesome.Sharp.IconButton();
             this.groupInfoCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataClientes)).BeginInit();
             this.groupContatoCliente.SuspendLayout();
@@ -287,6 +287,73 @@ namespace EstoquIN.View
             this.dataClientes.Size = new System.Drawing.Size(937, 184);
             this.dataClientes.TabIndex = 23;
             // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
+            // 
+            // ColumnCnpj
+            // 
+            this.ColumnCnpj.DataPropertyName = "Cnpj";
+            this.ColumnCnpj.HeaderText = "Cnpj";
+            this.ColumnCnpj.Name = "ColumnCnpj";
+            // 
+            // ColumnRazao
+            // 
+            this.ColumnRazao.DataPropertyName = "Razao";
+            this.ColumnRazao.HeaderText = "Razão Social";
+            this.ColumnRazao.Name = "ColumnRazao";
+            // 
+            // ColumnInscricao
+            // 
+            this.ColumnInscricao.DataPropertyName = "Inscricao";
+            this.ColumnInscricao.HeaderText = "Inscricao";
+            this.ColumnInscricao.Name = "ColumnInscricao";
+            // 
+            // ColumnNomeFantasia
+            // 
+            this.ColumnNomeFantasia.DataPropertyName = "NomeFantasia";
+            this.ColumnNomeFantasia.HeaderText = "Nome Fantasia";
+            this.ColumnNomeFantasia.Name = "ColumnNomeFantasia";
+            // 
+            // ColumnObs
+            // 
+            this.ColumnObs.DataPropertyName = "Obs";
+            this.ColumnObs.HeaderText = "Observação";
+            this.ColumnObs.Name = "ColumnObs";
+            // 
+            // ColumnContatoNome
+            // 
+            this.ColumnContatoNome.DataPropertyName = "ContatoNome";
+            this.ColumnContatoNome.HeaderText = "Contato Nome";
+            this.ColumnContatoNome.Name = "ColumnContatoNome";
+            // 
+            // ColumnContatoEmail
+            // 
+            this.ColumnContatoEmail.DataPropertyName = "ContatoEmail";
+            this.ColumnContatoEmail.HeaderText = "Contato Email";
+            this.ColumnContatoEmail.Name = "ColumnContatoEmail";
+            // 
+            // ColumnContatoTelefone
+            // 
+            this.ColumnContatoTelefone.DataPropertyName = "ContatoTelefone";
+            this.ColumnContatoTelefone.HeaderText = "Contato Telefone";
+            this.ColumnContatoTelefone.Name = "ColumnContatoTelefone";
+            // 
+            // ColumnEndereco
+            // 
+            this.ColumnEndereco.DataPropertyName = "Endereco";
+            this.ColumnEndereco.HeaderText = "Endereço";
+            this.ColumnEndereco.Name = "ColumnEndereco";
+            // 
+            // ColumnFreqCompra
+            // 
+            this.ColumnFreqCompra.DataPropertyName = "freq_compra";
+            this.ColumnFreqCompra.HeaderText = "Frequência de compras";
+            this.ColumnFreqCompra.Name = "ColumnFreqCompra";
+            // 
             // btnClienteCancelar
             // 
             this.btnClienteCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
@@ -404,73 +471,6 @@ namespace EstoquIN.View
             this.btnClienteExcluir.UseVisualStyleBackColor = false;
             this.btnClienteExcluir.Click += new System.EventHandler(this.btnClienteExcluir_Click);
             // 
-            // ColumnId
-            // 
-            this.ColumnId.DataPropertyName = "Id";
-            this.ColumnId.FillWeight = 25F;
-            this.ColumnId.HeaderText = "Id";
-            this.ColumnId.Name = "ColumnId";
-            // 
-            // ColumnCnpj
-            // 
-            this.ColumnCnpj.DataPropertyName = "Cnpj";
-            this.ColumnCnpj.HeaderText = "Cnpj";
-            this.ColumnCnpj.Name = "ColumnCnpj";
-            // 
-            // ColumnRazao
-            // 
-            this.ColumnRazao.DataPropertyName = "Razao";
-            this.ColumnRazao.HeaderText = "Razão Social";
-            this.ColumnRazao.Name = "ColumnRazao";
-            // 
-            // ColumnInscricao
-            // 
-            this.ColumnInscricao.DataPropertyName = "Inscricao";
-            this.ColumnInscricao.HeaderText = "Inscricao";
-            this.ColumnInscricao.Name = "ColumnInscricao";
-            // 
-            // ColumnNomeFantasia
-            // 
-            this.ColumnNomeFantasia.DataPropertyName = "NomeFantasia";
-            this.ColumnNomeFantasia.HeaderText = "Nome Fantasia";
-            this.ColumnNomeFantasia.Name = "ColumnNomeFantasia";
-            // 
-            // ColumnObs
-            // 
-            this.ColumnObs.DataPropertyName = "Obs";
-            this.ColumnObs.HeaderText = "Observação";
-            this.ColumnObs.Name = "ColumnObs";
-            // 
-            // ColumnContatoNome
-            // 
-            this.ColumnContatoNome.DataPropertyName = "ContatoNome";
-            this.ColumnContatoNome.HeaderText = "Contato Nome";
-            this.ColumnContatoNome.Name = "ColumnContatoNome";
-            // 
-            // ColumnContatoEmail
-            // 
-            this.ColumnContatoEmail.DataPropertyName = "ContatoEmail";
-            this.ColumnContatoEmail.HeaderText = "Contato Email";
-            this.ColumnContatoEmail.Name = "ColumnContatoEmail";
-            // 
-            // ColumnContatoTelefone
-            // 
-            this.ColumnContatoTelefone.DataPropertyName = "ContatoTelefone";
-            this.ColumnContatoTelefone.HeaderText = "Contato Telefone";
-            this.ColumnContatoTelefone.Name = "ColumnContatoTelefone";
-            // 
-            // ColumnEndereco
-            // 
-            this.ColumnEndereco.DataPropertyName = "Endereco";
-            this.ColumnEndereco.HeaderText = "Endereço";
-            this.ColumnEndereco.Name = "ColumnEndereco";
-            // 
-            // ColumnFreqCompra
-            // 
-            this.ColumnFreqCompra.DataPropertyName = "freq_compra";
-            this.ColumnFreqCompra.HeaderText = "Frequência de compras";
-            this.ColumnFreqCompra.Name = "ColumnFreqCompra";
-            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -478,7 +478,7 @@ namespace EstoquIN.View
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(960, 542);
+            this.ClientSize = new System.Drawing.Size(1377, 772);
             this.Controls.Add(this.groupInfoCliente);
             this.Controls.Add(this.btnClienteAdicionar);
             this.Controls.Add(this.btnClienteEditar);
