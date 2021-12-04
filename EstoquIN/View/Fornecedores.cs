@@ -37,8 +37,6 @@ namespace EstoquIN.View
                         orderby c.Id descending
                         select new { c.Id, c.Nome };
             bs.DataSource = queri.ToList();
-            dataFornecMaterial.DataSource = bs;
-            dataFornecMaterial.Refresh();
         }
 
         private void ClearBoxes()
@@ -58,6 +56,7 @@ namespace EstoquIN.View
         {
             if (txtFornecCnpj.Text != string.Empty || txtFornecInscricao.Text != string.Empty || txtFornecNomeFantasia.Text != string.Empty || txtFornecRazao.Text != string.Empty)
             {
+                
                 var fornecedor = new DadosFornec()
                 {
                     Cnpj = txtFornecCnpj.Text,
@@ -68,7 +67,7 @@ namespace EstoquIN.View
                     Inscricao = txtFornecInscricao.Text,
                     NomeFantasia = txtFornecNomeFantasia.Text,
                     Observ = txtFornecObs.Text,
-                    Razao = txtFornecRazao.Text,
+                    Razao = txtFornecRazao.Text,               
                 };
                 context.DBfornec.Add(fornecedor);
                 context.SaveChanges();
@@ -133,6 +132,5 @@ namespace EstoquIN.View
             RefreshGrid();
             ClearBoxes();
         }
-
     }
 }

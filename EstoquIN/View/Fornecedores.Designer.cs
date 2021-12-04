@@ -54,14 +54,9 @@ namespace EstoquIN.View
             this.lblFornecContatoNome = new System.Windows.Forms.Label();
             this.txtFornecContatoNome = new System.Windows.Forms.TextBox();
             this.btnFornecExcluir = new FontAwesome.Sharp.IconButton();
-            this.dataFornecMaterial = new System.Windows.Forms.DataGridView();
-            this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ColumnMaterialId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMaterialNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupInfoFornec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataFornec)).BeginInit();
             this.groupContatoFornec.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataFornecMaterial)).BeginInit();
             this.SuspendLayout();
             // 
             // groupInfoFornec
@@ -226,7 +221,7 @@ namespace EstoquIN.View
             this.btnFornecEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecEditar.IconColor = System.Drawing.Color.Black;
             this.btnFornecEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFornecEditar.Location = new System.Drawing.Point(280, 396);
+            this.btnFornecEditar.Location = new System.Drawing.Point(396, 396);
             this.btnFornecEditar.Name = "btnFornecEditar";
             this.btnFornecEditar.Size = new System.Drawing.Size(238, 37);
             this.btnFornecEditar.TabIndex = 18;
@@ -249,7 +244,7 @@ namespace EstoquIN.View
             this.dataFornec.RowHeadersWidth = 51;
             this.dataFornec.RowTemplate.Height = 25;
             this.dataFornec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataFornec.Size = new System.Drawing.Size(981, 301);
+            this.dataFornec.Size = new System.Drawing.Size(1304, 301);
             this.dataFornec.TabIndex = 16;
             // 
             // btnFornecCancelar
@@ -261,7 +256,7 @@ namespace EstoquIN.View
             this.btnFornecCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecCancelar.IconColor = System.Drawing.Color.Black;
             this.btnFornecCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFornecCancelar.Location = new System.Drawing.Point(524, 396);
+            this.btnFornecCancelar.Location = new System.Drawing.Point(771, 396);
             this.btnFornecCancelar.Name = "btnFornecCancelar";
             this.btnFornecCancelar.Size = new System.Drawing.Size(238, 37);
             this.btnFornecCancelar.TabIndex = 19;
@@ -351,7 +346,7 @@ namespace EstoquIN.View
             this.btnFornecExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecExcluir.IconColor = System.Drawing.Color.Black;
             this.btnFornecExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFornecExcluir.Location = new System.Drawing.Point(772, 396);
+            this.btnFornecExcluir.Location = new System.Drawing.Point(1095, 396);
             this.btnFornecExcluir.Name = "btnFornecExcluir";
             this.btnFornecExcluir.Size = new System.Drawing.Size(238, 37);
             this.btnFornecExcluir.TabIndex = 20;
@@ -359,53 +354,12 @@ namespace EstoquIN.View
             this.btnFornecExcluir.UseVisualStyleBackColor = false;
             this.btnFornecExcluir.Click += new System.EventHandler(this.btnFornecExcluir_Click);
             // 
-            // dataFornecMaterial
-            // 
-            this.dataFornecMaterial.AllowUserToAddRows = false;
-            this.dataFornecMaterial.AllowUserToDeleteRows = false;
-            this.dataFornecMaterial.AllowUserToResizeColumns = false;
-            this.dataFornecMaterial.AllowUserToResizeRows = false;
-            this.dataFornecMaterial.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataFornecMaterial.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.dataFornecMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataFornecMaterial.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Checkbox,
-            this.ColumnMaterialId,
-            this.ColumnMaterialNome});
-            this.dataFornecMaterial.Location = new System.Drawing.Point(1037, 396);
-            this.dataFornecMaterial.Name = "dataFornecMaterial";
-            this.dataFornecMaterial.RowHeadersVisible = false;
-            this.dataFornecMaterial.RowTemplate.Height = 25;
-            this.dataFornecMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataFornecMaterial.Size = new System.Drawing.Size(296, 344);
-            this.dataFornecMaterial.TabIndex = 21;
-            // 
-            // Checkbox
-            // 
-            this.Checkbox.FillWeight = 20F;
-            this.Checkbox.HeaderText = "###";
-            this.Checkbox.Name = "Checkbox";
-            // 
-            // ColumnMaterialId
-            // 
-            this.ColumnMaterialId.DataPropertyName = "Id";
-            this.ColumnMaterialId.FillWeight = 20F;
-            this.ColumnMaterialId.HeaderText = "Id";
-            this.ColumnMaterialId.Name = "ColumnMaterialId";
-            // 
-            // ColumnMaterialNome
-            // 
-            this.ColumnMaterialNome.DataPropertyName = "Nome";
-            this.ColumnMaterialNome.HeaderText = "Nome";
-            this.ColumnMaterialNome.Name = "ColumnMaterialNome";
-            // 
             // Fornecedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1377, 772);
-            this.Controls.Add(this.dataFornecMaterial);
             this.Controls.Add(this.groupInfoFornec);
             this.Controls.Add(this.btnFornecAdicionar);
             this.Controls.Add(this.btnFornecEditar);
@@ -420,7 +374,6 @@ namespace EstoquIN.View
             ((System.ComponentModel.ISupportInitialize)(this.dataFornec)).EndInit();
             this.groupContatoFornec.ResumeLayout(false);
             this.groupContatoFornec.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataFornecMaterial)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,9 +405,5 @@ namespace EstoquIN.View
         private FontAwesome.Sharp.IconButton btnFornecExcluir;
         private System.Windows.Forms.TextBox txtFornecEndereco;
         private System.Windows.Forms.Label lblFornecEndereco;
-        private System.Windows.Forms.DataGridView dataFornecMaterial;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaterialId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaterialNome;
     }
 }

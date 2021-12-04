@@ -38,8 +38,8 @@ namespace EstoquIN.View
             this.btnMaterialEditar = new FontAwesome.Sharp.IconButton();
             this.btnMaterialCancelar = new FontAwesome.Sharp.IconButton();
             this.btnMaterialExcluir = new FontAwesome.Sharp.IconButton();
-            this.dataMaterialFornec = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataMaterialFornec = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataMaterial)).BeginInit();
             this.groupMaterialInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataMaterialFornec)).BeginInit();
@@ -173,6 +173,13 @@ namespace EstoquIN.View
             this.btnMaterialExcluir.UseVisualStyleBackColor = false;
             this.btnMaterialExcluir.Click += new System.EventHandler(this.btnMaterialExcluir_Click);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.FillWeight = 25F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
             // dataMaterialFornec
             // 
             this.dataMaterialFornec.AllowUserToAddRows = false;
@@ -184,20 +191,13 @@ namespace EstoquIN.View
             this.dataMaterialFornec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataMaterialFornec.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
-            this.dataMaterialFornec.Location = new System.Drawing.Point(380, 336);
+            this.dataMaterialFornec.Location = new System.Drawing.Point(380, 416);
             this.dataMaterialFornec.Name = "dataMaterialFornec";
             this.dataMaterialFornec.RowHeadersVisible = false;
             this.dataMaterialFornec.RowTemplate.Height = 25;
             this.dataMaterialFornec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataMaterialFornec.Size = new System.Drawing.Size(934, 382);
+            this.dataMaterialFornec.Size = new System.Drawing.Size(934, 302);
             this.dataMaterialFornec.TabIndex = 25;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.FillWeight = 25F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // Material
             // 
@@ -232,8 +232,8 @@ namespace EstoquIN.View
         private FontAwesome.Sharp.IconButton btnMaterialEditar;
         private FontAwesome.Sharp.IconButton btnMaterialCancelar;
         private FontAwesome.Sharp.IconButton btnMaterialExcluir;
-        private System.Windows.Forms.DataGridView dataMaterialFornec;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridView dataMaterialFornec;
     }
 }
