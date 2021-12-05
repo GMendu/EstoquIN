@@ -113,6 +113,18 @@
     <Compile Include="View\Fornecedores.Designer.cs">
       <DependentUpon>Fornecedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Geral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Geral.Designer.cs">
+      <DependentUpon>Geral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Log-in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Log-in.Designer.cs">
+      <DependentUpon>Log-in.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Material.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +180,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Fornecedores.resx">
       <DependentUpon>Fornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Geral.resx">
+      <DependentUpon>Geral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Log-in.resx">
+      <DependentUpon>Log-in.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Material.resx">
       <DependentUpon>Material.cs</DependentUpon>

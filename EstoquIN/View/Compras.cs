@@ -13,7 +13,7 @@ using System.IO;
 
 namespace EstoquIN.View
 {
-    public partial class Compras : Form
+    public partial class Compras : System.Windows.Forms.Form
     {
         private EstoqDBContext context;
         

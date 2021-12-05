@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace EstoquIN.View
 {
-    public partial class Configuracoes : Form
+    public partial class Configuracoes : System.Windows.Forms.Form
     {
         public Configuracoes()
         {

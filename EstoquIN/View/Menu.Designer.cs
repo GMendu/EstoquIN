@@ -292,7 +292,7 @@ namespace EstoquIN
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(1393, 65);
             this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+          
             // 
             // btnMinimizar
             // 
@@ -309,7 +309,7 @@ namespace EstoquIN
             this.btnMinimizar.TabIndex = 4;
             this.btnMinimizar.Text = ".";
             this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
+
             // 
             // btnMaximizar
             // 
@@ -326,7 +326,7 @@ namespace EstoquIN
             this.btnMaximizar.TabIndex = 3;
             this.btnMaximizar.Text = "o";
             this.btnMaximizar.UseVisualStyleBackColor = true;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click_1);
+           
             // 
             // btnFechar
             // 
@@ -343,7 +343,7 @@ namespace EstoquIN
             this.btnFechar.TabIndex = 2;
             this.btnFechar.Text = "O";
             this.btnFechar.UseVisualStyleBackColor = true;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
+
             // 
             // lblTitleChildForm
             // 

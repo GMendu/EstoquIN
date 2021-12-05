@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace EstoquIN.View
 {
-    public partial class Relatorios : Form
+    public partial class Relatorios : System.Windows.Forms.Form
     {
         public Relatorios()
         {

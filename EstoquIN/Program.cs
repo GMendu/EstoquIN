@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EstoquIN.View;
 
 namespace EstoquIN
 {
@@ -16,7 +17,7 @@ namespace EstoquIN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMainMenu());
+            Application.Run(new FormGeral());
         }
     }
 }

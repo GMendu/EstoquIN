@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace EstoquIN.View
 {
-    public partial class Clientes : Form
+    public partial class Clientes : System.Windows.Forms.Form
     {
         private EstoqDBContext context;
         public Clientes()

@@ -13,12 +13,12 @@ using EstoquIN.View;
 
 namespace EstoquIN
 {
-    public partial class FormMainMenu : Form
+    public partial class FormMainMenu : System.Windows.Forms.Form
     {
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-        private Form currentChildForm;
+        private System.Windows.Forms.Form currentChildForm;
 
         //Constructor
         public FormMainMenu()
@@ -84,7 +84,7 @@ namespace EstoquIN
             }
         }
 
-        private void OpenChildForm(Form childForm)
+        private void OpenChildForm(System.Windows.Forms.Form childForm)
         {
             if(currentChildForm != null)
             {
@@ -167,35 +167,35 @@ namespace EstoquIN
 
         }
         //Drag Form
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
+        //[DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        //private extern static void ReleaseCapture();
 
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        //[DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        //private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
+        //private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    ReleaseCapture();
+        //    SendMessage(this.Handle, 0x112, 0xf012, 0);
+        //}
 
-        private void btnFechar_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void btnFechar_Click_1(object sender, EventArgs e)
+        //{
+        //    Application.Exit();
+        //}
 
-        private void btnMaximizar_Click_1(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                WindowState = FormWindowState.Maximized;
-            else
-                WindowState = FormWindowState.Normal;
-        }
+        //private void btnMaximizar_Click_1(object sender, EventArgs e)
+        //{
+        //    if (WindowState == FormWindowState.Normal)
+        //        WindowState = FormWindowState.Maximized;
+        //    else
+        //        WindowState = FormWindowState.Normal;
+        //}
 
-        private void btnMinimizar_Click_1(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
+        //private void btnMinimizar_Click_1(object sender, EventArgs e)
+        //{
+        //    WindowState = FormWindowState.Minimized;
+        //}
 
         private void timerRelogio_Tick(object sender, EventArgs e)
         {
