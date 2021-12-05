@@ -77,9 +77,9 @@ namespace EstoquIN.View
             this.groupInfoFornec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupInfoFornec.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupInfoFornec.ForeColor = System.Drawing.Color.White;
-            this.groupInfoFornec.Location = new System.Drawing.Point(29, 27);
+            this.groupInfoFornec.Location = new System.Drawing.Point(12, 12);
             this.groupInfoFornec.Name = "groupInfoFornec";
-            this.groupInfoFornec.Size = new System.Drawing.Size(911, 351);
+            this.groupInfoFornec.Size = new System.Drawing.Size(960, 364);
             this.groupInfoFornec.TabIndex = 14;
             this.groupInfoFornec.TabStop = false;
             this.groupInfoFornec.Text = "Informações empresariais";
@@ -106,7 +106,7 @@ namespace EstoquIN.View
             // 
             this.lblFornecObs.AutoSize = true;
             this.lblFornecObs.ForeColor = System.Drawing.Color.White;
-            this.lblFornecObs.Location = new System.Drawing.Point(541, 41);
+            this.lblFornecObs.Location = new System.Drawing.Point(593, 42);
             this.lblFornecObs.Name = "lblFornecObs";
             this.lblFornecObs.Size = new System.Drawing.Size(127, 28);
             this.lblFornecObs.TabIndex = 11;
@@ -114,7 +114,7 @@ namespace EstoquIN.View
             // 
             // txtFornecObs
             // 
-            this.txtFornecObs.Location = new System.Drawing.Point(546, 72);
+            this.txtFornecObs.Location = new System.Drawing.Point(598, 73);
             this.txtFornecObs.MaxLength = 65000;
             this.txtFornecObs.Name = "txtFornecObs";
             this.txtFornecObs.Size = new System.Drawing.Size(346, 261);
@@ -204,9 +204,9 @@ namespace EstoquIN.View
             this.btnFornecAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnFornecAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFornecAdicionar.Location = new System.Drawing.Point(29, 396);
+            this.btnFornecAdicionar.Location = new System.Drawing.Point(12, 382);
             this.btnFornecAdicionar.Name = "btnFornecAdicionar";
-            this.btnFornecAdicionar.Size = new System.Drawing.Size(238, 37);
+            this.btnFornecAdicionar.Size = new System.Drawing.Size(317, 64);
             this.btnFornecAdicionar.TabIndex = 17;
             this.btnFornecAdicionar.Text = "Adicionar";
             this.btnFornecAdicionar.UseVisualStyleBackColor = false;
@@ -221,9 +221,9 @@ namespace EstoquIN.View
             this.btnFornecEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecEditar.IconColor = System.Drawing.Color.Black;
             this.btnFornecEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFornecEditar.Location = new System.Drawing.Point(396, 396);
+            this.btnFornecEditar.Location = new System.Drawing.Point(363, 382);
             this.btnFornecEditar.Name = "btnFornecEditar";
-            this.btnFornecEditar.Size = new System.Drawing.Size(238, 37);
+            this.btnFornecEditar.Size = new System.Drawing.Size(317, 64);
             this.btnFornecEditar.TabIndex = 18;
             this.btnFornecEditar.Text = "Editar";
             this.btnFornecEditar.UseVisualStyleBackColor = false;
@@ -238,13 +238,13 @@ namespace EstoquIN.View
             this.dataFornec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataFornec.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataFornec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataFornec.Location = new System.Drawing.Point(29, 439);
+            this.dataFornec.Location = new System.Drawing.Point(12, 459);
             this.dataFornec.Name = "dataFornec";
             this.dataFornec.RowHeadersVisible = false;
             this.dataFornec.RowHeadersWidth = 51;
             this.dataFornec.RowTemplate.Height = 25;
             this.dataFornec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataFornec.Size = new System.Drawing.Size(1304, 301);
+            this.dataFornec.Size = new System.Drawing.Size(1353, 301);
             this.dataFornec.TabIndex = 16;
             // 
             // btnFornecCancelar
@@ -256,9 +256,9 @@ namespace EstoquIN.View
             this.btnFornecCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecCancelar.IconColor = System.Drawing.Color.Black;
             this.btnFornecCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFornecCancelar.Location = new System.Drawing.Point(771, 396);
+            this.btnFornecCancelar.Location = new System.Drawing.Point(705, 382);
             this.btnFornecCancelar.Name = "btnFornecCancelar";
-            this.btnFornecCancelar.Size = new System.Drawing.Size(238, 37);
+            this.btnFornecCancelar.Size = new System.Drawing.Size(317, 64);
             this.btnFornecCancelar.TabIndex = 19;
             this.btnFornecCancelar.Text = "Cancelar";
             this.btnFornecCancelar.UseVisualStyleBackColor = false;
@@ -276,9 +276,9 @@ namespace EstoquIN.View
             this.groupContatoFornec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupContatoFornec.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupContatoFornec.ForeColor = System.Drawing.Color.White;
-            this.groupContatoFornec.Location = new System.Drawing.Point(946, 27);
+            this.groupContatoFornec.Location = new System.Drawing.Point(978, 12);
             this.groupContatoFornec.Name = "groupContatoFornec";
-            this.groupContatoFornec.Size = new System.Drawing.Size(387, 351);
+            this.groupContatoFornec.Size = new System.Drawing.Size(387, 364);
             this.groupContatoFornec.TabIndex = 15;
             this.groupContatoFornec.TabStop = false;
             this.groupContatoFornec.Text = "Contatos";
@@ -346,9 +346,9 @@ namespace EstoquIN.View
             this.btnFornecExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecExcluir.IconColor = System.Drawing.Color.Black;
             this.btnFornecExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFornecExcluir.Location = new System.Drawing.Point(1095, 396);
+            this.btnFornecExcluir.Location = new System.Drawing.Point(1050, 382);
             this.btnFornecExcluir.Name = "btnFornecExcluir";
-            this.btnFornecExcluir.Size = new System.Drawing.Size(238, 37);
+            this.btnFornecExcluir.Size = new System.Drawing.Size(314, 64);
             this.btnFornecExcluir.TabIndex = 20;
             this.btnFornecExcluir.Text = "Excluir";
             this.btnFornecExcluir.UseVisualStyleBackColor = false;

@@ -60,7 +60,7 @@ namespace EstoquIN.View
             this.groupConfigUsuario.ForeColor = System.Drawing.Color.White;
             this.groupConfigUsuario.Location = new System.Drawing.Point(12, 12);
             this.groupConfigUsuario.Name = "groupConfigUsuario";
-            this.groupConfigUsuario.Size = new System.Drawing.Size(670, 326);
+            this.groupConfigUsuario.Size = new System.Drawing.Size(658, 388);
             this.groupConfigUsuario.TabIndex = 0;
             this.groupConfigUsuario.TabStop = false;
             this.groupConfigUsuario.Text = "Configurações de usuário";
@@ -69,7 +69,7 @@ namespace EstoquIN.View
             // 
             this.lblConfigSenhaRep.AutoSize = true;
             this.lblConfigSenhaRep.ForeColor = System.Drawing.Color.White;
-            this.lblConfigSenhaRep.Location = new System.Drawing.Point(23, 211);
+            this.lblConfigSenhaRep.Location = new System.Drawing.Point(23, 291);
             this.lblConfigSenhaRep.Name = "lblConfigSenhaRep";
             this.lblConfigSenhaRep.Size = new System.Drawing.Size(129, 28);
             this.lblConfigSenhaRep.TabIndex = 6;
@@ -79,17 +79,17 @@ namespace EstoquIN.View
             // 
             this.txtConfigSenhaRep.BackColor = System.Drawing.SystemColors.Menu;
             this.txtConfigSenhaRep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfigSenhaRep.Location = new System.Drawing.Point(28, 242);
+            this.txtConfigSenhaRep.Location = new System.Drawing.Point(28, 322);
             this.txtConfigSenhaRep.MaxLength = 22;
             this.txtConfigSenhaRep.Name = "txtConfigSenhaRep";
-            this.txtConfigSenhaRep.Size = new System.Drawing.Size(182, 34);
+            this.txtConfigSenhaRep.Size = new System.Drawing.Size(604, 34);
             this.txtConfigSenhaRep.TabIndex = 7;
             // 
             // lblConfigSenha
             // 
             this.lblConfigSenha.AutoSize = true;
             this.lblConfigSenha.ForeColor = System.Drawing.Color.White;
-            this.lblConfigSenha.Location = new System.Drawing.Point(23, 123);
+            this.lblConfigSenha.Location = new System.Drawing.Point(23, 163);
             this.lblConfigSenha.Name = "lblConfigSenha";
             this.lblConfigSenha.Size = new System.Drawing.Size(65, 28);
             this.lblConfigSenha.TabIndex = 4;
@@ -99,10 +99,10 @@ namespace EstoquIN.View
             // 
             this.txtConfigSenha.BackColor = System.Drawing.SystemColors.Menu;
             this.txtConfigSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfigSenha.Location = new System.Drawing.Point(28, 154);
+            this.txtConfigSenha.Location = new System.Drawing.Point(28, 194);
             this.txtConfigSenha.MaxLength = 22;
             this.txtConfigSenha.Name = "txtConfigSenha";
-            this.txtConfigSenha.Size = new System.Drawing.Size(182, 34);
+            this.txtConfigSenha.Size = new System.Drawing.Size(604, 34);
             this.txtConfigSenha.TabIndex = 5;
             // 
             // lblConfigUsuario
@@ -113,7 +113,7 @@ namespace EstoquIN.View
             this.lblConfigUsuario.Name = "lblConfigUsuario";
             this.lblConfigUsuario.Size = new System.Drawing.Size(79, 28);
             this.lblConfigUsuario.TabIndex = 2;
-            this.lblConfigUsuario.Text = "Usuario";
+            this.lblConfigUsuario.Text = "Usuário";
             // 
             // txtConfigUsuario
             // 
@@ -122,7 +122,7 @@ namespace EstoquIN.View
             this.txtConfigUsuario.Location = new System.Drawing.Point(28, 73);
             this.txtConfigUsuario.MaxLength = 22;
             this.txtConfigUsuario.Name = "txtConfigUsuario";
-            this.txtConfigUsuario.Size = new System.Drawing.Size(182, 34);
+            this.txtConfigUsuario.Size = new System.Drawing.Size(604, 34);
             this.txtConfigUsuario.TabIndex = 3;
             // 
             // txtProdutoPeso
@@ -142,9 +142,9 @@ namespace EstoquIN.View
             this.btnConfigExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfigExcluir.IconColor = System.Drawing.Color.Black;
             this.btnConfigExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConfigExcluir.Location = new System.Drawing.Point(539, 488);
+            this.btnConfigExcluir.Location = new System.Drawing.Point(676, 304);
             this.btnConfigExcluir.Name = "btnConfigExcluir";
-            this.btnConfigExcluir.Size = new System.Drawing.Size(143, 42);
+            this.btnConfigExcluir.Size = new System.Drawing.Size(257, 96);
             this.btnConfigExcluir.TabIndex = 39;
             this.btnConfigExcluir.Text = "Excluir";
             this.btnConfigExcluir.UseVisualStyleBackColor = false;
@@ -159,9 +159,9 @@ namespace EstoquIN.View
             this.btnConfigAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfigAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnConfigAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConfigAdicionar.Location = new System.Drawing.Point(539, 344);
+            this.btnConfigAdicionar.Location = new System.Drawing.Point(676, 12);
             this.btnConfigAdicionar.Name = "btnConfigAdicionar";
-            this.btnConfigAdicionar.Size = new System.Drawing.Size(143, 42);
+            this.btnConfigAdicionar.Size = new System.Drawing.Size(257, 98);
             this.btnConfigAdicionar.TabIndex = 36;
             this.btnConfigAdicionar.Text = "Adicionar";
             this.btnConfigAdicionar.UseVisualStyleBackColor = false;
@@ -176,9 +176,9 @@ namespace EstoquIN.View
             this.btnConfigEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfigEditar.IconColor = System.Drawing.Color.Black;
             this.btnConfigEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConfigEditar.Location = new System.Drawing.Point(539, 392);
+            this.btnConfigEditar.Location = new System.Drawing.Point(676, 116);
             this.btnConfigEditar.Name = "btnConfigEditar";
-            this.btnConfigEditar.Size = new System.Drawing.Size(143, 42);
+            this.btnConfigEditar.Size = new System.Drawing.Size(257, 84);
             this.btnConfigEditar.TabIndex = 37;
             this.btnConfigEditar.Text = "Editar";
             this.btnConfigEditar.UseVisualStyleBackColor = false;
@@ -193,9 +193,9 @@ namespace EstoquIN.View
             this.btnConfigCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfigCancelar.IconColor = System.Drawing.Color.Black;
             this.btnConfigCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConfigCancelar.Location = new System.Drawing.Point(539, 440);
+            this.btnConfigCancelar.Location = new System.Drawing.Point(676, 206);
             this.btnConfigCancelar.Name = "btnConfigCancelar";
-            this.btnConfigCancelar.Size = new System.Drawing.Size(143, 42);
+            this.btnConfigCancelar.Size = new System.Drawing.Size(257, 92);
             this.btnConfigCancelar.TabIndex = 38;
             this.btnConfigCancelar.Text = "Cancelar";
             this.btnConfigCancelar.UseVisualStyleBackColor = false;
@@ -210,12 +210,12 @@ namespace EstoquIN.View
             this.dataConfigUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataConfigUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataConfigUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataConfigUsuario.Location = new System.Drawing.Point(688, 12);
+            this.dataConfigUsuario.Location = new System.Drawing.Point(939, 12);
             this.dataConfigUsuario.Name = "dataConfigUsuario";
             this.dataConfigUsuario.RowHeadersVisible = false;
             this.dataConfigUsuario.RowTemplate.Height = 25;
             this.dataConfigUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataConfigUsuario.Size = new System.Drawing.Size(260, 518);
+            this.dataConfigUsuario.Size = new System.Drawing.Size(426, 748);
             this.dataConfigUsuario.TabIndex = 40;
             // 
             // groupConfigLogo
@@ -223,9 +223,9 @@ namespace EstoquIN.View
             this.groupConfigLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.groupConfigLogo.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupConfigLogo.ForeColor = System.Drawing.Color.White;
-            this.groupConfigLogo.Location = new System.Drawing.Point(12, 344);
+            this.groupConfigLogo.Location = new System.Drawing.Point(12, 406);
             this.groupConfigLogo.Name = "groupConfigLogo";
-            this.groupConfigLogo.Size = new System.Drawing.Size(521, 186);
+            this.groupConfigLogo.Size = new System.Drawing.Size(921, 354);
             this.groupConfigLogo.TabIndex = 41;
             this.groupConfigLogo.TabStop = false;
             this.groupConfigLogo.Text = "Logo do menu";

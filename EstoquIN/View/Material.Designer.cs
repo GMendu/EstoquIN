@@ -56,12 +56,12 @@ namespace EstoquIN.View
             this.dataMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataMaterial.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnId});
-            this.dataMaterial.Location = new System.Drawing.Point(44, 44);
+            this.dataMaterial.Location = new System.Drawing.Point(12, 12);
             this.dataMaterial.Name = "dataMaterial";
             this.dataMaterial.RowHeadersVisible = false;
             this.dataMaterial.RowTemplate.Height = 25;
             this.dataMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataMaterial.Size = new System.Drawing.Size(284, 674);
+            this.dataMaterial.Size = new System.Drawing.Size(349, 748);
             this.dataMaterial.TabIndex = 0;
             // 
             // ColumnId
@@ -78,9 +78,9 @@ namespace EstoquIN.View
             this.groupMaterialInfo.Controls.Add(this.txtMaterialNome);
             this.groupMaterialInfo.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupMaterialInfo.ForeColor = System.Drawing.Color.White;
-            this.groupMaterialInfo.Location = new System.Drawing.Point(380, 44);
+            this.groupMaterialInfo.Location = new System.Drawing.Point(367, 12);
             this.groupMaterialInfo.Name = "groupMaterialInfo";
-            this.groupMaterialInfo.Size = new System.Drawing.Size(450, 258);
+            this.groupMaterialInfo.Size = new System.Drawing.Size(806, 418);
             this.groupMaterialInfo.TabIndex = 1;
             this.groupMaterialInfo.TabStop = false;
             this.groupMaterialInfo.Text = "Material";
@@ -89,7 +89,7 @@ namespace EstoquIN.View
             // 
             this.lblMaterialNome.AutoSize = true;
             this.lblMaterialNome.ForeColor = System.Drawing.Color.White;
-            this.lblMaterialNome.Location = new System.Drawing.Point(106, 101);
+            this.lblMaterialNome.Location = new System.Drawing.Point(135, 157);
             this.lblMaterialNome.Name = "lblMaterialNome";
             this.lblMaterialNome.Size = new System.Drawing.Size(66, 28);
             this.lblMaterialNome.TabIndex = 2;
@@ -99,10 +99,10 @@ namespace EstoquIN.View
             // 
             this.txtMaterialNome.BackColor = System.Drawing.SystemColors.Menu;
             this.txtMaterialNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMaterialNome.Location = new System.Drawing.Point(101, 132);
+            this.txtMaterialNome.Location = new System.Drawing.Point(130, 188);
             this.txtMaterialNome.MaxLength = 45;
             this.txtMaterialNome.Name = "txtMaterialNome";
-            this.txtMaterialNome.Size = new System.Drawing.Size(241, 34);
+            this.txtMaterialNome.Size = new System.Drawing.Size(513, 34);
             this.txtMaterialNome.TabIndex = 3;
             // 
             // btnMaterialAdicionar
@@ -114,9 +114,9 @@ namespace EstoquIN.View
             this.btnMaterialAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnMaterialAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialAdicionar.Location = new System.Drawing.Point(889, 61);
+            this.btnMaterialAdicionar.Location = new System.Drawing.Point(1179, 12);
             this.btnMaterialAdicionar.Name = "btnMaterialAdicionar";
-            this.btnMaterialAdicionar.Size = new System.Drawing.Size(175, 60);
+            this.btnMaterialAdicionar.Size = new System.Drawing.Size(186, 92);
             this.btnMaterialAdicionar.TabIndex = 21;
             this.btnMaterialAdicionar.Text = "Adicionar";
             this.btnMaterialAdicionar.UseVisualStyleBackColor = false;
@@ -131,9 +131,9 @@ namespace EstoquIN.View
             this.btnMaterialEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialEditar.IconColor = System.Drawing.Color.Black;
             this.btnMaterialEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialEditar.Location = new System.Drawing.Point(958, 179);
+            this.btnMaterialEditar.Location = new System.Drawing.Point(1181, 113);
             this.btnMaterialEditar.Name = "btnMaterialEditar";
-            this.btnMaterialEditar.Size = new System.Drawing.Size(175, 60);
+            this.btnMaterialEditar.Size = new System.Drawing.Size(186, 99);
             this.btnMaterialEditar.TabIndex = 22;
             this.btnMaterialEditar.Text = "Editar";
             this.btnMaterialEditar.UseVisualStyleBackColor = false;
@@ -148,9 +148,9 @@ namespace EstoquIN.View
             this.btnMaterialCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialCancelar.IconColor = System.Drawing.Color.Black;
             this.btnMaterialCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialCancelar.Location = new System.Drawing.Point(1070, 113);
+            this.btnMaterialCancelar.Location = new System.Drawing.Point(1180, 218);
             this.btnMaterialCancelar.Name = "btnMaterialCancelar";
-            this.btnMaterialCancelar.Size = new System.Drawing.Size(176, 60);
+            this.btnMaterialCancelar.Size = new System.Drawing.Size(187, 102);
             this.btnMaterialCancelar.TabIndex = 23;
             this.btnMaterialCancelar.Text = "Cancelar";
             this.btnMaterialCancelar.UseVisualStyleBackColor = false;
@@ -165,9 +165,9 @@ namespace EstoquIN.View
             this.btnMaterialExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialExcluir.IconColor = System.Drawing.Color.Black;
             this.btnMaterialExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialExcluir.Location = new System.Drawing.Point(1139, 226);
+            this.btnMaterialExcluir.Location = new System.Drawing.Point(1179, 326);
             this.btnMaterialExcluir.Name = "btnMaterialExcluir";
-            this.btnMaterialExcluir.Size = new System.Drawing.Size(175, 60);
+            this.btnMaterialExcluir.Size = new System.Drawing.Size(186, 104);
             this.btnMaterialExcluir.TabIndex = 24;
             this.btnMaterialExcluir.Text = "Excluir";
             this.btnMaterialExcluir.UseVisualStyleBackColor = false;
@@ -191,12 +191,12 @@ namespace EstoquIN.View
             this.dataMaterialFornec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataMaterialFornec.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
-            this.dataMaterialFornec.Location = new System.Drawing.Point(380, 416);
+            this.dataMaterialFornec.Location = new System.Drawing.Point(367, 436);
             this.dataMaterialFornec.Name = "dataMaterialFornec";
             this.dataMaterialFornec.RowHeadersVisible = false;
             this.dataMaterialFornec.RowTemplate.Height = 25;
             this.dataMaterialFornec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataMaterialFornec.Size = new System.Drawing.Size(934, 302);
+            this.dataMaterialFornec.Size = new System.Drawing.Size(998, 324);
             this.dataMaterialFornec.TabIndex = 25;
             // 
             // Material
