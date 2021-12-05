@@ -21,7 +21,6 @@ namespace EstoquIN.View
         private void btnLoginLogin_Click(object sender, EventArgs e)
         {
             FormGeral Fg = new FormGeral(1);
-            this.Close();
         }
     }
 }

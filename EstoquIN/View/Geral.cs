@@ -19,7 +19,7 @@ namespace EstoquIN.View
         public FormGeral()
         {
             InitializeComponent();
-            OpenChildForm(new FormLogin());
+            OpenChildForm(new FormMainMenu());
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
