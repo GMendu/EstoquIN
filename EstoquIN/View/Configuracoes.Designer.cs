@@ -36,13 +36,14 @@ namespace EstoquIN.View
             this.txtConfigSenha = new System.Windows.Forms.TextBox();
             this.lblConfigUsuario = new System.Windows.Forms.Label();
             this.txtConfigUsuario = new System.Windows.Forms.TextBox();
-            this.txtProdutoPeso = new System.Windows.Forms.TextBox();
             this.btnConfigExcluir = new FontAwesome.Sharp.IconButton();
             this.btnConfigAdicionar = new FontAwesome.Sharp.IconButton();
             this.btnConfigEditar = new FontAwesome.Sharp.IconButton();
             this.btnConfigCancelar = new FontAwesome.Sharp.IconButton();
             this.dataConfigUsuario = new System.Windows.Forms.DataGridView();
             this.groupConfigLogo = new System.Windows.Forms.GroupBox();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.cbTipos = new System.Windows.Forms.ComboBox();
             this.groupConfigUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConfigUsuario)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +51,8 @@ namespace EstoquIN.View
             // groupConfigUsuario
             // 
             this.groupConfigUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupConfigUsuario.Controls.Add(this.cbTipos);
+            this.groupConfigUsuario.Controls.Add(this.lblTipo);
             this.groupConfigUsuario.Controls.Add(this.lblConfigSenhaRep);
             this.groupConfigUsuario.Controls.Add(this.txtConfigSenhaRep);
             this.groupConfigUsuario.Controls.Add(this.lblConfigSenha);
@@ -69,7 +72,7 @@ namespace EstoquIN.View
             // 
             this.lblConfigSenhaRep.AutoSize = true;
             this.lblConfigSenhaRep.ForeColor = System.Drawing.Color.White;
-            this.lblConfigSenhaRep.Location = new System.Drawing.Point(23, 291);
+            this.lblConfigSenhaRep.Location = new System.Drawing.Point(354, 203);
             this.lblConfigSenhaRep.Name = "lblConfigSenhaRep";
             this.lblConfigSenhaRep.Size = new System.Drawing.Size(129, 28);
             this.lblConfigSenhaRep.TabIndex = 6;
@@ -79,17 +82,17 @@ namespace EstoquIN.View
             // 
             this.txtConfigSenhaRep.BackColor = System.Drawing.SystemColors.Menu;
             this.txtConfigSenhaRep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfigSenhaRep.Location = new System.Drawing.Point(28, 322);
+            this.txtConfigSenhaRep.Location = new System.Drawing.Point(359, 236);
             this.txtConfigSenhaRep.MaxLength = 22;
             this.txtConfigSenhaRep.Name = "txtConfigSenhaRep";
-            this.txtConfigSenhaRep.Size = new System.Drawing.Size(604, 34);
+            this.txtConfigSenhaRep.Size = new System.Drawing.Size(258, 34);
             this.txtConfigSenhaRep.TabIndex = 7;
             // 
             // lblConfigSenha
             // 
             this.lblConfigSenha.AutoSize = true;
             this.lblConfigSenha.ForeColor = System.Drawing.Color.White;
-            this.lblConfigSenha.Location = new System.Drawing.Point(23, 163);
+            this.lblConfigSenha.Location = new System.Drawing.Point(354, 97);
             this.lblConfigSenha.Name = "lblConfigSenha";
             this.lblConfigSenha.Size = new System.Drawing.Size(65, 28);
             this.lblConfigSenha.TabIndex = 4;
@@ -99,17 +102,17 @@ namespace EstoquIN.View
             // 
             this.txtConfigSenha.BackColor = System.Drawing.SystemColors.Menu;
             this.txtConfigSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfigSenha.Location = new System.Drawing.Point(28, 194);
+            this.txtConfigSenha.Location = new System.Drawing.Point(359, 128);
             this.txtConfigSenha.MaxLength = 22;
             this.txtConfigSenha.Name = "txtConfigSenha";
-            this.txtConfigSenha.Size = new System.Drawing.Size(604, 34);
+            this.txtConfigSenha.Size = new System.Drawing.Size(258, 34);
             this.txtConfigSenha.TabIndex = 5;
             // 
             // lblConfigUsuario
             // 
             this.lblConfigUsuario.AutoSize = true;
             this.lblConfigUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblConfigUsuario.Location = new System.Drawing.Point(23, 42);
+            this.lblConfigUsuario.Location = new System.Drawing.Point(33, 97);
             this.lblConfigUsuario.Name = "lblConfigUsuario";
             this.lblConfigUsuario.Size = new System.Drawing.Size(79, 28);
             this.lblConfigUsuario.TabIndex = 2;
@@ -119,19 +122,11 @@ namespace EstoquIN.View
             // 
             this.txtConfigUsuario.BackColor = System.Drawing.SystemColors.Menu;
             this.txtConfigUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfigUsuario.Location = new System.Drawing.Point(28, 73);
+            this.txtConfigUsuario.Location = new System.Drawing.Point(38, 128);
             this.txtConfigUsuario.MaxLength = 22;
             this.txtConfigUsuario.Name = "txtConfigUsuario";
-            this.txtConfigUsuario.Size = new System.Drawing.Size(604, 34);
+            this.txtConfigUsuario.Size = new System.Drawing.Size(263, 34);
             this.txtConfigUsuario.TabIndex = 3;
-            // 
-            // txtProdutoPeso
-            // 
-            this.txtProdutoPeso.Location = new System.Drawing.Point(-215, 279);
-            this.txtProdutoPeso.Name = "txtProdutoPeso";
-            this.txtProdutoPeso.Size = new System.Drawing.Size(182, 20);
-            this.txtProdutoPeso.TabIndex = 35;
-            this.txtProdutoPeso.Text = " ";
             // 
             // btnConfigExcluir
             // 
@@ -230,6 +225,24 @@ namespace EstoquIN.View
             this.groupConfigLogo.TabStop = false;
             this.groupConfigLogo.Text = "Logo do menu";
             // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.ForeColor = System.Drawing.Color.White;
+            this.lblTipo.Location = new System.Drawing.Point(33, 203);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(56, 28);
+            this.lblTipo.TabIndex = 8;
+            this.lblTipo.Text = "Tipo ";
+            // 
+            // cbTipos
+            // 
+            this.cbTipos.FormattingEnabled = true;
+            this.cbTipos.Location = new System.Drawing.Point(38, 236);
+            this.cbTipos.Name = "cbTipos";
+            this.cbTipos.Size = new System.Drawing.Size(263, 36);
+            this.cbTipos.TabIndex = 9;
+            // 
             // Configuracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,7 +251,6 @@ namespace EstoquIN.View
             this.ClientSize = new System.Drawing.Size(1377, 772);
             this.Controls.Add(this.groupConfigLogo);
             this.Controls.Add(this.dataConfigUsuario);
-            this.Controls.Add(this.txtProdutoPeso);
             this.Controls.Add(this.btnConfigExcluir);
             this.Controls.Add(this.btnConfigAdicionar);
             this.Controls.Add(this.btnConfigEditar);
@@ -250,14 +262,12 @@ namespace EstoquIN.View
             this.groupConfigUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConfigUsuario)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox groupConfigUsuario;
-        private System.Windows.Forms.TextBox txtProdutoPeso;
         private FontAwesome.Sharp.IconButton btnConfigExcluir;
         private FontAwesome.Sharp.IconButton btnConfigAdicionar;
         private FontAwesome.Sharp.IconButton btnConfigEditar;
@@ -270,5 +280,7 @@ namespace EstoquIN.View
         private System.Windows.Forms.Label lblConfigUsuario;
         private System.Windows.Forms.TextBox txtConfigUsuario;
         private System.Windows.Forms.GroupBox groupConfigLogo;
+        private System.Windows.Forms.ComboBox cbTipos;
+        private System.Windows.Forms.Label lblTipo;
     }
 }

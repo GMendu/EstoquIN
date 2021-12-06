@@ -17,7 +17,7 @@ namespace EstoquIN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormGeral());
+            Application.Run(new FormLogin());
         }
     }
 }

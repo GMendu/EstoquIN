@@ -54,6 +54,7 @@ namespace EstoquIN
             this.txtMenuRelogio = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerRelogio = new System.Windows.Forms.Timer(this.components);
+            this.lblBemVindo = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnHome)).BeginInit();
@@ -292,7 +293,7 @@ namespace EstoquIN
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(1393, 65);
             this.panelTitleBar.TabIndex = 1;
-          
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // btnMinimizar
             // 
@@ -309,7 +310,7 @@ namespace EstoquIN
             this.btnMinimizar.TabIndex = 4;
             this.btnMinimizar.Text = ".";
             this.btnMinimizar.UseVisualStyleBackColor = true;
-
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnMaximizar
             // 
@@ -326,7 +327,7 @@ namespace EstoquIN
             this.btnMaximizar.TabIndex = 3;
             this.btnMaximizar.Text = "o";
             this.btnMaximizar.UseVisualStyleBackColor = true;
-           
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnFechar
             // 
@@ -343,7 +344,7 @@ namespace EstoquIN
             this.btnFechar.TabIndex = 2;
             this.btnFechar.Text = "O";
             this.btnFechar.UseVisualStyleBackColor = true;
-
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // lblTitleChildForm
             // 
@@ -381,6 +382,7 @@ namespace EstoquIN
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.panelDesktop.Controls.Add(this.lblBemVindo);
             this.panelDesktop.Controls.Add(this.iconPictureBox1);
             this.panelDesktop.Controls.Add(this.txtMenuRelogio);
             this.panelDesktop.Controls.Add(this.pictureBox1);
@@ -435,6 +437,16 @@ namespace EstoquIN
             this.timerRelogio.Interval = 1000;
             this.timerRelogio.Tick += new System.EventHandler(this.timerRelogio_Tick);
             // 
+            // lblBemVindo
+            // 
+            this.lblBemVindo.AutoSize = true;
+            this.lblBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo.Location = new System.Drawing.Point(134, 48);
+            this.lblBemVindo.Name = "lblBemVindo";
+            this.lblBemVindo.Size = new System.Drawing.Size(178, 39);
+            this.lblBemVindo.TabIndex = 4;
+            this.lblBemVindo.Text = "Bem vindo";
+            // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,6 +499,7 @@ namespace EstoquIN
         private FontAwesome.Sharp.IconButton btnCompras;
         private FontAwesome.Sharp.IconButton btnMaterial;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.Label lblBemVindo;
     }
 }
 
