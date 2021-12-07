@@ -48,7 +48,6 @@ namespace EstoquIN.View
             this.txtProdutosCodBar = new System.Windows.Forms.TextBox();
             this.lblProdutosCodBar = new System.Windows.Forms.Label();
             this.btnProdutoCancelar = new FontAwesome.Sharp.IconButton();
-            this.groupProdutoFornecedor = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataProduto)).BeginInit();
             this.groupProdutoInfo.SuspendLayout();
             this.SuspendLayout();
@@ -169,7 +168,7 @@ namespace EstoquIN.View
             this.btnProdutoAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProdutoAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnProdutoAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutoAdicionar.Location = new System.Drawing.Point(909, 320);
+            this.btnProdutoAdicionar.Location = new System.Drawing.Point(1140, 31);
             this.btnProdutoAdicionar.Name = "btnProdutoAdicionar";
             this.btnProdutoAdicionar.Size = new System.Drawing.Size(225, 74);
             this.btnProdutoAdicionar.TabIndex = 31;
@@ -241,7 +240,7 @@ namespace EstoquIN.View
             this.groupProdutoInfo.ForeColor = System.Drawing.Color.White;
             this.groupProdutoInfo.Location = new System.Drawing.Point(9, 9);
             this.groupProdutoInfo.Name = "groupProdutoInfo";
-            this.groupProdutoInfo.Size = new System.Drawing.Size(894, 465);
+            this.groupProdutoInfo.Size = new System.Drawing.Size(871, 465);
             this.groupProdutoInfo.TabIndex = 28;
             this.groupProdutoInfo.TabStop = false;
             this.groupProdutoInfo.Text = "Informações do Produto";
@@ -272,26 +271,13 @@ namespace EstoquIN.View
             this.btnProdutoCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProdutoCancelar.IconColor = System.Drawing.Color.Black;
             this.btnProdutoCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutoCancelar.Location = new System.Drawing.Point(909, 400);
+            this.btnProdutoCancelar.Location = new System.Drawing.Point(1140, 111);
             this.btnProdutoCancelar.Name = "btnProdutoCancelar";
             this.btnProdutoCancelar.Size = new System.Drawing.Size(225, 74);
             this.btnProdutoCancelar.TabIndex = 33;
             this.btnProdutoCancelar.Text = "Cancelar";
             this.btnProdutoCancelar.UseVisualStyleBackColor = false;
             this.btnProdutoCancelar.Click += new System.EventHandler(this.btnProdutoCancelar_Click);
-            // 
-            // groupProdutoFornecedor
-            // 
-            this.groupProdutoFornecedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.groupProdutoFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupProdutoFornecedor.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.groupProdutoFornecedor.ForeColor = System.Drawing.Color.White;
-            this.groupProdutoFornecedor.Location = new System.Drawing.Point(909, 12);
-            this.groupProdutoFornecedor.Name = "groupProdutoFornecedor";
-            this.groupProdutoFornecedor.Size = new System.Drawing.Size(456, 302);
-            this.groupProdutoFornecedor.TabIndex = 29;
-            this.groupProdutoFornecedor.TabStop = false;
-            this.groupProdutoFornecedor.Text = "Possível Fornecedor";
             // 
             // Produtos
             // 
@@ -305,7 +291,6 @@ namespace EstoquIN.View
             this.Controls.Add(this.dataProduto);
             this.Controls.Add(this.groupProdutoInfo);
             this.Controls.Add(this.btnProdutoCancelar);
-            this.Controls.Add(this.groupProdutoFornecedor);
             this.Name = "Produtos";
             this.Text = "Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.dataProduto)).EndInit();
@@ -333,7 +318,6 @@ namespace EstoquIN.View
         private System.Windows.Forms.DataGridView dataProduto;
         private System.Windows.Forms.GroupBox groupProdutoInfo;
         private FontAwesome.Sharp.IconButton btnProdutoCancelar;
-        private System.Windows.Forms.GroupBox groupProdutoFornecedor;
         private System.Windows.Forms.TextBox txtProdutosCodBar;
         private System.Windows.Forms.Label lblProdutosCodBar;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;

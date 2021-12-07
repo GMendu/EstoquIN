@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Linq;
 using System.Threading.Tasks;
-
+using System.IO;
 
 namespace EstoquIN.View
 {
@@ -21,6 +21,10 @@ namespace EstoquIN.View
             InitializeComponent();
             context = new EstoqDBContext();
             RefreshGrid();
+            if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg"))
+            {
+                picLogoMenu.Image = Image.FromFile(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg");
+            }
         }
 
         private void RefreshGrid()
@@ -64,7 +68,7 @@ namespace EstoquIN.View
 
         private void btnConfigAdicionar_Click(object sender, EventArgs e)
         {
-            if (cbTipos.SelectedItem != null & txtConfigUsuario.Text != null || txtConfigSenha.Text != null)
+            if (cbTipos.SelectedItem != null && txtConfigUsuario.Text != null && txtConfigSenha.Text != null) // tentar context.DBTipo.Contains(cbTipos.SelectedItem)
             {
                 bool repetido = false;
                 var logins = context.DBusuario.ToList();
@@ -112,22 +116,30 @@ namespace EstoquIN.View
                 txtConfigSenhaRep.Text = dataConfigUsuario.SelectedCells[2].Value.ToString();
                 cbTipos.Text = dataConfigUsuario.SelectedCells[3].Value.ToString();
 
-                
+
 
                 btnConfigEditar.Text = "Salvar";
             }
             else if (btnConfigEditar.Text == "Salvar")
             {
-                if (txtConfigSenha == txtConfigSenhaRep)
-                {
-                    var editarUsuario = context.DBusuario.Find((int)dataConfigUsuario.SelectedCells[0].Value);
-                    editarUsuario.TipoUsuarioId = ((TiposUsuario)cbTipos.SelectedItem).Id;
-                    editarUsuario.Login = txtConfigUsuario.Text;
-                    editarUsuario.Senha = txtConfigSenha.Text;
-                    context.SaveChanges();
-                    RefreshGrid();
-                    btnConfigEditar.Text = "Editar";
-                    ClearBoxes();
+                if (cbTipos.SelectedItem != null && txtConfigUsuario.Text != null && txtConfigSenha.Text != null)
+                { 
+                    if (txtConfigSenha.Text == txtConfigSenhaRep.Text)
+                    {
+                        var editarUsuario = context.DBusuario.Find((int)dataConfigUsuario.SelectedCells[0].Value);
+                        editarUsuario.TipoUsuarioId = ((TiposUsuario)cbTipos.SelectedItem).Id;
+                        editarUsuario.Login = txtConfigUsuario.Text;
+                        editarUsuario.Senha = txtConfigSenha.Text;
+                        context.SaveChanges();
+                        RefreshGrid();
+                        btnConfigEditar.Text = "Editar";
+                        ClearBoxes();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Senha não confere");
+                    }
+                    
                 }
                 else
                 {
@@ -140,6 +152,29 @@ namespace EstoquIN.View
         {
             btnConfigEditar.Text = "Editar";
             ClearBoxes();
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opnfd = new OpenFileDialog();
+            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
+            if (opnfd.ShowDialog() == DialogResult.OK)
+            {
+                picLogoMenu.Image = new Bitmap(opnfd.FileName);
+            }
+            if (picLogoMenu.Image != null)
+            {
+                string fotoNome = "logo_menu.jpg";
+                string folder = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\";
+                string pathstring = Path.Combine(folder, fotoNome);
+                Image a = picLogoMenu.Image;
+                a.Save(pathstring);
+                FormMainMenu fmm = new FormMainMenu();
+            }
+            else
+            {
+                MessageBox.Show("É necessario incluir uma imagem");
+            }
         }
     }
 }

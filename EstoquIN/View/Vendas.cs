@@ -9,6 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace EstoquIN.View
 {
@@ -154,6 +155,7 @@ namespace EstoquIN.View
             {
                 picVendaNotaFiscal.Image = new Bitmap(opnfd.FileName);
             }
+            
         }
     }
 }

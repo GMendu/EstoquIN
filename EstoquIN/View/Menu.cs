@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using EstoquIN.View;
+using System.IO;
 
 namespace EstoquIN
 {
@@ -33,7 +34,19 @@ namespace EstoquIN
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            if(File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg"))
+            {
+                picLogo.Image = Image.FromFile(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg");
+            }
+           
 
+        }
+        public FormMainMenu()
+        {
+            if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg"))
+            {
+                picLogo.Image = Image.FromFile(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg");
+            }
         }
         //Structs
         private struct RGBColors

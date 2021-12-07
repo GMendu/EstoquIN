@@ -30,6 +30,8 @@ namespace EstoquIN.View
         private void InitializeComponent()
         {
             this.groupConfigUsuario = new System.Windows.Forms.GroupBox();
+            this.cbTipos = new System.Windows.Forms.ComboBox();
+            this.lblTipo = new System.Windows.Forms.Label();
             this.lblConfigSenhaRep = new System.Windows.Forms.Label();
             this.txtConfigSenhaRep = new System.Windows.Forms.TextBox();
             this.lblConfigSenha = new System.Windows.Forms.Label();
@@ -42,10 +44,12 @@ namespace EstoquIN.View
             this.btnConfigCancelar = new FontAwesome.Sharp.IconButton();
             this.dataConfigUsuario = new System.Windows.Forms.DataGridView();
             this.groupConfigLogo = new System.Windows.Forms.GroupBox();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.cbTipos = new System.Windows.Forms.ComboBox();
+            this.picLogoMenu = new System.Windows.Forms.PictureBox();
+            this.btnUpload = new FontAwesome.Sharp.IconButton();
             this.groupConfigUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConfigUsuario)).BeginInit();
+            this.groupConfigLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // groupConfigUsuario
@@ -67,6 +71,24 @@ namespace EstoquIN.View
             this.groupConfigUsuario.TabIndex = 0;
             this.groupConfigUsuario.TabStop = false;
             this.groupConfigUsuario.Text = "Configurações de usuário";
+            // 
+            // cbTipos
+            // 
+            this.cbTipos.FormattingEnabled = true;
+            this.cbTipos.Location = new System.Drawing.Point(38, 236);
+            this.cbTipos.Name = "cbTipos";
+            this.cbTipos.Size = new System.Drawing.Size(263, 36);
+            this.cbTipos.TabIndex = 9;
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.ForeColor = System.Drawing.Color.White;
+            this.lblTipo.Location = new System.Drawing.Point(33, 203);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(56, 28);
+            this.lblTipo.TabIndex = 8;
+            this.lblTipo.Text = "Tipo ";
             // 
             // lblConfigSenhaRep
             // 
@@ -216,6 +238,8 @@ namespace EstoquIN.View
             // groupConfigLogo
             // 
             this.groupConfigLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupConfigLogo.Controls.Add(this.btnUpload);
+            this.groupConfigLogo.Controls.Add(this.picLogoMenu);
             this.groupConfigLogo.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupConfigLogo.ForeColor = System.Drawing.Color.White;
             this.groupConfigLogo.Location = new System.Drawing.Point(12, 406);
@@ -225,23 +249,32 @@ namespace EstoquIN.View
             this.groupConfigLogo.TabStop = false;
             this.groupConfigLogo.Text = "Logo do menu";
             // 
-            // lblTipo
+            // picLogoMenu
             // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.ForeColor = System.Drawing.Color.White;
-            this.lblTipo.Location = new System.Drawing.Point(33, 203);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(56, 28);
-            this.lblTipo.TabIndex = 8;
-            this.lblTipo.Text = "Tipo ";
+            this.picLogoMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picLogoMenu.Location = new System.Drawing.Point(21, 33);
+            this.picLogoMenu.Name = "picLogoMenu";
+            this.picLogoMenu.Size = new System.Drawing.Size(535, 300);
+            this.picLogoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoMenu.TabIndex = 0;
+            this.picLogoMenu.TabStop = false;
             // 
-            // cbTipos
+            // btnUpload
             // 
-            this.cbTipos.FormattingEnabled = true;
-            this.cbTipos.Location = new System.Drawing.Point(38, 236);
-            this.cbTipos.Name = "cbTipos";
-            this.cbTipos.Size = new System.Drawing.Size(263, 36);
-            this.cbTipos.TabIndex = 9;
+            this.btnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnUpload.ForeColor = System.Drawing.Color.White;
+            this.btnUpload.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnUpload.IconColor = System.Drawing.Color.Black;
+            this.btnUpload.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUpload.Location = new System.Drawing.Point(611, 221);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(257, 98);
+            this.btnUpload.TabIndex = 42;
+            this.btnUpload.Text = "Upload";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // Configuracoes
             // 
@@ -261,6 +294,8 @@ namespace EstoquIN.View
             this.groupConfigUsuario.ResumeLayout(false);
             this.groupConfigUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConfigUsuario)).EndInit();
+            this.groupConfigLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -282,5 +317,7 @@ namespace EstoquIN.View
         private System.Windows.Forms.GroupBox groupConfigLogo;
         private System.Windows.Forms.ComboBox cbTipos;
         private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.PictureBox picLogoMenu;
+        private FontAwesome.Sharp.IconButton btnUpload;
     }
 }
