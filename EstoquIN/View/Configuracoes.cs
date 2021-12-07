@@ -66,22 +66,35 @@ namespace EstoquIN.View
         {
             if (cbTipos.SelectedItem != null & txtConfigUsuario.Text != null || txtConfigSenha.Text != null)
             {
-                if(txtConfigSenha.Text == txtConfigSenhaRep.Text)
+                bool repetido = false;
+                var logins = context.DBusuario.ToList();
+                foreach(DadosUsuario log in logins)
                 {
-                    var usuario = new DadosUsuario()
+                    if(log.Login == txtConfigUsuario.Text)
                     {
-                        TipoUsuarioId = ((TiposUsuario)cbTipos.SelectedItem).Id,
-                        Login = txtConfigUsuario.Text,
-                        Senha = txtConfigSenha.Text,
-                    };
-                    context.DBusuario.Add(usuario);
-                    context.SaveChanges();
-                    RefreshGrid();
-                    ClearBoxes();
+                        repetido = true;
+                        MessageBox.Show("Este nome de usuário já está sendo utilizado");
+                    }
                 }
-                else
+                if (!repetido)
                 {
-                    MessageBox.Show("a senha não confere");
+                    if (txtConfigSenha.Text == txtConfigSenhaRep.Text)
+                    {
+                        var usuario = new DadosUsuario()
+                        {
+                            TipoUsuarioId = ((TiposUsuario)cbTipos.SelectedItem).Id,
+                            Login = txtConfigUsuario.Text,
+                            Senha = txtConfigSenha.Text,
+                        };
+                        context.DBusuario.Add(usuario);
+                        context.SaveChanges();
+                        RefreshGrid();
+                        ClearBoxes();
+                    }
+                    else
+                    {
+                        MessageBox.Show("a senha não confere");
+                    }
                 }
             }
             else

@@ -66,7 +66,7 @@ namespace EstoquIN.View
 
         private void btnVendaAdicionar_Click(object sender, EventArgs e)
         {
-            if (cbVendaCliente.SelectedItem != null & cbVendaProdutoCliente.SelectedItem != null || txtVendaQuantidade.Text != string.Empty)
+            if (cbVendaCliente.SelectedItem != null & cbVendaProdutoCliente.SelectedItem != null && txtVendaQuantidade.Text != string.Empty)
             {
                 var venda = new DadosVendas()
                 {
@@ -133,6 +133,7 @@ namespace EstoquIN.View
 
         private void btnVendaCancelar_Click(object sender, EventArgs e)
         {
+            btnVendaEditar.Text = "Editar";
             ClearBoxes();
         }
 

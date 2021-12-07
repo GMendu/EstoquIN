@@ -25,6 +25,35 @@ namespace EstoquIN.View
         private void btnLoginLogin_Click(object sender, EventArgs e)
         {
             int check = 0;
+            
+            if(context.DBTipo.Count() == 0)
+            {
+                var gerente = new TiposUsuario()
+                {
+                    Id = 1,
+                    Nome = "Gerente"
+                };
+                context.DBTipo.Add(gerente);
+                context.SaveChanges();
+                var func = new TiposUsuario()
+                {
+                    Id = 2,
+                    Nome = "Funcionário"
+                };
+                context.DBTipo.Add(func);
+                context.SaveChanges();
+            }
+            if(context.DBusuario.Count() == 0)
+            {
+                var adm = new DadosUsuario()
+                {
+                    TipoUsuarioId = 1,
+                    Login = "admin",
+                    Senha = "admin",
+                };
+                context.DBusuario.Add(adm);
+                context.SaveChanges();
+            }
             var users = context.DBusuario.ToList();
             foreach (DadosUsuario user in users)
             {

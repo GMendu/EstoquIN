@@ -67,6 +67,7 @@ namespace EstoquIN.View
 
         private void btnMaterialCancelar_Click(object sender, EventArgs e)
         {
+            btnMaterialEditar.Text = "Editar";
             ClearBoxes();
         }
 

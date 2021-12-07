@@ -121,6 +121,7 @@ namespace EstoquIN.View
 
         private void btnFornecCancelar_Click(object sender, EventArgs e)
         {
+            btnFornecEditar.Text = "Editar";
             ClearBoxes();
         }
 
