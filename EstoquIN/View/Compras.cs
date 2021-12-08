@@ -64,28 +64,25 @@ namespace EstoquIN.View
             txtCompraValorUnit.Text = null;
             checkCompraStatus.Checked = false;
             picNotaFiscal.Image = null;
-            txtImgNome.Text = null;
         }
 
         private int SalvarImg()
         {
             if (picNotaFiscal.Image != null)
             {
-                string fotoNome = "img_" + txtImgNome.Text + ".jpg";
-                string folder = @"C:\Users\Aluno\source\repos\abbbbbb\EstoquIN\Images\";
-                string pathstring = Path.Combine(folder, fotoNome);
-                if (!File.Exists(pathstring))
+                Random r = new Random();
+                string pathstring = "C:";
+                do
                 {
-                    Image a = picNotaFiscal.Image;
-                    a.Save(pathstring);
-                }
-                else
-                {
-                    //MessageBox.Show("Nome já utilizado, tente outro");
-                }
+                    int idrand = r.Next(2147483646);
+                    string fotoNome = "img_" + idrand + ".jpg";
+                    string folder = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\";
+                    pathstring = Path.Combine(folder, fotoNome);
+                }while (File.Exists(pathstring));
+                Image a = picNotaFiscal.Image;
+                a.Save(pathstring);
                 var newImg = new DadosImages
                 {
-                    Nome = txtImgNome.Text,
                     Path = pathstring,
                     Categoria = "compras"
                 };
@@ -133,18 +130,23 @@ namespace EstoquIN.View
         {
             if (btnCompraEditar.Text == "Editar")
             {
-                
+                //e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.Images, e.Insumos, e.Fornec
                 dateCompraData.Text = dataCompra.SelectedCells[1].Value.ToString();
-                checkCompraStatus.Checked = bool.Parse(dataCompra.SelectedCells[2].Value.ToString());
-                cbCompraFornecedor.Text = dataCompra.SelectedCells[3].Value.ToString();
-                cbCompraProdutoFornecido.Text = dataCompra.SelectedCells[4].Value.ToString();
-                txtCompraQuantidade.Text = dataCompra.SelectedCells[5].Value.ToString();
-                txtCompraValorUnit.Text = dataCompra.SelectedCells[6].Value.ToString();
-                txtCompraValorTotal.Text = dataCompra.SelectedCells[7].Value.ToString();
                 txtCompraFormaPagamento.Text = dataCompra.SelectedCells[2].Value.ToString();
-                txtImgNome.Text = dataCompra.SelectedCells[9].Value.ToString();
-                if (dataCompra.SelectedCells[10].Value != null)
-                    picNotaFiscal.ImageLocation = dataCompra.SelectedCells[10].Value.ToString();
+                txtCompraQuantidade.Text = dataCompra.SelectedCells[3].Value.ToString();
+                txtCompraValorTotal.Text = dataCompra.SelectedCells[4].Value.ToString();
+                txtCompraValorUnit.Text = dataCompra.SelectedCells[5].Value.ToString();
+                checkCompraStatus.Checked = bool.Parse(dataCompra.SelectedCells[6].Value.ToString());
+                if (dataCompra.SelectedCells[7].Value != null)
+                    picNotaFiscal.ImageLocation = dataCompra.SelectedCells[7].Value.ToString();
+                cbCompraProdutoFornecido.Text = dataCompra.SelectedCells[8].Value.ToString();
+                cbCompraFornecedor.Text = dataCompra.SelectedCells[9].Value.ToString();
+                
+                
+                
+                
+            
+                
                 
                 
 

@@ -20,6 +20,8 @@ namespace EstoquIN.Model
         public DadosProdutos produto { get; set; }
         public int DadosClienteId { get; set; }
         public DadosCliente cliente { get; set; }
+        public int DadosImagesId { get; set; }
+        public DadosImages Images { get; set; }
 
     }
 }

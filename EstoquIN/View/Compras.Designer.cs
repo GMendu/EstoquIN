@@ -53,7 +53,6 @@ namespace EstoquIN.View
             this.dataCompra = new System.Windows.Forms.DataGridView();
             this.btnCompraCancelar = new FontAwesome.Sharp.IconButton();
             this.btnCompraExcluir = new FontAwesome.Sharp.IconButton();
-            this.txtImgNome = new System.Windows.Forms.TextBox();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ColumnFornec = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,7 +72,6 @@ namespace EstoquIN.View
             // groupCompraStatus
             // 
             this.groupCompraStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.groupCompraStatus.Controls.Add(this.txtImgNome);
             this.groupCompraStatus.Controls.Add(this.btnCompraUpload);
             this.groupCompraStatus.Controls.Add(this.picNotaFiscal);
             this.groupCompraStatus.Controls.Add(this.checkCompraStatus);
@@ -369,19 +367,13 @@ namespace EstoquIN.View
             this.btnCompraExcluir.UseVisualStyleBackColor = false;
             this.btnCompraExcluir.Click += new System.EventHandler(this.btnCompraExcluir_Click);
             // 
-            // txtImgNome
-            // 
-            this.txtImgNome.Location = new System.Drawing.Point(6, 236);
-            this.txtImgNome.Name = "txtImgNome";
-            this.txtImgNome.Size = new System.Drawing.Size(185, 29);
-            this.txtImgNome.TabIndex = 22;
-            // 
             // ColumnId
             // 
             this.ColumnId.DataPropertyName = "Id";
             this.ColumnId.FillWeight = 25F;
             this.ColumnId.HeaderText = "Id";
             this.ColumnId.Name = "ColumnId";
+            this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // ColumnStatus
             // 
@@ -395,12 +387,14 @@ namespace EstoquIN.View
             this.ColumnFornec.DataPropertyName = "Fornec";
             this.ColumnFornec.HeaderText = "Fornecedor";
             this.ColumnFornec.Name = "ColumnFornec";
+            this.ColumnFornec.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // ColumnInsu
             // 
             this.ColumnInsu.DataPropertyName = "Insumos";
             this.ColumnInsu.HeaderText = "Material";
             this.ColumnInsu.Name = "ColumnInsu";
+            this.ColumnInsu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // ColumnQuant
             // 
@@ -505,7 +499,6 @@ namespace EstoquIN.View
         private System.Windows.Forms.PictureBox picNotaFiscal;
         private FontAwesome.Sharp.IconButton btnCompraUpload;
         private System.Windows.Forms.TextBox txtCompraFormaPagamento;
-        private System.Windows.Forms.TextBox txtImgNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFornec;

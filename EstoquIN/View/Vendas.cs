@@ -64,7 +64,34 @@ namespace EstoquIN.View
             picVendaNotaFiscal.Image = null;
 
         }
+        private int SalvarImg()
+        {
+            if (picVendaNotaFiscal.Image != null)
+            {
+                Random r = new Random();
+                string pathstring = "C:";
+                do
+                {
+                    int idrand = r.Next(2147483646);
+                    string fotoNome = "img_" + idrand + ".jpg";
+                    string folder = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\";
+                    pathstring = Path.Combine(folder, fotoNome);
+                } while (File.Exists(pathstring));
+                Image a = picVendaNotaFiscal.Image;
+                a.Save(pathstring);
+                var newImg = new DadosImages
+                {
+                    Path = pathstring,
+                    Categoria = "vendas"
+                };
+                context.DBImage.Add(newImg);
+                context.SaveChanges();
+                RefreshGrid();
+                return newImg.Id;
 
+            }
+            return -1;
+        }
         private void btnVendaAdicionar_Click(object sender, EventArgs e)
         {
             if (cbVendaCliente.SelectedItem != null & cbVendaProdutoCliente.SelectedItem != null && txtVendaQuantidade.Text != string.Empty)
@@ -79,7 +106,7 @@ namespace EstoquIN.View
                     ValorTotal = txtVendaValorTotal.Text,
                     ValorUnit = txtVendaValorUnit.Text,
                     Status = checkVendaStatus.Checked,
-                    NotaFiscal = picVendaNotaFiscal.ImageLocation,
+                    DadosImagesId = SalvarImg(),
                 };
                 context.DBvendas.Add(venda);
                 context.SaveChanges();
@@ -106,7 +133,8 @@ namespace EstoquIN.View
                 txtVendaValorTotal.Text = dataVenda.SelectedCells[4].Value.ToString();
                 txtVendaValorUnit.Text = dataVenda.SelectedCells[5].Value.ToString();
                 checkVendaStatus.Text = dataVenda.SelectedCells[6].Value.ToString();
-                picVendaNotaFiscal.ImageLocation = dataVenda.SelectedCells[7].Value.ToString();
+                if (dataVenda.SelectedCells[7].Value != null)
+                    picVendaNotaFiscal.ImageLocation = dataVenda.SelectedCells[7].Value.ToString();
                 cbVendaCliente.Text = dataVenda.SelectedCells[8].Value.ToString();
                 cbVendaProdutoCliente.Text = dataVenda.SelectedCells[9].Value.ToString();
                 btnVendaAdicionar.Text = "Duplicar";
@@ -124,7 +152,7 @@ namespace EstoquIN.View
                 editarVendas.ValorTotal = txtVendaValorTotal.Text;
                 editarVendas.ValorUnit = txtVendaValorUnit.Text;
                 editarVendas.Status = checkVendaStatus.Checked;
-                editarVendas.NotaFiscal = picVendaNotaFiscal.ImageLocation;
+                editarVendas.DadosImagesId = SalvarImg();
 
                 context.SaveChanges();
                 RefreshGrid();
