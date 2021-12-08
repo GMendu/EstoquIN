@@ -47,13 +47,22 @@ namespace EstoquIN.View
             this.btnVendaAdicionar = new FontAwesome.Sharp.IconButton();
             this.btnVendaEditar = new FontAwesome.Sharp.IconButton();
             this.dataVenda = new System.Windows.Forms.DataGridView();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVendaCancelar = new FontAwesome.Sharp.IconButton();
             this.btnVendaExcluir = new FontAwesome.Sharp.IconButton();
             this.groupVendaStatus = new System.Windows.Forms.GroupBox();
             this.btnVendaUpload = new FontAwesome.Sharp.IconButton();
             this.checkVendaStatus = new System.Windows.Forms.CheckBox();
             this.picVendaNotaFiscal = new System.Windows.Forms.PictureBox();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ColumnClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnQuant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnVUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnVTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnFormPag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNotaFiscal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupVendaInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataVenda)).BeginInit();
             this.groupVendaStatus.SuspendLayout();
@@ -254,7 +263,16 @@ namespace EstoquIN.View
             this.dataVenda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.dataVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataVenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnId});
+            this.ColumnId,
+            this.ColumnStatus,
+            this.ColumnClient,
+            this.ColumnProd,
+            this.ColumnQuant,
+            this.ColumnVUnit,
+            this.ColumnVTotal,
+            this.ColumnFormPag,
+            this.ColumnData,
+            this.ColumnNotaFiscal});
             this.dataVenda.Location = new System.Drawing.Point(9, 433);
             this.dataVenda.Name = "dataVenda";
             this.dataVenda.RowHeadersVisible = false;
@@ -263,13 +281,6 @@ namespace EstoquIN.View
             this.dataVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataVenda.Size = new System.Drawing.Size(1356, 327);
             this.dataVenda.TabIndex = 30;
-            // 
-            // ColumnId
-            // 
-            this.ColumnId.DataPropertyName = "Id";
-            this.ColumnId.FillWeight = 25F;
-            this.ColumnId.HeaderText = "Id";
-            this.ColumnId.Name = "ColumnId";
             // 
             // btnVendaCancelar
             // 
@@ -356,6 +367,83 @@ namespace EstoquIN.View
             this.picVendaNotaFiscal.TabIndex = 36;
             this.picVendaNotaFiscal.TabStop = false;
             // 
+            // ColumnId
+            // 
+            this.ColumnId.DataPropertyName = "Id";
+            this.ColumnId.FillWeight = 25F;
+            this.ColumnId.HeaderText = "Id";
+            this.ColumnId.Name = "ColumnId";
+            // 
+            // ColumnStatus
+            // 
+            this.ColumnStatus.DataPropertyName = "Status";
+            this.ColumnStatus.HeaderText = "Status";
+            this.ColumnStatus.Name = "ColumnStatus";
+            // 
+            // ColumnClient
+            // 
+            this.ColumnClient.DataPropertyName = "cliente";
+            this.ColumnClient.HeaderText = "Cliente";
+            this.ColumnClient.Name = "ColumnClient";
+            this.ColumnClient.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnClient.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnProd
+            // 
+            this.ColumnProd.DataPropertyName = "produto";
+            this.ColumnProd.HeaderText = "Produto";
+            this.ColumnProd.Name = "ColumnProd";
+            this.ColumnProd.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnProd.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnQuant
+            // 
+            this.ColumnQuant.DataPropertyName = "Quant";
+            this.ColumnQuant.HeaderText = "Quant.";
+            this.ColumnQuant.Name = "ColumnQuant";
+            this.ColumnQuant.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnQuant.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnVUnit
+            // 
+            this.ColumnVUnit.DataPropertyName = "ValorUnit";
+            this.ColumnVUnit.HeaderText = "V. Unit";
+            this.ColumnVUnit.Name = "ColumnVUnit";
+            this.ColumnVUnit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnVUnit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnVTotal
+            // 
+            this.ColumnVTotal.DataPropertyName = "ValorTotal";
+            this.ColumnVTotal.HeaderText = "V. Total";
+            this.ColumnVTotal.Name = "ColumnVTotal";
+            this.ColumnVTotal.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnVTotal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnFormPag
+            // 
+            this.ColumnFormPag.DataPropertyName = "FormPag";
+            this.ColumnFormPag.HeaderText = "Form. Pag";
+            this.ColumnFormPag.Name = "ColumnFormPag";
+            this.ColumnFormPag.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnFormPag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnData
+            // 
+            this.ColumnData.DataPropertyName = "Data";
+            this.ColumnData.HeaderText = "Data";
+            this.ColumnData.Name = "ColumnData";
+            this.ColumnData.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnData.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnNotaFiscal
+            // 
+            this.ColumnNotaFiscal.DataPropertyName = "Images";
+            this.ColumnNotaFiscal.HeaderText = "Nota Fiscal";
+            this.ColumnNotaFiscal.Name = "ColumnNotaFiscal";
+            this.ColumnNotaFiscal.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnNotaFiscal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // Vendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,5 +496,14 @@ namespace EstoquIN.View
         private System.Windows.Forms.PictureBox picVendaNotaFiscal;
         private System.Windows.Forms.TextBox txtVendaFormaPagamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnClient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQuant;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnVUnit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnVTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFormPag;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNotaFiscal;
     }
 }

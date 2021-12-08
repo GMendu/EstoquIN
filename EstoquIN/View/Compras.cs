@@ -92,7 +92,34 @@ namespace EstoquIN.View
                 return newImg.Id;
 
             }
-            return -1;
+            else
+            {
+                int noimg = 0;
+                if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_0.jpg"))
+                {
+                    bool verif = true;
+                    var imgs = context.DBImage.ToList();
+                    foreach (DadosImages img in imgs)
+                    {
+                        if (img.Path == @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_0.jpg")
+                        {
+                            noimg = img.Id;
+                            verif = false;
+                        }
+                    }
+                    if (verif)
+                    {
+                        var newImg = new DadosImages
+                        {
+                            Path = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_0.jpg",//modifcar na instalação para a pasta do computador desejada
+                            Categoria = "placeholder"
+                        };
+                        context.DBImage.Add(newImg);
+                        noimg = newImg.Id;
+                    }
+                }
+                return noimg;
+            }
         }
 
         private void btnCompraAdicionar_Click(object sender, EventArgs e)

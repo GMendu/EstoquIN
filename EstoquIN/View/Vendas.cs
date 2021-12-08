@@ -45,7 +45,7 @@ namespace EstoquIN.View
                         from g in context.DBprodutos
                         orderby e.Id descending
                         where f.Id == e.DadosClienteId & g.Id == e.DadosProdutosId
-                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, e.cliente, e.produto};
+                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.Images, e.cliente, e.produto};
             bi.DataSource = query.ToList();
             dataVenda.DataSource = bi;
             dataVenda.Refresh();
@@ -90,7 +90,35 @@ namespace EstoquIN.View
                 return newImg.Id;
 
             }
-            return -1;
+            else
+            {
+                int noimg = 0;
+                if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_0.jpg"))
+                {
+                    bool verif = true;
+                    var imgs = context.DBImage.ToList();
+                    foreach (DadosImages img in imgs)
+                    {
+                        if(img.Path == @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_0.jpg")
+                        {
+                            noimg = img.Id;
+                            verif = false;
+                        }
+                    }
+                    if (verif)
+                    {
+                        var newImg = new DadosImages
+                        {
+                            Path = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_0.jpg",
+                            Categoria = "placeholder"
+                        };
+                        context.DBImage.Add(newImg);
+                        noimg = newImg.Id;
+                    }
+                }
+                return noimg;
+            }
+            
         }
         private void btnVendaAdicionar_Click(object sender, EventArgs e)
         {
