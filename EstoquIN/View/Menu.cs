@@ -34,6 +34,7 @@ namespace EstoquIN
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+            this.BringToFront();
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
 

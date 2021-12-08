@@ -36,19 +36,21 @@
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.timerRelogio = new System.Windows.Forms.Timer(this.components);
             this.dataNotifCompras = new System.Windows.Forms.DataGridView();
-            this.dataNotifVendas = new System.Windows.Forms.DataGridView();
             this.ColumnNomeF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFormPag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataNotifVendas = new System.Windows.Forms.DataGridView();
             this.ColumnCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnVendaData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnVendaValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnVendaQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnVendarFormPag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataNotifCompras)).BeginInit();
@@ -76,7 +78,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 103;
-            this.iconPictureBox1.Location = new System.Drawing.Point(114, 91);
+            this.iconPictureBox1.Location = new System.Drawing.Point(102, 91);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(103, 107);
@@ -133,26 +135,6 @@
             this.dataNotifCompras.Size = new System.Drawing.Size(777, 332);
             this.dataNotifCompras.TabIndex = 9;
             // 
-            // dataNotifVendas
-            // 
-            this.dataNotifVendas.AllowUserToAddRows = false;
-            this.dataNotifVendas.AllowUserToDeleteRows = false;
-            this.dataNotifVendas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataNotifVendas.BackgroundColor = System.Drawing.SystemColors.Highlight;
-            this.dataNotifVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataNotifVendas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnCliente,
-            this.ColumnProduto,
-            this.ColumnVendaData,
-            this.ColumnVendaValorTotal,
-            this.ColumnVendaQuantidade,
-            this.ColumnVendarFormPag});
-            this.dataNotifVendas.Location = new System.Drawing.Point(569, 408);
-            this.dataNotifVendas.Name = "dataNotifVendas";
-            this.dataNotifVendas.RowHeadersVisible = false;
-            this.dataNotifVendas.Size = new System.Drawing.Size(777, 332);
-            this.dataNotifVendas.TabIndex = 10;
-            // 
             // ColumnNomeF
             // 
             this.ColumnNomeF.DataPropertyName = "Fornec";
@@ -188,6 +170,26 @@
             this.ColumnFormPag.DataPropertyName = "FormPag";
             this.ColumnFormPag.HeaderText = "Form. Pagamento";
             this.ColumnFormPag.Name = "ColumnFormPag";
+            // 
+            // dataNotifVendas
+            // 
+            this.dataNotifVendas.AllowUserToAddRows = false;
+            this.dataNotifVendas.AllowUserToDeleteRows = false;
+            this.dataNotifVendas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataNotifVendas.BackgroundColor = System.Drawing.SystemColors.Highlight;
+            this.dataNotifVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataNotifVendas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnCliente,
+            this.ColumnProduto,
+            this.ColumnVendaData,
+            this.ColumnVendaValorTotal,
+            this.ColumnVendaQuantidade,
+            this.ColumnVendarFormPag});
+            this.dataNotifVendas.Location = new System.Drawing.Point(569, 408);
+            this.dataNotifVendas.Name = "dataNotifVendas";
+            this.dataNotifVendas.RowHeadersVisible = false;
+            this.dataNotifVendas.Size = new System.Drawing.Size(777, 332);
+            this.dataNotifVendas.TabIndex = 10;
             // 
             // ColumnCliente
             // 
@@ -225,12 +227,34 @@
             this.ColumnVendarFormPag.HeaderText = "Form. Pagamento";
             this.ColumnVendarFormPag.Name = "ColumnVendarFormPag";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Location = new System.Drawing.Point(569, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 25);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Compras a pagar";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label2.Location = new System.Drawing.Point(569, 380);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(177, 25);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Vendas pendentes";
+            // 
             // Submenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1377, 772);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataNotifVendas);
             this.Controls.Add(this.dataNotifCompras);
             this.Controls.Add(this.lblBemVindo);
@@ -269,5 +293,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnVendaValorTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnVendaQuantidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnVendarFormPag;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

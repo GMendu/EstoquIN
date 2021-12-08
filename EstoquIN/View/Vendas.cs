@@ -83,13 +83,16 @@ namespace EstoquIN.View
                 };
                 context.DBvendas.Add(venda);
                 context.SaveChanges();
+                btnVendaAdicionar.Text = "Adicionar";
+                btnVendaEditar.Text = "Editar";
+                RefreshGrid();
+                ClearBoxes();
             }
             else
             {
                 MessageBox.Show("preencha todos os campos");
             }
-            RefreshGrid();
-            ClearBoxes();
+            
         }
 
         private void btnVendaEditar_Click(object sender, EventArgs e)
@@ -106,7 +109,7 @@ namespace EstoquIN.View
                 picVendaNotaFiscal.ImageLocation = dataVenda.SelectedCells[7].Value.ToString();
                 cbVendaCliente.Text = dataVenda.SelectedCells[8].Value.ToString();
                 cbVendaProdutoCliente.Text = dataVenda.SelectedCells[9].Value.ToString();
-
+                btnVendaAdicionar.Text = "Duplicar";
                 btnVendaEditar.Text = "Salvar";
             }
             else if (btnVendaEditar.Text == "Salvar")
@@ -126,14 +129,18 @@ namespace EstoquIN.View
                 context.SaveChanges();
                 RefreshGrid();
 
+                btnVendaAdicionar.Text = "Adicionar";
                 btnVendaEditar.Text = "Editar";
                 ClearBoxes();
 
             }
         }
-
+        // adicionar btnClienteAdicionar.Text = "Adicionar"; ao botão cancelar, adicionar e salvar
+        // adicionar btnConfigEditar.Text = "Editar"; ao botão adicionar
+        // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnVendaCancelar_Click(object sender, EventArgs e)
         {
+            btnVendaAdicionar.Text = "Adicionar";
             btnVendaEditar.Text = "Editar";
             ClearBoxes();
         }

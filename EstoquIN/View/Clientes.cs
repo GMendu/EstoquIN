@@ -64,13 +64,16 @@ namespace EstoquIN.View
                 };
                 context.DBclientes.Add(cliente);
                 context.SaveChanges();
+                btnClienteAdicionar.Text = "Adicionar";
+                btnClienteEditar.Text = "Editar";
+                RefreshGrid();
+                ClearBoxes();
             }
             else
             {
                 MessageBox.Show("preencha pelo menos um dos campos");
             }
-            RefreshGrid();
-            ClearBoxes();
+            
         }
 
         private void btnClienteEditar_Click(object sender, EventArgs e)
@@ -87,6 +90,7 @@ namespace EstoquIN.View
                 txtClienteObs.Text = dataClientes.SelectedCells[5].Value.ToString();
                 txtClienteRazao.Text = dataClientes.SelectedCells[2].Value.ToString();
                 btnClienteEditar.Text = "Salvar";
+                btnClienteAdicionar.Text = "Duplicar";
             }
             else if (btnClienteEditar.Text == "Salvar")
             {
@@ -101,11 +105,11 @@ namespace EstoquIN.View
                 editarClientes.NomeFantasia = txtClienteNomeFantasia.Text;
                 editarClientes.Obs = txtClienteObs.Text;
                 editarClientes.Razao = txtClienteRazao.Text;
-
                 context.SaveChanges();
-                RefreshGrid();
 
+                RefreshGrid();
                 btnClienteEditar.Text = "Editar";
+                btnClienteAdicionar.Text = "Adicionar";
                 ClearBoxes();
 
 
@@ -113,8 +117,12 @@ namespace EstoquIN.View
         }
 
         private void btnClienteCancelar_Click(object sender, EventArgs e)
+        // adicionar   btnClienteAdicionar.Text = "Adicionar"; ao botão cancelar, adicionar e salvar
+        // adicionar  btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         {
             ClearBoxes();
+            btnClienteEditar.Text = "Editar";
+            btnClienteAdicionar.Text = "Adicionar";
         }
 
         private void btnClienteExcluir_Click(object sender, EventArgs e)

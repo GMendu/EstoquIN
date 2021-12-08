@@ -98,6 +98,8 @@ namespace EstoquIN.View
                         context.SaveChanges();
                         RefreshGrid();
                         ClearBoxes();
+                        btnConfigAdicionar.Text = "Adicionar";
+                        btnConfigEditar.Text = "Editar";
                     }
                     else
                     {
@@ -121,7 +123,7 @@ namespace EstoquIN.View
                 cbTipos.Text = dataConfigUsuario.SelectedCells[3].Value.ToString();
 
 
-
+                btnConfigAdicionar.Text = "Duplicar";
                 btnConfigEditar.Text = "Salvar";
             }
             else if (btnConfigEditar.Text == "Salvar")
@@ -136,6 +138,7 @@ namespace EstoquIN.View
                         editarUsuario.Senha = txtConfigSenha.Text;
                         context.SaveChanges();
                         RefreshGrid();
+                        btnConfigAdicionar.Text = "Adicionar";
                         btnConfigEditar.Text = "Editar";
                         ClearBoxes();
                     }
@@ -151,9 +154,13 @@ namespace EstoquIN.View
                 }
             }
         }
+        // adicionar btnClienteAdicionar.Text = "Adicionar"; ao botão cancelar, adicionar e salvar
+        // adicionar btnConfigEditar.Text = "Editar"; ao botão adicionar
+        // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
 
         private void btnConfigCancelar_Click(object sender, EventArgs e)
         {
+            btnConfigAdicionar.Text = "Adicionar";
             btnConfigEditar.Text = "Editar";
             ClearBoxes();
         }

@@ -20,13 +20,7 @@ namespace EstoquIN.View
         {
             context = new EstoqDBContext();
             InitializeComponent();
-        }
-        
-        private void btnLoginLogin_Click(object sender, EventArgs e)
-        {
-            int check = 0;
-            
-            if(context.DBTipo.Count() == 0)
+            if (context.DBTipo.Count() == 0)
             {
                 var gerente = new TiposUsuario()
                 {
@@ -43,7 +37,7 @@ namespace EstoquIN.View
                 context.DBTipo.Add(func);
                 context.SaveChanges();
             }
-            if(context.DBusuario.Count() == 0)
+            if (context.DBusuario.Count() == 0)
             {
                 var adm = new DadosUsuario()
                 {
@@ -54,6 +48,13 @@ namespace EstoquIN.View
                 context.DBusuario.Add(adm);
                 context.SaveChanges();
             }
+        }
+        
+        private void btnLoginLogin_Click(object sender, EventArgs e)
+        {
+            int check = 0;
+            
+
             var users = context.DBusuario.ToList();
             foreach (DadosUsuario user in users)
             {

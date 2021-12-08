@@ -56,17 +56,22 @@ namespace EstoquIN.View
                 };
                 context.DBinsumos.Add(material);
                 context.SaveChanges();
+                btnMaterialAdicionar.Text = "Adicionar";
+                btnMaterialEditar.Text = "Editar";
+                RefreshGrid();
+                ClearBoxes();
             }
             else
             {
                 MessageBox.Show("preencha o nome");
             }
-            RefreshGrid();
-            ClearBoxes();
         }
-
+        // adicionar btnClienteAdicionar.Text = "Adicionar"; ao botão cancelar, adicionar e salvar
+        // adicionar btnConfigEditar.Text = "Editar"; ao botão adicionar
+        // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnMaterialCancelar_Click(object sender, EventArgs e)
         {
+            btnMaterialAdicionar.Text = "Adicionar";
             btnMaterialEditar.Text = "Editar";
             ClearBoxes();
         }
@@ -76,7 +81,7 @@ namespace EstoquIN.View
             if (btnMaterialEditar.Text == "Editar")
             {
                 txtMaterialNome.Text = dataMaterial.SelectedCells[1].Value.ToString();
-                
+                btnMaterialAdicionar.Text = "Duplicar";
                 btnMaterialEditar.Text = "Salvar";
             }
             else if (btnMaterialEditar.Text == "Salvar")
@@ -87,11 +92,9 @@ namespace EstoquIN.View
 
                 context.SaveChanges();
                 RefreshGrid();
-
+                btnMaterialAdicionar.Text = "Adicionar";
                 btnMaterialEditar.Text = "Editar";
                 ClearBoxes();
-
-
             }
         }
 

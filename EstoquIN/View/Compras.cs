@@ -86,8 +86,11 @@ namespace EstoquIN.View
                 string fotoNome = "img_" + x + ".jpg";
                 string folder = @"C:\Users\Aluno\source\repos\abbbbbb\EstoquIN\Images";
                 string pathstring = Path.Combine(folder, fotoNome);
-                Image a = picNotaFiscal.Image;
-                a.Save(pathstring);
+                if (!File.Exists(pathstring))
+                {
+                    Image a = picNotaFiscal.Image;
+                    a.Save(pathstring);
+                }
                 return pathstring;
             }
             else
@@ -115,13 +118,16 @@ namespace EstoquIN.View
                 };
                 context.DBcompras.Add(compra);
                 context.SaveChanges();
+                RefreshGrid();
+                ClearBoxes();
+                btnCompraAdicionar.Text = "Adicionar";
+                btnCompraEditar.Text = "Editar";
             }
             else
             {
                 MessageBox.Show("preencha todos os campos");
             }
-            RefreshGrid();
-            ClearBoxes();
+            
         }
 
         private void btnCompraEditar_Click(object sender, EventArgs e)
@@ -139,7 +145,8 @@ namespace EstoquIN.View
                     picNotaFiscal.ImageLocation = dataCompra.SelectedCells[7].Value.ToString();
                 cbCompraFornecedor.Text = dataCompra.SelectedCells[9].Value.ToString();
                 cbCompraProdutoFornecido.Text =  dataCompra.SelectedCells[8].Value.ToString();
-              
+
+                btnCompraAdicionar.Text = "Duplicar";
                 btnCompraEditar.Text = "Salvar";
             }
             else if (btnCompraEditar.Text == "Salvar")
@@ -159,12 +166,15 @@ namespace EstoquIN.View
                 context.SaveChanges();
                 RefreshGrid();
 
+                btnCompraAdicionar.Text = "Adicionar";
                 btnCompraEditar.Text = "Editar";
                 ClearBoxes();
 
             }
         }
-
+        // adicionar btnClienteAdicionar.Text = "Adicionar"; ao botão cancelar, adicionar e salvar
+        // adicionar btnConfigEditar.Text = "Editar"; ao botão adicionar
+        // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnCompraExcluir_Click(object sender, EventArgs e)
         {
             var t = context.DBcompras.Find((int)dataCompra.SelectedCells[0].Value);
@@ -176,6 +186,7 @@ namespace EstoquIN.View
 
         private void btnCompraCancelar_Click(object sender, EventArgs e)
         {
+            btnCompraAdicionar.Text = "Adicionar";
             btnCompraEditar.Text = "Editar";
             ClearBoxes();
         }

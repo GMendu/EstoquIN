@@ -57,13 +57,16 @@ namespace EstoquIN.View
                 };
                 context.DBprodutos.Add(produto);
                 context.SaveChanges();
+                btnProdutoAdicionar.Text = "Adicionar";
+                btnProdutoEditar.Text = "Editar";
+                RefreshGrid();
+                ClearBoxes();
             }
             else
             {
                 MessageBox.Show("informe um nome ou código de barras");
             }
-            RefreshGrid();
-            ClearBoxes();
+            
         }
 
         private void btnProdutoEditar_Click(object sender, EventArgs e)
@@ -98,9 +101,13 @@ namespace EstoquIN.View
 
             }
         }
-
+        // adicionar btnClienteAdicionar.Text = "Adicionar"; ao botão cancelar, adicionar e salvar
+        // adicionar btnConfigEditar.Text = "Editar"; ao botão adicionar
+        // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnProdutoCancelar_Click(object sender, EventArgs e)
         {
+            btnProdutoAdicionar.Text = "Adicionar";
+            btnProdutoEditar.Text = "Editar";
             ClearBoxes();
         }
 

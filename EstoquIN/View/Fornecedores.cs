@@ -71,13 +71,16 @@ namespace EstoquIN.View
                 };
                 context.DBfornec.Add(fornecedor);
                 context.SaveChanges();
+                btnFornecAdicionar.Text = "Adicionar";
+                btnFornecEditar.Text = "Editar";
+                RefreshGrid();
+                ClearBoxes();
             }
             else
             {
                 MessageBox.Show("preencha pelo menos um dos campos");
             }
-            RefreshGrid();
-            ClearBoxes();
+            
         }
 
         private void btnFornecEditar_Click(object sender, EventArgs e)
@@ -93,6 +96,7 @@ namespace EstoquIN.View
                 txtFornecNomeFantasia.Text = dataFornec.SelectedCells[4].Value.ToString();
                 txtFornecObs.Text = dataFornec.SelectedCells[5].Value.ToString();
                 txtFornecRazao.Text = dataFornec.SelectedCells[2].Value.ToString();
+                btnFornecAdicionar.Text = "Adicionar";
                 btnFornecEditar.Text = "Salvar";
             }
             else if (btnFornecEditar.Text == "Salvar")
@@ -111,16 +115,19 @@ namespace EstoquIN.View
 
                 context.SaveChanges();
                 RefreshGrid();
-
+                btnFornecAdicionar.Text = "Duplicar";
                 btnFornecEditar.Text = "Editar";
                 ClearBoxes();
 
 
             }
         }
-
+        // adicionar btnClienteAdicionar.Text = "Adicionar"; ao botão cancelar, adicionar e salvar
+        // adicionar btnConfigEditar.Text = "Editar"; ao botão adicionar
+        // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnFornecCancelar_Click(object sender, EventArgs e)
         {
+            btnFornecAdicionar.Text = "Adicionar";
             btnFornecEditar.Text = "Editar";
             ClearBoxes();
         }

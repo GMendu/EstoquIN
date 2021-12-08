@@ -77,7 +77,7 @@ namespace EstoquIN.View
             this.panel7.Location = new System.Drawing.Point(50, 50);
             this.panel7.Margin = new System.Windows.Forms.Padding(50);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(463, 268);
+            this.panel7.Size = new System.Drawing.Size(481, 268);
             this.panel7.TabIndex = 5;
             // 
             // btnLoginLogin
