@@ -30,17 +30,17 @@ namespace EstoquIN.View
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.labelLoginLogin = new System.Windows.Forms.Label();
-            this.labelLoginUser = new System.Windows.Forms.Label();
-            this.labelLoginSenha = new System.Windows.Forms.Label();
-            this.txtLoginUser = new System.Windows.Forms.TextBox();
-            this.txtLoginSenha = new System.Windows.Forms.TextBox();
-            this.btnLoginLogin = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnLoginLogin = new System.Windows.Forms.Button();
+            this.txtLoginSenha = new System.Windows.Forms.TextBox();
+            this.txtLoginUser = new System.Windows.Forms.TextBox();
+            this.labelLoginSenha = new System.Windows.Forms.Label();
+            this.labelLoginUser = new System.Windows.Forms.Label();
+            this.labelLoginLogin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -52,6 +52,15 @@ namespace EstoquIN.View
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(590, 368);
             this.panel1.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(590, 368);
+            this.panel6.TabIndex = 4;
             // 
             // panel7
             // 
@@ -71,55 +80,6 @@ namespace EstoquIN.View
             this.panel7.Size = new System.Drawing.Size(463, 268);
             this.panel7.TabIndex = 5;
             // 
-            // labelLoginLogin
-            // 
-            this.labelLoginLogin.AutoSize = true;
-            this.labelLoginLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoginLogin.ForeColor = System.Drawing.Color.White;
-            this.labelLoginLogin.Location = new System.Drawing.Point(185, 16);
-            this.labelLoginLogin.Name = "labelLoginLogin";
-            this.labelLoginLogin.Size = new System.Drawing.Size(96, 37);
-            this.labelLoginLogin.TabIndex = 0;
-            this.labelLoginLogin.Text = "Login";
-            // 
-            // labelLoginUser
-            // 
-            this.labelLoginUser.AutoSize = true;
-            this.labelLoginUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoginUser.ForeColor = System.Drawing.Color.White;
-            this.labelLoginUser.Location = new System.Drawing.Point(87, 55);
-            this.labelLoginUser.Name = "labelLoginUser";
-            this.labelLoginUser.Size = new System.Drawing.Size(74, 24);
-            this.labelLoginUser.TabIndex = 1;
-            this.labelLoginUser.Text = "Usuário";
-            // 
-            // labelLoginSenha
-            // 
-            this.labelLoginSenha.AutoSize = true;
-            this.labelLoginSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoginSenha.ForeColor = System.Drawing.Color.White;
-            this.labelLoginSenha.Location = new System.Drawing.Point(87, 119);
-            this.labelLoginSenha.Name = "labelLoginSenha";
-            this.labelLoginSenha.Size = new System.Drawing.Size(65, 24);
-            this.labelLoginSenha.TabIndex = 2;
-            this.labelLoginSenha.Text = "Senha";
-            // 
-            // txtLoginUser
-            // 
-            this.txtLoginUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoginUser.Location = new System.Drawing.Point(90, 81);
-            this.txtLoginUser.Name = "txtLoginUser";
-            this.txtLoginUser.Size = new System.Drawing.Size(280, 30);
-            this.txtLoginUser.TabIndex = 3;
-            // 
-            // txtLoginSenha
-            // 
-            this.txtLoginSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoginSenha.Location = new System.Drawing.Point(91, 146);
-            this.txtLoginSenha.Name = "txtLoginSenha";
-            this.txtLoginSenha.Size = new System.Drawing.Size(280, 30);
-            this.txtLoginSenha.TabIndex = 4;
-            // 
             // btnLoginLogin
             // 
             this.btnLoginLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -133,14 +93,55 @@ namespace EstoquIN.View
             this.btnLoginLogin.UseVisualStyleBackColor = true;
             this.btnLoginLogin.Click += new System.EventHandler(this.btnLoginLogin_Click);
             // 
-            // panel6
+            // txtLoginSenha
             // 
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(590, 368);
-            this.panel6.TabIndex = 4;
+            this.txtLoginSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoginSenha.Location = new System.Drawing.Point(91, 146);
+            this.txtLoginSenha.Name = "txtLoginSenha";
+            this.txtLoginSenha.Size = new System.Drawing.Size(280, 30);
+            this.txtLoginSenha.TabIndex = 4;
+            this.txtLoginSenha.UseSystemPasswordChar = true;
+            // 
+            // txtLoginUser
+            // 
+            this.txtLoginUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoginUser.Location = new System.Drawing.Point(90, 81);
+            this.txtLoginUser.Name = "txtLoginUser";
+            this.txtLoginUser.Size = new System.Drawing.Size(280, 30);
+            this.txtLoginUser.TabIndex = 3;
+            // 
+            // labelLoginSenha
+            // 
+            this.labelLoginSenha.AutoSize = true;
+            this.labelLoginSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoginSenha.ForeColor = System.Drawing.Color.White;
+            this.labelLoginSenha.Location = new System.Drawing.Point(87, 119);
+            this.labelLoginSenha.Name = "labelLoginSenha";
+            this.labelLoginSenha.Size = new System.Drawing.Size(65, 24);
+            this.labelLoginSenha.TabIndex = 2;
+            this.labelLoginSenha.Text = "Senha";
+            // 
+            // labelLoginUser
+            // 
+            this.labelLoginUser.AutoSize = true;
+            this.labelLoginUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoginUser.ForeColor = System.Drawing.Color.White;
+            this.labelLoginUser.Location = new System.Drawing.Point(87, 55);
+            this.labelLoginUser.Name = "labelLoginUser";
+            this.labelLoginUser.Size = new System.Drawing.Size(74, 24);
+            this.labelLoginUser.TabIndex = 1;
+            this.labelLoginUser.Text = "Usuário";
+            // 
+            // labelLoginLogin
+            // 
+            this.labelLoginLogin.AutoSize = true;
+            this.labelLoginLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoginLogin.ForeColor = System.Drawing.Color.White;
+            this.labelLoginLogin.Location = new System.Drawing.Point(185, 16);
+            this.labelLoginLogin.Name = "labelLoginLogin";
+            this.labelLoginLogin.Size = new System.Drawing.Size(96, 37);
+            this.labelLoginLogin.TabIndex = 0;
+            this.labelLoginLogin.Text = "Login";
             // 
             // FormLogin
             // 
@@ -152,9 +153,9 @@ namespace EstoquIN.View
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_in";
             this.panel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

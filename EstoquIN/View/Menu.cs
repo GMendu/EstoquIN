@@ -20,12 +20,13 @@ namespace EstoquIN
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private System.Windows.Forms.Form currentChildForm;
-
+        private string username;
         //Constructor
         public FormMainMenu(string nomeusuario)
         {
+            username = nomeusuario;
             InitializeComponent();
-            lblBemVindo.Text = "Bem Vindo, " + nomeusuario;
+            OpenChildForm(new Submenu(nomeusuario));
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
@@ -33,21 +34,11 @@ namespace EstoquIN
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            if(File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg"))
-            {
-                picLogo.Image = Image.FromFile(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg");
-            }
-           
+            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
 
         }
-        public FormMainMenu()
-        {
-            if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg"))
-            {
-                picLogo.Image = Image.FromFile(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg");
-            }
-        }
+
         //Structs
         private struct RGBColors
         {
@@ -169,7 +160,7 @@ namespace EstoquIN
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
+            OpenChildForm(new Submenu(username));
             Reset();
         }
         private void Reset()
@@ -180,11 +171,6 @@ namespace EstoquIN
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             lblTitleChildForm.Text = "Home";
 
-        }
-
-        private void timerRelogio_Tick(object sender, EventArgs e)
-        {
-            txtMenuRelogio.Text = (DateTime.Now.TimeOfDay.ToString()).Substring(0,8);
         }
 
         //Drag Form

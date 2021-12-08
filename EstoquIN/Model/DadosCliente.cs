@@ -17,5 +17,9 @@ namespace EstoquIN.Model
         public string ContatoTelefone { get; set; }
         public string endereco { get; set; }
         public double freq_compra { get; set; }
+        public override string ToString()
+        {
+            return NomeFantasia;
+        }
     }
 }

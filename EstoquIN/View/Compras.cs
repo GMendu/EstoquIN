@@ -46,7 +46,7 @@ namespace EstoquIN.View
                         from g in context.DBinsumos
                         orderby e.Id descending
                         where f.Id == e.DadosFornecId & g.Id == e.DadosInsumosId
-                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, e.Insumos, e.Fornec, f.NomeFantasia, g.Nome};
+                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, e.Insumos, e.Fornec};
             bi.DataSource = query.ToList();
             dataCompra.DataSource = bi;
             dataCompra.Refresh();

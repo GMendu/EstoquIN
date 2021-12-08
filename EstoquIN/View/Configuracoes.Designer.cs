@@ -44,8 +44,8 @@ namespace EstoquIN.View
             this.btnConfigCancelar = new FontAwesome.Sharp.IconButton();
             this.dataConfigUsuario = new System.Windows.Forms.DataGridView();
             this.groupConfigLogo = new System.Windows.Forms.GroupBox();
-            this.picLogoMenu = new System.Windows.Forms.PictureBox();
             this.btnUpload = new FontAwesome.Sharp.IconButton();
+            this.picLogoMenu = new System.Windows.Forms.PictureBox();
             this.groupConfigUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConfigUsuario)).BeginInit();
             this.groupConfigLogo.SuspendLayout();
@@ -109,6 +109,7 @@ namespace EstoquIN.View
             this.txtConfigSenhaRep.Name = "txtConfigSenhaRep";
             this.txtConfigSenhaRep.Size = new System.Drawing.Size(258, 34);
             this.txtConfigSenhaRep.TabIndex = 7;
+            this.txtConfigSenhaRep.UseSystemPasswordChar = true;
             // 
             // lblConfigSenha
             // 
@@ -129,6 +130,7 @@ namespace EstoquIN.View
             this.txtConfigSenha.Name = "txtConfigSenha";
             this.txtConfigSenha.Size = new System.Drawing.Size(258, 34);
             this.txtConfigSenha.TabIndex = 5;
+            this.txtConfigSenha.UseSystemPasswordChar = true;
             // 
             // lblConfigUsuario
             // 
@@ -249,16 +251,6 @@ namespace EstoquIN.View
             this.groupConfigLogo.TabStop = false;
             this.groupConfigLogo.Text = "Logo do menu";
             // 
-            // picLogoMenu
-            // 
-            this.picLogoMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picLogoMenu.Location = new System.Drawing.Point(21, 33);
-            this.picLogoMenu.Name = "picLogoMenu";
-            this.picLogoMenu.Size = new System.Drawing.Size(535, 300);
-            this.picLogoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogoMenu.TabIndex = 0;
-            this.picLogoMenu.TabStop = false;
-            // 
             // btnUpload
             // 
             this.btnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
@@ -275,6 +267,16 @@ namespace EstoquIN.View
             this.btnUpload.Text = "Upload";
             this.btnUpload.UseVisualStyleBackColor = false;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // picLogoMenu
+            // 
+            this.picLogoMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picLogoMenu.Location = new System.Drawing.Point(21, 33);
+            this.picLogoMenu.Name = "picLogoMenu";
+            this.picLogoMenu.Size = new System.Drawing.Size(535, 300);
+            this.picLogoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoMenu.TabIndex = 0;
+            this.picLogoMenu.TabStop = false;
             // 
             // Configuracoes
             // 

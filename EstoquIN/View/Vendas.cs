@@ -28,13 +28,13 @@ namespace EstoquIN.View
             var clientes = context.DBclientes.ToList();
             foreach (DadosCliente client in clientes)
             {
-                cbVendaCliente.Items.Add(client.NomeFantasia);
+                cbVendaCliente.Items.Add(client);
             }
             cbVendaProdutoCliente.Items.Clear();
             var produtos = context.DBprodutos.ToList();
             foreach (DadosProdutos prod in produtos)
             {
-                cbVendaProdutoCliente.Items.Add(prod.Nome);
+                cbVendaProdutoCliente.Items.Add(prod);
             }
         }
         private void RefreshGrid()
@@ -45,7 +45,7 @@ namespace EstoquIN.View
                         from g in context.DBprodutos
                         orderby e.Id descending
                         where f.Id == e.DadosClienteId & g.Id == e.DadosProdutosId
-                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, e.cliente, e.produto, f.NomeFantasia, g.Nome };
+                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, e.cliente, e.produto};
             bi.DataSource = query.ToList();
             dataVenda.DataSource = bi;
             dataVenda.Refresh();

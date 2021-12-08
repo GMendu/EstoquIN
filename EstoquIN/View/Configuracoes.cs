@@ -21,10 +21,14 @@ namespace EstoquIN.View
             InitializeComponent();
             context = new EstoqDBContext();
             RefreshGrid();
-            if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg"))
+            for(int i = 1; i<5; i++)
             {
-                picLogoMenu.Image = Image.FromFile(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu.jpg");
+                if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu"+ i +".jpg"))
+                {
+                    picLogoMenu.Image = Image.FromFile(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu"+i+".jpg");
+                }
             }
+            
         }
 
         private void RefreshGrid()
@@ -164,12 +168,62 @@ namespace EstoquIN.View
             }
             if (picLogoMenu.Image != null)
             {
-                string fotoNome = "logo_menu.jpg";
-                string folder = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\";
-                string pathstring = Path.Combine(folder, fotoNome);
+                int id = 4;
+                string pathstring = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu4.jpg";
+                if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu1.jpg"))
+                {
+                    if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu2.jpg"))
+                    {
+                        pathstring = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu3.jpg";
+                        id = 3;
+                    }
+                    else
+                    {
+                        pathstring = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu2.jpg";
+                        id = 2;
+                    }
+                        
+                }else if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu2.jpg"))
+                {
+                    if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu1.jpg"))
+                    {
+                        pathstring = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu3.jpg";
+                        id = 3;
+                    }
+                    else
+                    {
+                        pathstring = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu1.jpg";
+                        id = 1;
+                    }
+                }else if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu3.jpg"))
+                {
+                        if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu2.jpg"))
+                        {
+                            pathstring = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu1.jpg";
+                            id = 1;
+                        }
+                        else
+                        {
+                            pathstring = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu2.jpg";
+                            id = 2;
+                        }
+                }
+                else
+                {
+                    id = 1;
+                    pathstring = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu1.jpg";
+                }
                 Image a = picLogoMenu.Image;
                 a.Save(pathstring);
-                FormMainMenu fmm = new FormMainMenu();
+                for (int i = 1; i < 4; i++)
+                {
+                    if (i != id && File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu" + i + ".jpg"))
+                    {
+                        // precisamos encontrar uma forma de deletar o arquivo, mas ele está sendo executado então não pode ser deletado
+                        //File.Delete(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\logo_menu" + i + ".jpg");
+                    }
+                }
+                Submenu sm = new Submenu(id);
             }
             else
             {

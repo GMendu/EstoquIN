@@ -12,7 +12,10 @@ namespace EstoquIN.Model
         public string ValorVarejo { get; set; }
         public string ValorAtacado { get; set; }
         public string CodBarras { get; set; }
-
         public string Obs { get; set; }
+        public override string ToString()
+        {
+            return Nome;
+        }
     }
 }

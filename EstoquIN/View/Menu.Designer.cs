@@ -29,7 +29,6 @@ namespace EstoquIN
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnMaterial = new FontAwesome.Sharp.IconButton();
@@ -50,32 +49,24 @@ namespace EstoquIN
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.lblBemVindo = new System.Windows.Forms.Label();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.txtMenuRelogio = new System.Windows.Forms.TextBox();
-            this.picLogo = new System.Windows.Forms.PictureBox();
-            this.timerRelogio = new System.Windows.Forms.Timer(this.components);
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-            this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.panelMenu.Controls.Add(this.btnMaterial);
-            this.panelMenu.Controls.Add(this.btnCompras);
-            this.panelMenu.Controls.Add(this.btnConfiguracoes);
             this.panelMenu.Controls.Add(this.btnRelatorios);
+            this.panelMenu.Controls.Add(this.btnCompras);
+            this.panelMenu.Controls.Add(this.btnMaterial);
             this.panelMenu.Controls.Add(this.btnFornecedores);
-            this.panelMenu.Controls.Add(this.btnProdutos);
             this.panelMenu.Controls.Add(this.btnVendas);
+            this.panelMenu.Controls.Add(this.btnProdutos);
             this.panelMenu.Controls.Add(this.btnClientes);
+            this.panelMenu.Controls.Add(this.btnConfiguracoes);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -95,7 +86,7 @@ namespace EstoquIN
             this.btnMaterial.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaterial.IconSize = 32;
             this.btnMaterial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMaterial.Location = new System.Drawing.Point(0, 433);
+            this.btnMaterial.Location = new System.Drawing.Point(0, 329);
             this.btnMaterial.Name = "btnMaterial";
             this.btnMaterial.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
             this.btnMaterial.Size = new System.Drawing.Size(205, 52);
@@ -161,7 +152,7 @@ namespace EstoquIN
             this.btnRelatorios.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRelatorios.IconSize = 32;
             this.btnRelatorios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelatorios.Location = new System.Drawing.Point(0, 329);
+            this.btnRelatorios.Location = new System.Drawing.Point(0, 433);
             this.btnRelatorios.Name = "btnRelatorios";
             this.btnRelatorios.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
             this.btnRelatorios.Size = new System.Drawing.Size(205, 52);
@@ -205,7 +196,7 @@ namespace EstoquIN
             this.btnProdutos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProdutos.IconSize = 32;
             this.btnProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProdutos.Location = new System.Drawing.Point(0, 225);
+            this.btnProdutos.Location = new System.Drawing.Point(0, 173);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
             this.btnProdutos.Size = new System.Drawing.Size(205, 52);
@@ -227,7 +218,7 @@ namespace EstoquIN
             this.btnVendas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVendas.IconSize = 32;
             this.btnVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.Location = new System.Drawing.Point(0, 173);
+            this.btnVendas.Location = new System.Drawing.Point(0, 225);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
             this.btnVendas.Size = new System.Drawing.Size(205, 52);
@@ -382,70 +373,11 @@ namespace EstoquIN
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.panelDesktop.Controls.Add(this.lblBemVindo);
-            this.panelDesktop.Controls.Add(this.iconPictureBox1);
-            this.panelDesktop.Controls.Add(this.txtMenuRelogio);
-            this.panelDesktop.Controls.Add(this.picLogo);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(205, 73);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1393, 769);
             this.panelDesktop.TabIndex = 3;
-            // 
-            // lblBemVindo
-            // 
-            this.lblBemVindo.AutoSize = true;
-            this.lblBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemVindo.Location = new System.Drawing.Point(134, 48);
-            this.lblBemVindo.Name = "lblBemVindo";
-            this.lblBemVindo.Size = new System.Drawing.Size(178, 39);
-            this.lblBemVindo.TabIndex = 4;
-            this.lblBemVindo.Text = "Bem vindo";
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.iconPictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.iconPictureBox1.Enabled = false;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Clock;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 103;
-            this.iconPictureBox1.Location = new System.Drawing.Point(28, 384);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(103, 107);
-            this.iconPictureBox1.TabIndex = 3;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // txtMenuRelogio
-            // 
-            this.txtMenuRelogio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.txtMenuRelogio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMenuRelogio.Font = new System.Drawing.Font("Segoe UI", 40F);
-            this.txtMenuRelogio.Location = new System.Drawing.Point(122, 396);
-            this.txtMenuRelogio.Name = "txtMenuRelogio";
-            this.txtMenuRelogio.Size = new System.Drawing.Size(226, 71);
-            this.txtMenuRelogio.TabIndex = 2;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(522, 137);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(414, 313);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 1;
-            this.picLogo.TabStop = false;
-            // 
-            // timerRelogio
-            // 
-            this.timerRelogio.Enabled = true;
-            this.timerRelogio.Interval = 1000;
-            this.timerRelogio.Tick += new System.EventHandler(this.timerRelogio_Tick);
             // 
             // FormMainMenu
             // 
@@ -456,20 +388,18 @@ namespace EstoquIN
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.MaximumSize = new System.Drawing.Size(1614, 881);
+            this.MinimumSize = new System.Drawing.Size(1614, 881);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnHome)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            this.panelDesktop.ResumeLayout(false);
-            this.panelDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -490,16 +420,11 @@ namespace EstoquIN
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Panel panelDesktop;
-        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnMaximizar;
-        private System.Windows.Forms.Timer timerRelogio;
-        private System.Windows.Forms.TextBox txtMenuRelogio;
         private FontAwesome.Sharp.IconButton btnCompras;
         private FontAwesome.Sharp.IconButton btnMaterial;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.Label lblBemVindo;
     }
 }
 
