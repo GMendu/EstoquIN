@@ -44,9 +44,10 @@ namespace EstoquIN.View
             var query = from e in context.DBcompras
                         from f in context.DBfornec
                         from g in context.DBinsumos
+                        from h in context.DBImage
                         orderby e.Id descending
-                        where f.Id == e.DadosFornecId & g.Id == e.DadosInsumosId
-                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.NotaFiscal, e.Insumos, e.Fornec};
+                        where f.Id == e.DadosFornecId & g.Id == e.DadosInsumosId & h.Id == e.DadosImagesId
+                        select new { e.Id, e.Data, e.FormPag, e.Quant, e.ValorTotal, e.ValorUnit, e.Status, e.Images, e.Insumos, e.Fornec};
             bi.DataSource = query.ToList();
             dataCompra.DataSource = bi;
             dataCompra.Refresh();
@@ -63,40 +64,38 @@ namespace EstoquIN.View
             txtCompraValorUnit.Text = null;
             checkCompraStatus.Checked = false;
             picNotaFiscal.Image = null;
-            
+            txtImgNome.Text = null;
         }
 
-        private string SalvarImg(int y)
+        private int SalvarImg()
         {
-            var x = 0;
             if (picNotaFiscal.Image != null)
             {
-                if (y == -1)
-                {
-                    var imgs = context.DBcompras.ToList();
-                    foreach (DadosCompras img in imgs)
-                    {
-                        x = img.Id;
-                    }
-                }
-                else
-                {
-                    x = y;
-                }
-                string fotoNome = "img_" + x + ".jpg";
-                string folder = @"C:\Users\Aluno\source\repos\abbbbbb\EstoquIN\Images";
+                string fotoNome = "img_" + txtImgNome.Text + ".jpg";
+                string folder = @"C:\Users\Aluno\source\repos\abbbbbb\EstoquIN\Images\";
                 string pathstring = Path.Combine(folder, fotoNome);
                 if (!File.Exists(pathstring))
                 {
                     Image a = picNotaFiscal.Image;
                     a.Save(pathstring);
                 }
-                return pathstring;
+                else
+                {
+                    //MessageBox.Show("Nome já utilizado, tente outro");
+                }
+                var newImg = new DadosImages
+                {
+                    Nome = txtImgNome.Text,
+                    Path = pathstring,
+                    Categoria = "compras"
+                };
+                context.DBImage.Add(newImg);
+                context.SaveChanges();
+                RefreshGrid();
+                return newImg.Id;
+
             }
-            else
-            {
-                return null;
-            }
+            return -1;
         }
 
         private void btnCompraAdicionar_Click(object sender, EventArgs e)
@@ -114,7 +113,7 @@ namespace EstoquIN.View
                     ValorTotal = txtCompraValorTotal.Text,
                     ValorUnit = txtCompraValorUnit.Text,
                     Status = checkCompraStatus.Checked,
-                    NotaFiscal = SalvarImg(-1),
+                    DadosImagesId = SalvarImg(),
                 };
                 context.DBcompras.Add(compra);
                 context.SaveChanges();
@@ -136,15 +135,18 @@ namespace EstoquIN.View
             {
                 
                 dateCompraData.Text = dataCompra.SelectedCells[1].Value.ToString();
-                txtCompraFormaPagamento.Text = dataCompra.SelectedCells[2].Value.ToString();
-                txtCompraQuantidade.Text = dataCompra.SelectedCells[3].Value.ToString();
-                txtCompraValorTotal.Text = dataCompra.SelectedCells[4].Value.ToString();
-                txtCompraValorUnit.Text = dataCompra.SelectedCells[5].Value.ToString();
-                checkCompraStatus.Checked = bool.Parse(dataCompra.SelectedCells[6].Value.ToString());
-                if(dataCompra.SelectedCells[7].Value != null)
-                    picNotaFiscal.ImageLocation = dataCompra.SelectedCells[7].Value.ToString();
-                cbCompraFornecedor.Text = dataCompra.SelectedCells[9].Value.ToString();
-                cbCompraProdutoFornecido.Text =  dataCompra.SelectedCells[8].Value.ToString();
+                checkCompraStatus.Checked = bool.Parse(dataCompra.SelectedCells[2].Value.ToString());
+                cbCompraFornecedor.Text = dataCompra.SelectedCells[3].Value.ToString();
+                cbCompraProdutoFornecido.Text = dataCompra.SelectedCells[4].Value.ToString();
+                txtCompraQuantidade.Text = dataCompra.SelectedCells[5].Value.ToString();
+                txtCompraValorUnit.Text = dataCompra.SelectedCells[6].Value.ToString();
+                txtCompraValorTotal.Text = dataCompra.SelectedCells[7].Value.ToString();
+                txtCompraFormaPagamento.Text = dataCompra.SelectedCells[8].Value.ToString();
+                txtImgNome.Text = dataCompra.SelectedCells[9].Value.ToString();
+                if (dataCompra.SelectedCells[10].Value != null)
+                    picNotaFiscal.ImageLocation = dataCompra.SelectedCells[10].Value.ToString();
+                
+                
 
                 btnCompraAdicionar.Text = "Duplicar";
                 btnCompraEditar.Text = "Salvar";
@@ -161,7 +163,7 @@ namespace EstoquIN.View
                 editarCompras.ValorTotal = txtCompraValorTotal.Text;
                 editarCompras.ValorUnit = txtCompraValorUnit.Text;
                 editarCompras.Status = checkCompraStatus.Checked;
-                editarCompras.NotaFiscal = SalvarImg((int)dataCompra.SelectedCells[0].Value);
+                editarCompras.DadosImagesId = SalvarImg();
 
                 context.SaveChanges();
                 RefreshGrid();

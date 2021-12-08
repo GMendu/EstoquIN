@@ -20,6 +20,8 @@ namespace EstoquIN.Model
         public DadosInsumos Insumos { get; set; }
         public int DadosFornecId { get; set; }
         public DadosFornec Fornec { get; set; }
+        public int DadosImagesId { get; set; }
+        public DadosImages Images { get; set; }
 
     }
 }

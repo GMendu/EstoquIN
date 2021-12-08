@@ -31,14 +31,14 @@ namespace EstoquIN
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnMaterial = new FontAwesome.Sharp.IconButton();
-            this.btnCompras = new FontAwesome.Sharp.IconButton();
-            this.btnConfiguracoes = new FontAwesome.Sharp.IconButton();
             this.btnRelatorios = new FontAwesome.Sharp.IconButton();
+            this.btnCompras = new FontAwesome.Sharp.IconButton();
+            this.btnMaterial = new FontAwesome.Sharp.IconButton();
             this.btnFornecedores = new FontAwesome.Sharp.IconButton();
-            this.btnProdutos = new FontAwesome.Sharp.IconButton();
             this.btnVendas = new FontAwesome.Sharp.IconButton();
+            this.btnProdutos = new FontAwesome.Sharp.IconButton();
             this.btnClientes = new FontAwesome.Sharp.IconButton();
+            this.btnConfiguracoes = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.BtnHome = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
@@ -74,27 +74,27 @@ namespace EstoquIN
             this.panelMenu.Size = new System.Drawing.Size(205, 842);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnMaterial
+            // btnRelatorios
             // 
-            this.btnMaterial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMaterial.FlatAppearance.BorderSize = 0;
-            this.btnMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaterial.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnMaterial.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMaterial.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
-            this.btnMaterial.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnMaterial.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterial.IconSize = 32;
-            this.btnMaterial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMaterial.Location = new System.Drawing.Point(0, 329);
-            this.btnMaterial.Name = "btnMaterial";
-            this.btnMaterial.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnMaterial.Size = new System.Drawing.Size(205, 52);
-            this.btnMaterial.TabIndex = 8;
-            this.btnMaterial.Text = "Material";
-            this.btnMaterial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMaterial.UseVisualStyleBackColor = true;
-            this.btnMaterial.Click += new System.EventHandler(this.btnMaterial_Click);
+            this.btnRelatorios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRelatorios.FlatAppearance.BorderSize = 0;
+            this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorios.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnRelatorios.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRelatorios.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.btnRelatorios.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnRelatorios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRelatorios.IconSize = 32;
+            this.btnRelatorios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRelatorios.Location = new System.Drawing.Point(0, 433);
+            this.btnRelatorios.Name = "btnRelatorios";
+            this.btnRelatorios.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
+            this.btnRelatorios.Size = new System.Drawing.Size(205, 52);
+            this.btnRelatorios.TabIndex = 5;
+            this.btnRelatorios.Text = "Relatórios";
+            this.btnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRelatorios.UseVisualStyleBackColor = true;
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // btnCompras
             // 
@@ -118,49 +118,27 @@ namespace EstoquIN
             this.btnCompras.UseVisualStyleBackColor = true;
             this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
-            // btnConfiguracoes
+            // btnMaterial
             // 
-            this.btnConfiguracoes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
-            this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfiguracoes.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnConfiguracoes.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnConfiguracoes.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.btnConfiguracoes.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnConfiguracoes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConfiguracoes.IconSize = 32;
-            this.btnConfiguracoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfiguracoes.Location = new System.Drawing.Point(0, 790);
-            this.btnConfiguracoes.Name = "btnConfiguracoes";
-            this.btnConfiguracoes.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnConfiguracoes.Size = new System.Drawing.Size(205, 52);
-            this.btnConfiguracoes.TabIndex = 6;
-            this.btnConfiguracoes.Text = "Configurações";
-            this.btnConfiguracoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnConfiguracoes.UseVisualStyleBackColor = true;
-            this.btnConfiguracoes.Click += new System.EventHandler(this.btnConfiguracoes_Click);
-            // 
-            // btnRelatorios
-            // 
-            this.btnRelatorios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRelatorios.FlatAppearance.BorderSize = 0;
-            this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelatorios.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnRelatorios.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnRelatorios.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
-            this.btnRelatorios.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnRelatorios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRelatorios.IconSize = 32;
-            this.btnRelatorios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelatorios.Location = new System.Drawing.Point(0, 433);
-            this.btnRelatorios.Name = "btnRelatorios";
-            this.btnRelatorios.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnRelatorios.Size = new System.Drawing.Size(205, 52);
-            this.btnRelatorios.TabIndex = 5;
-            this.btnRelatorios.Text = "Relatórios";
-            this.btnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRelatorios.UseVisualStyleBackColor = true;
-            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
+            this.btnMaterial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMaterial.FlatAppearance.BorderSize = 0;
+            this.btnMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaterial.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnMaterial.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMaterial.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
+            this.btnMaterial.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnMaterial.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMaterial.IconSize = 32;
+            this.btnMaterial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaterial.Location = new System.Drawing.Point(0, 329);
+            this.btnMaterial.Name = "btnMaterial";
+            this.btnMaterial.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
+            this.btnMaterial.Size = new System.Drawing.Size(205, 52);
+            this.btnMaterial.TabIndex = 8;
+            this.btnMaterial.Text = "Material";
+            this.btnMaterial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMaterial.UseVisualStyleBackColor = true;
+            this.btnMaterial.Click += new System.EventHandler(this.btnMaterial_Click);
             // 
             // btnFornecedores
             // 
@@ -184,28 +162,6 @@ namespace EstoquIN
             this.btnFornecedores.UseVisualStyleBackColor = true;
             this.btnFornecedores.Click += new System.EventHandler(this.btnFornecedores_Click);
             // 
-            // btnProdutos
-            // 
-            this.btnProdutos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProdutos.FlatAppearance.BorderSize = 0;
-            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProdutos.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.btnProdutos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnProdutos.IconChar = FontAwesome.Sharp.IconChar.Boxes;
-            this.btnProdutos.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnProdutos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutos.IconSize = 32;
-            this.btnProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProdutos.Location = new System.Drawing.Point(0, 173);
-            this.btnProdutos.Name = "btnProdutos";
-            this.btnProdutos.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnProdutos.Size = new System.Drawing.Size(205, 52);
-            this.btnProdutos.TabIndex = 3;
-            this.btnProdutos.Text = "Produtos";
-            this.btnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProdutos.UseVisualStyleBackColor = true;
-            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
-            // 
             // btnVendas
             // 
             this.btnVendas.Dock = System.Windows.Forms.DockStyle.Top;
@@ -228,6 +184,28 @@ namespace EstoquIN
             this.btnVendas.UseVisualStyleBackColor = true;
             this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
             // 
+            // btnProdutos
+            // 
+            this.btnProdutos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProdutos.FlatAppearance.BorderSize = 0;
+            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProdutos.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnProdutos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProdutos.IconChar = FontAwesome.Sharp.IconChar.Boxes;
+            this.btnProdutos.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnProdutos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProdutos.IconSize = 32;
+            this.btnProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProdutos.Location = new System.Drawing.Point(0, 173);
+            this.btnProdutos.Name = "btnProdutos";
+            this.btnProdutos.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
+            this.btnProdutos.Size = new System.Drawing.Size(205, 52);
+            this.btnProdutos.TabIndex = 3;
+            this.btnProdutos.Text = "Produtos";
+            this.btnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProdutos.UseVisualStyleBackColor = true;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
+            // 
             // btnClientes
             // 
             this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
@@ -249,6 +227,28 @@ namespace EstoquIN
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // btnConfiguracoes
+            // 
+            this.btnConfiguracoes.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracoes.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnConfiguracoes.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConfiguracoes.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            this.btnConfiguracoes.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnConfiguracoes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnConfiguracoes.IconSize = 32;
+            this.btnConfiguracoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfiguracoes.Location = new System.Drawing.Point(0, 790);
+            this.btnConfiguracoes.Name = "btnConfiguracoes";
+            this.btnConfiguracoes.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
+            this.btnConfiguracoes.Size = new System.Drawing.Size(205, 52);
+            this.btnConfiguracoes.TabIndex = 6;
+            this.btnConfiguracoes.Text = "Configurações";
+            this.btnConfiguracoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfiguracoes.UseVisualStyleBackColor = true;
+            this.btnConfiguracoes.Click += new System.EventHandler(this.btnConfiguracoes_Click);
             // 
             // panelLogo
             // 
@@ -389,11 +389,10 @@ namespace EstoquIN
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.MaximumSize = new System.Drawing.Size(1614, 881);
-            this.MinimumSize = new System.Drawing.Size(1614, 881);
+            this.MinimumSize = new System.Drawing.Size(1598, 858);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnHome)).EndInit();

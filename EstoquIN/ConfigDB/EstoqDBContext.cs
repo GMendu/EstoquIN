@@ -20,6 +20,7 @@ namespace EstoquIN.ConfigDB
         public DbSet<DadosInsumosFornec> DBinsumosfornec { get; set; }
         public DbSet<DadosProdInsumos> DBprodinsumos { get; set; }
         public DbSet<TiposUsuario> DBTipo { get; set; }
+        public DbSet<DadosImages> DBImage { get; set; }
         
     }
 }

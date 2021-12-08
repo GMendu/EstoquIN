@@ -53,6 +53,7 @@ namespace EstoquIN.View
             this.dataCompra = new System.Windows.Forms.DataGridView();
             this.btnCompraCancelar = new FontAwesome.Sharp.IconButton();
             this.btnCompraExcluir = new FontAwesome.Sharp.IconButton();
+            this.txtImgNome = new System.Windows.Forms.TextBox();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ColumnFornec = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,6 +73,7 @@ namespace EstoquIN.View
             // groupCompraStatus
             // 
             this.groupCompraStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupCompraStatus.Controls.Add(this.txtImgNome);
             this.groupCompraStatus.Controls.Add(this.btnCompraUpload);
             this.groupCompraStatus.Controls.Add(this.picNotaFiscal);
             this.groupCompraStatus.Controls.Add(this.checkCompraStatus);
@@ -367,6 +369,13 @@ namespace EstoquIN.View
             this.btnCompraExcluir.UseVisualStyleBackColor = false;
             this.btnCompraExcluir.Click += new System.EventHandler(this.btnCompraExcluir_Click);
             // 
+            // txtImgNome
+            // 
+            this.txtImgNome.Location = new System.Drawing.Point(6, 236);
+            this.txtImgNome.Name = "txtImgNome";
+            this.txtImgNome.Size = new System.Drawing.Size(185, 29);
+            this.txtImgNome.TabIndex = 22;
+            // 
             // ColumnId
             // 
             this.ColumnId.DataPropertyName = "Id";
@@ -438,7 +447,7 @@ namespace EstoquIN.View
             // 
             // ColumnNota
             // 
-            this.ColumnNota.DataPropertyName = "NotaFiscal";
+            this.ColumnNota.DataPropertyName = "Images";
             this.ColumnNota.HeaderText = "Nota Fiscal";
             this.ColumnNota.Name = "ColumnNota";
             this.ColumnNota.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -496,6 +505,7 @@ namespace EstoquIN.View
         private System.Windows.Forms.PictureBox picNotaFiscal;
         private FontAwesome.Sharp.IconButton btnCompraUpload;
         private System.Windows.Forms.TextBox txtCompraFormaPagamento;
+        private System.Windows.Forms.TextBox txtImgNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewCheckBoxColumn ColumnStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFornec;

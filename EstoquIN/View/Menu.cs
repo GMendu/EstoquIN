@@ -35,6 +35,7 @@ namespace EstoquIN
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.BringToFront();
+            lblTitleChildForm.Text = "Home";
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
 

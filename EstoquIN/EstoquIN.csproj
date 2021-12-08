@@ -75,11 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigDB\EstoqDBContext.cs" />
-    <Compile Include="Migrations\202112062158009_v7.cs" />
-    <Compile Include="Migrations\202112062158009_v7.designer.cs">
-      <DependentUpon>202112062158009_v7.cs</DependentUpon>
+    <Compile Include="Migrations\202112081929517_v13.cs" />
+    <Compile Include="Migrations\202112081929517_v13.designer.cs">
+      <DependentUpon>202112081929517_v13.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\DadosImages.cs" />
     <Compile Include="Model\TiposUsuario.cs" />
     <Compile Include="Model\DadosCliente.cs" />
     <Compile Include="Model\DadosCompras.cs" />
@@ -158,8 +159,8 @@
     <Compile Include="View\Vendas.Designer.cs">
       <DependentUpon>Vendas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Migrations\202112062158009_v7.resx">
-      <DependentUpon>202112062158009_v7.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202112081929517_v13.resx">
+      <DependentUpon>202112081929517_v13.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
