@@ -141,7 +141,7 @@ namespace EstoquIN.View
                 txtCompraQuantidade.Text = dataCompra.SelectedCells[5].Value.ToString();
                 txtCompraValorUnit.Text = dataCompra.SelectedCells[6].Value.ToString();
                 txtCompraValorTotal.Text = dataCompra.SelectedCells[7].Value.ToString();
-                txtCompraFormaPagamento.Text = dataCompra.SelectedCells[8].Value.ToString();
+                txtCompraFormaPagamento.Text = dataCompra.SelectedCells[2].Value.ToString();
                 txtImgNome.Text = dataCompra.SelectedCells[9].Value.ToString();
                 if (dataCompra.SelectedCells[10].Value != null)
                     picNotaFiscal.ImageLocation = dataCompra.SelectedCells[10].Value.ToString();
