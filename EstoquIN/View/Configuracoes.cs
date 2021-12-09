@@ -169,7 +169,7 @@ namespace EstoquIN.View
         {
             
             OpenFileDialog opnfd = new OpenFileDialog();
-            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
+            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif; *.png)|*.jpg;*.jpeg;.*.gif;*.png;";
             if (opnfd.ShowDialog() == DialogResult.OK)
             {
                 picLogoMenu.Image = new Bitmap(opnfd.FileName);

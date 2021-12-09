@@ -218,7 +218,7 @@ namespace EstoquIN.View
         private void btnVendaUpload_Click(object sender, EventArgs e)
         {
             OpenFileDialog opnfd = new OpenFileDialog();
-            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
+            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif; *.png)|*.jpg;*.jpeg;.*.gif;*.png;";
             if (opnfd.ShowDialog() == DialogResult.OK)
             {
                 picVendaNotaFiscal.Image = new Bitmap(opnfd.FileName);
