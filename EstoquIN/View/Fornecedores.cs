@@ -103,21 +103,21 @@ namespace EstoquIN.View
                 txtFornecNomeFantasia.Text = dataFornec.SelectedCells[4].Value.ToString();
                 txtFornecObs.Text = dataFornec.SelectedCells[5].Value.ToString();
                 txtFornecRazao.Text = dataFornec.SelectedCells[2].Value.ToString();
-                btnFornecAdicionar.Text = "Adicionar";
+                btnFornecAdicionar.Text = "Duplicar";
                 btnFornecEditar.Text = "Salvar";
             }
             else if (btnFornecEditar.Text == "Salvar")
             {
-                var editarClientes = context.DBclientes.Find((int)dataFornec.SelectedCells[0].Value);
+                var editarClientes = context.DBfornec.Find((int)dataFornec.SelectedCells[0].Value);
 
                 editarClientes.Cnpj = txtFornecCnpj.Text;
                 editarClientes.ContatoEmail = txtFornecContatoEmail.Text;
                 editarClientes.ContatoNome = txtFornecContatoNome.Text;
                 editarClientes.ContatoTelefone = txtFornecContatoTelefone.Text;
-                editarClientes.endereco = txtFornecEndereco.Text;
+                editarClientes.Endereco = txtFornecEndereco.Text;
                 editarClientes.Inscricao = txtFornecInscricao.Text;
                 editarClientes.NomeFantasia = txtFornecNomeFantasia.Text;
-                editarClientes.Obs = txtFornecObs.Text;
+                editarClientes.Observ = txtFornecObs.Text;
                 editarClientes.Razao = txtFornecRazao.Text;
 
                 context.SaveChanges();
