@@ -95,12 +95,14 @@ namespace EstoquIN.View
             // 
             // txtLoginSenha
             // 
+            this.txtLoginSenha.AcceptsReturn = true;
             this.txtLoginSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLoginSenha.Location = new System.Drawing.Point(91, 146);
             this.txtLoginSenha.Name = "txtLoginSenha";
             this.txtLoginSenha.Size = new System.Drawing.Size(280, 30);
             this.txtLoginSenha.TabIndex = 4;
             this.txtLoginSenha.UseSystemPasswordChar = true;
+            this.txtLoginSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginSenha_KeyDown);
             // 
             // txtLoginUser
             // 

@@ -166,7 +166,7 @@ namespace EstoquIN.View
                 txtVendaQuantidade.Text = dataVenda.SelectedCells[3].Value.ToString();
                 txtVendaValorTotal.Text = dataVenda.SelectedCells[4].Value.ToString();
                 txtVendaValorUnit.Text = dataVenda.SelectedCells[5].Value.ToString();
-                checkVendaStatus.Text = dataVenda.SelectedCells[6].Value.ToString();
+                checkVendaStatus.Checked = bool.Parse(dataVenda.SelectedCells[6].Value.ToString());
                 if (dataVenda.SelectedCells[7].Value != null)
                     picVendaNotaFiscal.ImageLocation = dataVenda.SelectedCells[7].Value.ToString();
                 cbVendaCliente.Text = dataVenda.SelectedCells[8].Value.ToString();
@@ -178,7 +178,7 @@ namespace EstoquIN.View
             {
                 var editarVendas = context.DBvendas.Find((int)dataVenda.SelectedCells[0].Value);
 
-                editarVendas.DadosClienteId = (cbVendaCliente.SelectedItem as DadosVendas).Id;
+                editarVendas.DadosClienteId = (cbVendaCliente.SelectedItem as DadosCliente).Id;
                 editarVendas.DadosProdutosId = (cbVendaProdutoCliente.SelectedItem as DadosProdutos).Id;
                 editarVendas.Data = dateVendaData.Value;
                 editarVendas.FormPag = txtVendaFormaPagamento.Text;

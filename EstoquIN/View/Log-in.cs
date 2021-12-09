@@ -75,5 +75,13 @@ namespace EstoquIN.View
                 MessageBox.Show("Usuário ou senha incorretos");
             }              
         }
+
+        private void txtLoginSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLoginLogin_Click(this, new EventArgs());
+            }
+        }
     }
 }
