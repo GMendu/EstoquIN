@@ -104,6 +104,7 @@ namespace EstoquIN.View
             // 
             // txtVendaFormaPagamento
             // 
+            this.txtVendaFormaPagamento.BackColor = System.Drawing.SystemColors.Menu;
             this.txtVendaFormaPagamento.Location = new System.Drawing.Point(41, 299);
             this.txtVendaFormaPagamento.Name = "txtVendaFormaPagamento";
             this.txtVendaFormaPagamento.Size = new System.Drawing.Size(216, 34);
@@ -111,6 +112,7 @@ namespace EstoquIN.View
             // 
             // txtVendaValorUnit
             // 
+            this.txtVendaValorUnit.BackColor = System.Drawing.SystemColors.Menu;
             this.txtVendaValorUnit.Location = new System.Drawing.Point(519, 194);
             this.txtVendaValorUnit.Name = "txtVendaValorUnit";
             this.txtVendaValorUnit.Size = new System.Drawing.Size(161, 34);
@@ -156,6 +158,7 @@ namespace EstoquIN.View
             // 
             // txtVendaQuantidade
             // 
+            this.txtVendaQuantidade.BackColor = System.Drawing.SystemColors.Menu;
             this.txtVendaQuantidade.Location = new System.Drawing.Point(519, 94);
             this.txtVendaQuantidade.Name = "txtVendaQuantidade";
             this.txtVendaQuantidade.Size = new System.Drawing.Size(161, 34);
@@ -163,6 +166,7 @@ namespace EstoquIN.View
             // 
             // cbVendaProdutoCliente
             // 
+            this.cbVendaProdutoCliente.BackColor = System.Drawing.SystemColors.Menu;
             this.cbVendaProdutoCliente.FormattingEnabled = true;
             this.cbVendaProdutoCliente.Location = new System.Drawing.Point(41, 190);
             this.cbVendaProdutoCliente.Name = "cbVendaProdutoCliente";
@@ -172,6 +176,7 @@ namespace EstoquIN.View
             // cbVendaCliente
             // 
             this.cbVendaCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbVendaCliente.BackColor = System.Drawing.SystemColors.Menu;
             this.cbVendaCliente.FormattingEnabled = true;
             this.cbVendaCliente.Location = new System.Drawing.Point(41, 92);
             this.cbVendaCliente.Name = "cbVendaCliente";
@@ -190,6 +195,7 @@ namespace EstoquIN.View
             // 
             // txtVendaValorTotal
             // 
+            this.txtVendaValorTotal.BackColor = System.Drawing.SystemColors.Menu;
             this.txtVendaValorTotal.Location = new System.Drawing.Point(519, 299);
             this.txtVendaValorTotal.Name = "txtVendaValorTotal";
             this.txtVendaValorTotal.Size = new System.Drawing.Size(161, 34);

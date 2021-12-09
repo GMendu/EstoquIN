@@ -99,6 +99,7 @@ namespace EstoquIN.View
             // 
             // txtClienteEndereco
             // 
+            this.txtClienteEndereco.BackColor = System.Drawing.SystemColors.Menu;
             this.txtClienteEndereco.Location = new System.Drawing.Point(51, 273);
             this.txtClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteEndereco.MaxLength = 100;
@@ -130,6 +131,7 @@ namespace EstoquIN.View
             // 
             // txtClienteObs
             // 
+            this.txtClienteObs.BackColor = System.Drawing.SystemColors.Menu;
             this.txtClienteObs.Location = new System.Drawing.Point(488, 273);
             this.txtClienteObs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteObs.MaxLength = 65000;
@@ -151,6 +153,7 @@ namespace EstoquIN.View
             // 
             // txtClienteRazao
             // 
+            this.txtClienteRazao.BackColor = System.Drawing.SystemColors.Menu;
             this.txtClienteRazao.Location = new System.Drawing.Point(488, 75);
             this.txtClienteRazao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteRazao.MaxLength = 80;
@@ -160,6 +163,7 @@ namespace EstoquIN.View
             // 
             // txtClienteNomeFantasia
             // 
+            this.txtClienteNomeFantasia.BackColor = System.Drawing.SystemColors.Menu;
             this.txtClienteNomeFantasia.Location = new System.Drawing.Point(488, 173);
             this.txtClienteNomeFantasia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteNomeFantasia.MaxLength = 80;
@@ -202,6 +206,7 @@ namespace EstoquIN.View
             // 
             // txtClienteInscricao
             // 
+            this.txtClienteInscricao.BackColor = System.Drawing.SystemColors.Menu;
             this.txtClienteInscricao.Location = new System.Drawing.Point(51, 173);
             this.txtClienteInscricao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteInscricao.MaxLength = 20;
@@ -406,6 +411,7 @@ namespace EstoquIN.View
             // 
             // txtClienteContatoTelefone
             // 
+            this.txtClienteContatoTelefone.BackColor = System.Drawing.SystemColors.Menu;
             this.txtClienteContatoTelefone.Location = new System.Drawing.Point(35, 271);
             this.txtClienteContatoTelefone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteContatoTelefone.MaxLength = 20;
@@ -437,6 +443,7 @@ namespace EstoquIN.View
             // 
             // txtClienteContatoNome
             // 
+            this.txtClienteContatoNome.BackColor = System.Drawing.SystemColors.Menu;
             this.txtClienteContatoNome.Location = new System.Drawing.Point(35, 74);
             this.txtClienteContatoNome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteContatoNome.MaxLength = 80;
@@ -446,6 +453,7 @@ namespace EstoquIN.View
             // 
             // txtClienteContatoEmail
             // 
+            this.txtClienteContatoEmail.BackColor = System.Drawing.SystemColors.Menu;
             this.txtClienteContatoEmail.Location = new System.Drawing.Point(35, 171);
             this.txtClienteContatoEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteContatoEmail.MaxLength = 80;

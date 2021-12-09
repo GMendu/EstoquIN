@@ -156,6 +156,7 @@ namespace EstoquIN.View
             // 
             // txtCompraFormaPagamento
             // 
+            this.txtCompraFormaPagamento.BackColor = System.Drawing.SystemColors.Menu;
             this.txtCompraFormaPagamento.Location = new System.Drawing.Point(49, 306);
             this.txtCompraFormaPagamento.Name = "txtCompraFormaPagamento";
             this.txtCompraFormaPagamento.Size = new System.Drawing.Size(216, 34);
@@ -163,6 +164,7 @@ namespace EstoquIN.View
             // 
             // txtCompraValorUnit
             // 
+            this.txtCompraValorUnit.BackColor = System.Drawing.SystemColors.Menu;
             this.txtCompraValorUnit.Location = new System.Drawing.Point(551, 203);
             this.txtCompraValorUnit.Name = "txtCompraValorUnit";
             this.txtCompraValorUnit.Size = new System.Drawing.Size(142, 34);
@@ -208,6 +210,7 @@ namespace EstoquIN.View
             // 
             // txtCompraQuantidade
             // 
+            this.txtCompraQuantidade.BackColor = System.Drawing.SystemColors.Menu;
             this.txtCompraQuantidade.Location = new System.Drawing.Point(549, 101);
             this.txtCompraQuantidade.Name = "txtCompraQuantidade";
             this.txtCompraQuantidade.Size = new System.Drawing.Size(144, 34);
@@ -215,6 +218,7 @@ namespace EstoquIN.View
             // 
             // cbCompraProdutoFornecido
             // 
+            this.cbCompraProdutoFornecido.BackColor = System.Drawing.SystemColors.Menu;
             this.cbCompraProdutoFornecido.FormattingEnabled = true;
             this.cbCompraProdutoFornecido.Location = new System.Drawing.Point(49, 203);
             this.cbCompraProdutoFornecido.Name = "cbCompraProdutoFornecido";
@@ -223,6 +227,7 @@ namespace EstoquIN.View
             // 
             // cbCompraFornecedor
             // 
+            this.cbCompraFornecedor.BackColor = System.Drawing.SystemColors.Menu;
             this.cbCompraFornecedor.FormattingEnabled = true;
             this.cbCompraFornecedor.Location = new System.Drawing.Point(49, 101);
             this.cbCompraFornecedor.Name = "cbCompraFornecedor";
@@ -241,6 +246,7 @@ namespace EstoquIN.View
             // 
             // txtCompraValorTotal
             // 
+            this.txtCompraValorTotal.BackColor = System.Drawing.SystemColors.Menu;
             this.txtCompraValorTotal.Location = new System.Drawing.Point(549, 306);
             this.txtCompraValorTotal.Name = "txtCompraValorTotal";
             this.txtCompraValorTotal.Size = new System.Drawing.Size(144, 34);
