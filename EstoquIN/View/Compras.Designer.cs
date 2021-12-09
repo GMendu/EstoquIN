@@ -63,6 +63,9 @@ namespace EstoquIN.View
             this.ColumnNota = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCompraCancelar = new FontAwesome.Sharp.IconButton();
             this.btnCompraExcluir = new FontAwesome.Sharp.IconButton();
+            this.btnCalcQuant = new FontAwesome.Sharp.IconButton();
+            this.btnCalcUnit = new FontAwesome.Sharp.IconButton();
+            this.btnCalcTotal = new FontAwesome.Sharp.IconButton();
             this.groupCompraStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNotaFiscal)).BeginInit();
             this.groupCompraInfo.SuspendLayout();
@@ -124,6 +127,9 @@ namespace EstoquIN.View
             // groupCompraInfo
             // 
             this.groupCompraInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupCompraInfo.Controls.Add(this.btnCalcTotal);
+            this.groupCompraInfo.Controls.Add(this.btnCalcUnit);
+            this.groupCompraInfo.Controls.Add(this.btnCalcQuant);
             this.groupCompraInfo.Controls.Add(this.txtCompraFormaPagamento);
             this.groupCompraInfo.Controls.Add(this.txtCompraValorUnit);
             this.groupCompraInfo.Controls.Add(this.lblCompraValorUnit);
@@ -447,6 +453,54 @@ namespace EstoquIN.View
             this.btnCompraExcluir.UseVisualStyleBackColor = false;
             this.btnCompraExcluir.Click += new System.EventHandler(this.btnCompraExcluir_Click);
             // 
+            // btnCalcQuant
+            // 
+            this.btnCalcQuant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCalcQuant.FlatAppearance.BorderSize = 0;
+            this.btnCalcQuant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcQuant.IconChar = FontAwesome.Sharp.IconChar.Calculator;
+            this.btnCalcQuant.IconColor = System.Drawing.Color.White;
+            this.btnCalcQuant.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCalcQuant.IconSize = 30;
+            this.btnCalcQuant.Location = new System.Drawing.Point(700, 101);
+            this.btnCalcQuant.Name = "btnCalcQuant";
+            this.btnCalcQuant.Size = new System.Drawing.Size(34, 34);
+            this.btnCalcQuant.TabIndex = 22;
+            this.btnCalcQuant.UseVisualStyleBackColor = true;
+            this.btnCalcQuant.Click += new System.EventHandler(this.btnCalcQuant_Click);
+            // 
+            // btnCalcUnit
+            // 
+            this.btnCalcUnit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCalcUnit.FlatAppearance.BorderSize = 0;
+            this.btnCalcUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcUnit.IconChar = FontAwesome.Sharp.IconChar.Calculator;
+            this.btnCalcUnit.IconColor = System.Drawing.Color.White;
+            this.btnCalcUnit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCalcUnit.IconSize = 30;
+            this.btnCalcUnit.Location = new System.Drawing.Point(699, 203);
+            this.btnCalcUnit.Name = "btnCalcUnit";
+            this.btnCalcUnit.Size = new System.Drawing.Size(34, 34);
+            this.btnCalcUnit.TabIndex = 23;
+            this.btnCalcUnit.UseVisualStyleBackColor = true;
+            this.btnCalcUnit.Click += new System.EventHandler(this.btnCalcUnit_Click);
+            // 
+            // btnCalcTotal
+            // 
+            this.btnCalcTotal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCalcTotal.FlatAppearance.BorderSize = 0;
+            this.btnCalcTotal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcTotal.IconChar = FontAwesome.Sharp.IconChar.Calculator;
+            this.btnCalcTotal.IconColor = System.Drawing.Color.White;
+            this.btnCalcTotal.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCalcTotal.IconSize = 30;
+            this.btnCalcTotal.Location = new System.Drawing.Point(699, 306);
+            this.btnCalcTotal.Name = "btnCalcTotal";
+            this.btnCalcTotal.Size = new System.Drawing.Size(34, 34);
+            this.btnCalcTotal.TabIndex = 24;
+            this.btnCalcTotal.UseVisualStyleBackColor = true;
+            this.btnCalcTotal.Click += new System.EventHandler(this.btnCalcTotal_Click);
+            // 
             // Compras
             // 
             this.AllowDrop = true;
@@ -509,5 +563,8 @@ namespace EstoquIN.View
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFormPag;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnData;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNota;
+        private FontAwesome.Sharp.IconButton btnCalcTotal;
+        private FontAwesome.Sharp.IconButton btnCalcUnit;
+        private FontAwesome.Sharp.IconButton btnCalcQuant;
     }
 }

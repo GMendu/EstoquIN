@@ -75,9 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigDB\EstoqDBContext.cs" />
-    <Compile Include="Migrations\202112082205002_v15.cs" />
-    <Compile Include="Migrations\202112082205002_v15.designer.cs">
-      <DependentUpon>202112082205002_v15.cs</DependentUpon>
+    <Compile Include="Migrations\202112090341528_v16.cs" />
+    <Compile Include="Migrations\202112090341528_v16.designer.cs">
+      <DependentUpon>202112090341528_v16.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DadosImages.cs" />
@@ -159,8 +159,8 @@
     <Compile Include="View\Vendas.Designer.cs">
       <DependentUpon>Vendas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Migrations\202112082205002_v15.resx">
-      <DependentUpon>202112082205002_v15.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202112090341528_v16.resx">
+      <DependentUpon>202112090341528_v16.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

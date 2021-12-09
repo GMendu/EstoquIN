@@ -226,5 +226,20 @@ namespace EstoquIN.View
                 picNotaFiscal.Image = new Bitmap(opnfd.FileName);
             }
         }
+
+        private void btnCalcQuant_Click(object sender, EventArgs e)
+        {
+            txtCompraQuantidade.Text = (double.Parse(txtCompraValorTotal.Text) / double.Parse(txtCompraValorUnit.Text)).ToString();
+        }
+
+        private void btnCalcUnit_Click(object sender, EventArgs e)
+        {
+            txtCompraValorUnit.Text = (double.Parse(txtCompraValorTotal.Text) / double.Parse(txtCompraQuantidade.Text)).ToString();
+        }
+
+        private void btnCalcTotal_Click(object sender, EventArgs e)
+        {
+            txtCompraValorTotal.Text = (double.Parse(txtCompraValorUnit.Text) * double.Parse(txtCompraQuantidade.Text)).ToString();
+        }
     }
 }

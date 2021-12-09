@@ -225,5 +225,20 @@ namespace EstoquIN.View
             }
             
         }
+
+        private void btnCalcQuant_Click(object sender, EventArgs e)
+        {
+            txtVendaQuantidade.Text = (double.Parse(txtVendaValorTotal.Text) / double.Parse(txtVendaValorUnit.Text)).ToString();
+        }
+
+        private void btnCalcUnit_Click(object sender, EventArgs e)
+        {
+            txtVendaValorUnit.Text = (double.Parse(txtVendaValorTotal.Text) / double.Parse(txtVendaQuantidade.Text)).ToString();  
+        }
+
+        private void btnCalcTotal_Click(object sender, EventArgs e)
+        {
+            txtVendaValorTotal.Text = (double.Parse(txtVendaValorUnit.Text) * double.Parse(txtVendaQuantidade.Text)).ToString();
+        }
     }
 }
