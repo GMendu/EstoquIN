@@ -51,8 +51,6 @@ namespace EstoquIN.View
             this.btnCompraAdicionar = new FontAwesome.Sharp.IconButton();
             this.btnCompraEditar = new FontAwesome.Sharp.IconButton();
             this.dataCompra = new System.Windows.Forms.DataGridView();
-            this.btnCompraCancelar = new FontAwesome.Sharp.IconButton();
-            this.btnCompraExcluir = new FontAwesome.Sharp.IconButton();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ColumnFornec = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +61,8 @@ namespace EstoquIN.View
             this.ColumnFormPag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNota = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCompraCancelar = new FontAwesome.Sharp.IconButton();
+            this.btnCompraExcluir = new FontAwesome.Sharp.IconButton();
             this.groupCompraStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNotaFiscal)).BeginInit();
             this.groupCompraInfo.SuspendLayout();
@@ -272,7 +272,7 @@ namespace EstoquIN.View
             // 
             // btnCompraAdicionar
             // 
-            this.btnCompraAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnCompraAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(203)))), ((int)(((byte)(116)))));
             this.btnCompraAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompraAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.btnCompraAdicionar.ForeColor = System.Drawing.Color.White;
@@ -332,40 +332,6 @@ namespace EstoquIN.View
             this.dataCompra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataCompra.Size = new System.Drawing.Size(1355, 352);
             this.dataCompra.TabIndex = 37;
-            // 
-            // btnCompraCancelar
-            // 
-            this.btnCompraCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.btnCompraCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompraCancelar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.btnCompraCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCompraCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCompraCancelar.IconColor = System.Drawing.Color.Black;
-            this.btnCompraCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompraCancelar.Location = new System.Drawing.Point(1090, 361);
-            this.btnCompraCancelar.Name = "btnCompraCancelar";
-            this.btnCompraCancelar.Size = new System.Drawing.Size(143, 41);
-            this.btnCompraCancelar.TabIndex = 40;
-            this.btnCompraCancelar.Text = "Cancelar";
-            this.btnCompraCancelar.UseVisualStyleBackColor = false;
-            this.btnCompraCancelar.Click += new System.EventHandler(this.btnCompraCancelar_Click);
-            // 
-            // btnCompraExcluir
-            // 
-            this.btnCompraExcluir.BackColor = System.Drawing.Color.Maroon;
-            this.btnCompraExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompraExcluir.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.btnCompraExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnCompraExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCompraExcluir.IconColor = System.Drawing.Color.Black;
-            this.btnCompraExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompraExcluir.Location = new System.Drawing.Point(1239, 361);
-            this.btnCompraExcluir.Name = "btnCompraExcluir";
-            this.btnCompraExcluir.Size = new System.Drawing.Size(126, 41);
-            this.btnCompraExcluir.TabIndex = 41;
-            this.btnCompraExcluir.Text = "Excluir";
-            this.btnCompraExcluir.UseVisualStyleBackColor = false;
-            this.btnCompraExcluir.Click += new System.EventHandler(this.btnCompraExcluir_Click);
             // 
             // ColumnId
             // 
@@ -446,6 +412,40 @@ namespace EstoquIN.View
             this.ColumnNota.Name = "ColumnNota";
             this.ColumnNota.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ColumnNota.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // btnCompraCancelar
+            // 
+            this.btnCompraCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnCompraCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompraCancelar.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnCompraCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCompraCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCompraCancelar.IconColor = System.Drawing.Color.Black;
+            this.btnCompraCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCompraCancelar.Location = new System.Drawing.Point(1090, 361);
+            this.btnCompraCancelar.Name = "btnCompraCancelar";
+            this.btnCompraCancelar.Size = new System.Drawing.Size(143, 41);
+            this.btnCompraCancelar.TabIndex = 40;
+            this.btnCompraCancelar.Text = "Cancelar";
+            this.btnCompraCancelar.UseVisualStyleBackColor = false;
+            this.btnCompraCancelar.Click += new System.EventHandler(this.btnCompraCancelar_Click);
+            // 
+            // btnCompraExcluir
+            // 
+            this.btnCompraExcluir.BackColor = System.Drawing.Color.Maroon;
+            this.btnCompraExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompraExcluir.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnCompraExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnCompraExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCompraExcluir.IconColor = System.Drawing.Color.Black;
+            this.btnCompraExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCompraExcluir.Location = new System.Drawing.Point(1239, 361);
+            this.btnCompraExcluir.Name = "btnCompraExcluir";
+            this.btnCompraExcluir.Size = new System.Drawing.Size(126, 41);
+            this.btnCompraExcluir.TabIndex = 41;
+            this.btnCompraExcluir.Text = "Excluir";
+            this.btnCompraExcluir.UseVisualStyleBackColor = false;
+            this.btnCompraExcluir.Click += new System.EventHandler(this.btnCompraExcluir_Click);
             // 
             // Compras
             // 

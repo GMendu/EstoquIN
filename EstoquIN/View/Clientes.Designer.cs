@@ -92,14 +92,14 @@ namespace EstoquIN.View
             this.groupInfoCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupInfoCliente.Name = "groupInfoCliente";
             this.groupInfoCliente.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupInfoCliente.Size = new System.Drawing.Size(961, 530);
+            this.groupInfoCliente.Size = new System.Drawing.Size(961, 442);
             this.groupInfoCliente.TabIndex = 21;
             this.groupInfoCliente.TabStop = false;
             this.groupInfoCliente.Text = "Informações empresariais";
             // 
             // txtClienteEndereco
             // 
-            this.txtClienteEndereco.Location = new System.Drawing.Point(51, 317);
+            this.txtClienteEndereco.Location = new System.Drawing.Point(51, 273);
             this.txtClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteEndereco.MaxLength = 100;
             this.txtClienteEndereco.Name = "txtClienteEndereco";
@@ -110,7 +110,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteEndereco.AutoSize = true;
             this.lblClienteEndereco.ForeColor = System.Drawing.Color.White;
-            this.lblClienteEndereco.Location = new System.Drawing.Point(46, 286);
+            this.lblClienteEndereco.Location = new System.Drawing.Point(46, 242);
             this.lblClienteEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteEndereco.Name = "lblClienteEndereco";
             this.lblClienteEndereco.Size = new System.Drawing.Size(93, 28);
@@ -121,7 +121,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteObs.AutoSize = true;
             this.lblClienteObs.ForeColor = System.Drawing.Color.White;
-            this.lblClienteObs.Location = new System.Drawing.Point(483, 286);
+            this.lblClienteObs.Location = new System.Drawing.Point(483, 242);
             this.lblClienteObs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteObs.Name = "lblClienteObs";
             this.lblClienteObs.Size = new System.Drawing.Size(123, 28);
@@ -130,11 +130,11 @@ namespace EstoquIN.View
             // 
             // txtClienteObs
             // 
-            this.txtClienteObs.Location = new System.Drawing.Point(488, 317);
+            this.txtClienteObs.Location = new System.Drawing.Point(488, 273);
             this.txtClienteObs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteObs.MaxLength = 65000;
             this.txtClienteObs.Name = "txtClienteObs";
-            this.txtClienteObs.Size = new System.Drawing.Size(398, 160);
+            this.txtClienteObs.Size = new System.Drawing.Size(398, 128);
             this.txtClienteObs.TabIndex = 10;
             this.txtClienteObs.Text = "";
             // 
@@ -160,7 +160,7 @@ namespace EstoquIN.View
             // 
             // txtClienteNomeFantasia
             // 
-            this.txtClienteNomeFantasia.Location = new System.Drawing.Point(488, 196);
+            this.txtClienteNomeFantasia.Location = new System.Drawing.Point(488, 173);
             this.txtClienteNomeFantasia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteNomeFantasia.MaxLength = 80;
             this.txtClienteNomeFantasia.Name = "txtClienteNomeFantasia";
@@ -182,7 +182,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteNomeFantasia.AutoSize = true;
             this.lblClienteNomeFantasia.ForeColor = System.Drawing.Color.White;
-            this.lblClienteNomeFantasia.Location = new System.Drawing.Point(483, 165);
+            this.lblClienteNomeFantasia.Location = new System.Drawing.Point(483, 142);
             this.lblClienteNomeFantasia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteNomeFantasia.Name = "lblClienteNomeFantasia";
             this.lblClienteNomeFantasia.Size = new System.Drawing.Size(141, 28);
@@ -202,7 +202,7 @@ namespace EstoquIN.View
             // 
             // txtClienteInscricao
             // 
-            this.txtClienteInscricao.Location = new System.Drawing.Point(51, 196);
+            this.txtClienteInscricao.Location = new System.Drawing.Point(51, 173);
             this.txtClienteInscricao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteInscricao.MaxLength = 20;
             this.txtClienteInscricao.Name = "txtClienteInscricao";
@@ -213,7 +213,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteInscricao.AutoSize = true;
             this.lblClienteInscricao.ForeColor = System.Drawing.Color.White;
-            this.lblClienteInscricao.Location = new System.Drawing.Point(46, 165);
+            this.lblClienteInscricao.Location = new System.Drawing.Point(46, 142);
             this.lblClienteInscricao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteInscricao.Name = "lblClienteInscricao";
             this.lblClienteInscricao.Size = new System.Drawing.Size(166, 28);
@@ -222,17 +222,17 @@ namespace EstoquIN.View
             // 
             // btnClienteAdicionar
             // 
-            this.btnClienteAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnClienteAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(203)))), ((int)(((byte)(116)))));
             this.btnClienteAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnClienteAdicionar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClienteAdicionar.ForeColor = System.Drawing.Color.White;
             this.btnClienteAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClienteAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnClienteAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClienteAdicionar.Location = new System.Drawing.Point(980, 424);
+            this.btnClienteAdicionar.Location = new System.Drawing.Point(980, 338);
             this.btnClienteAdicionar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClienteAdicionar.Name = "btnClienteAdicionar";
-            this.btnClienteAdicionar.Size = new System.Drawing.Size(188, 55);
+            this.btnClienteAdicionar.Size = new System.Drawing.Size(194, 55);
             this.btnClienteAdicionar.TabIndex = 24;
             this.btnClienteAdicionar.Text = "Adicionar";
             this.btnClienteAdicionar.UseVisualStyleBackColor = false;
@@ -242,12 +242,12 @@ namespace EstoquIN.View
             // 
             this.btnClienteEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnClienteEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteEditar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnClienteEditar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClienteEditar.ForeColor = System.Drawing.Color.White;
             this.btnClienteEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClienteEditar.IconColor = System.Drawing.Color.Black;
             this.btnClienteEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClienteEditar.Location = new System.Drawing.Point(1176, 424);
+            this.btnClienteEditar.Location = new System.Drawing.Point(1176, 338);
             this.btnClienteEditar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClienteEditar.Name = "btnClienteEditar";
             this.btnClienteEditar.Size = new System.Drawing.Size(188, 55);
@@ -277,14 +277,14 @@ namespace EstoquIN.View
             this.ColumnContatoTelefone,
             this.ColumnEndereco,
             this.ColumnFreqCompra});
-            this.dataClientes.Location = new System.Drawing.Point(12, 546);
+            this.dataClientes.Location = new System.Drawing.Point(12, 458);
             this.dataClientes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataClientes.Name = "dataClientes";
             this.dataClientes.RowHeadersVisible = false;
             this.dataClientes.RowHeadersWidth = 51;
             this.dataClientes.RowTemplate.Height = 25;
             this.dataClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataClientes.Size = new System.Drawing.Size(1352, 214);
+            this.dataClientes.Size = new System.Drawing.Size(1352, 302);
             this.dataClientes.TabIndex = 23;
             // 
             // ColumnId
@@ -358,15 +358,15 @@ namespace EstoquIN.View
             // 
             this.btnClienteCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnClienteCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteCancelar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnClienteCancelar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClienteCancelar.ForeColor = System.Drawing.Color.White;
             this.btnClienteCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClienteCancelar.IconColor = System.Drawing.Color.Black;
             this.btnClienteCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClienteCancelar.Location = new System.Drawing.Point(980, 485);
+            this.btnClienteCancelar.Location = new System.Drawing.Point(980, 397);
             this.btnClienteCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClienteCancelar.Name = "btnClienteCancelar";
-            this.btnClienteCancelar.Size = new System.Drawing.Size(188, 55);
+            this.btnClienteCancelar.Size = new System.Drawing.Size(194, 55);
             this.btnClienteCancelar.TabIndex = 26;
             this.btnClienteCancelar.Text = "Cancelar";
             this.btnClienteCancelar.UseVisualStyleBackColor = false;
@@ -388,7 +388,7 @@ namespace EstoquIN.View
             this.groupContatoCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupContatoCliente.Name = "groupContatoCliente";
             this.groupContatoCliente.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupContatoCliente.Size = new System.Drawing.Size(384, 406);
+            this.groupContatoCliente.Size = new System.Drawing.Size(384, 320);
             this.groupContatoCliente.TabIndex = 22;
             this.groupContatoCliente.TabStop = false;
             this.groupContatoCliente.Text = "Contatos";
@@ -397,7 +397,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteContatoTelefone.AutoSize = true;
             this.lblClienteContatoTelefone.ForeColor = System.Drawing.Color.White;
-            this.lblClienteContatoTelefone.Location = new System.Drawing.Point(30, 269);
+            this.lblClienteContatoTelefone.Location = new System.Drawing.Point(30, 240);
             this.lblClienteContatoTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteContatoTelefone.Name = "lblClienteContatoTelefone";
             this.lblClienteContatoTelefone.Size = new System.Drawing.Size(164, 28);
@@ -406,7 +406,7 @@ namespace EstoquIN.View
             // 
             // txtClienteContatoTelefone
             // 
-            this.txtClienteContatoTelefone.Location = new System.Drawing.Point(35, 300);
+            this.txtClienteContatoTelefone.Location = new System.Drawing.Point(35, 271);
             this.txtClienteContatoTelefone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteContatoTelefone.MaxLength = 20;
             this.txtClienteContatoTelefone.Name = "txtClienteContatoTelefone";
@@ -417,7 +417,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteContatoEmail.AutoSize = true;
             this.lblClienteContatoEmail.ForeColor = System.Drawing.Color.White;
-            this.lblClienteContatoEmail.Location = new System.Drawing.Point(30, 163);
+            this.lblClienteContatoEmail.Location = new System.Drawing.Point(30, 140);
             this.lblClienteContatoEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteContatoEmail.Name = "lblClienteContatoEmail";
             this.lblClienteContatoEmail.Size = new System.Drawing.Size(67, 28);
@@ -428,7 +428,7 @@ namespace EstoquIN.View
             // 
             this.lblClienteContatoNome.AutoSize = true;
             this.lblClienteContatoNome.ForeColor = System.Drawing.Color.White;
-            this.lblClienteContatoNome.Location = new System.Drawing.Point(30, 63);
+            this.lblClienteContatoNome.Location = new System.Drawing.Point(30, 42);
             this.lblClienteContatoNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteContatoNome.Name = "lblClienteContatoNome";
             this.lblClienteContatoNome.Size = new System.Drawing.Size(171, 28);
@@ -437,7 +437,7 @@ namespace EstoquIN.View
             // 
             // txtClienteContatoNome
             // 
-            this.txtClienteContatoNome.Location = new System.Drawing.Point(35, 94);
+            this.txtClienteContatoNome.Location = new System.Drawing.Point(35, 74);
             this.txtClienteContatoNome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteContatoNome.MaxLength = 80;
             this.txtClienteContatoNome.Name = "txtClienteContatoNome";
@@ -446,7 +446,7 @@ namespace EstoquIN.View
             // 
             // txtClienteContatoEmail
             // 
-            this.txtClienteContatoEmail.Location = new System.Drawing.Point(35, 194);
+            this.txtClienteContatoEmail.Location = new System.Drawing.Point(35, 171);
             this.txtClienteContatoEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClienteContatoEmail.MaxLength = 80;
             this.txtClienteContatoEmail.Name = "txtClienteContatoEmail";
@@ -455,14 +455,14 @@ namespace EstoquIN.View
             // 
             // btnClienteExcluir
             // 
-            this.btnClienteExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnClienteExcluir.BackColor = System.Drawing.Color.Maroon;
             this.btnClienteExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteExcluir.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnClienteExcluir.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClienteExcluir.ForeColor = System.Drawing.Color.White;
             this.btnClienteExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClienteExcluir.IconColor = System.Drawing.Color.Black;
             this.btnClienteExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClienteExcluir.Location = new System.Drawing.Point(1176, 485);
+            this.btnClienteExcluir.Location = new System.Drawing.Point(1176, 397);
             this.btnClienteExcluir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClienteExcluir.Name = "btnClienteExcluir";
             this.btnClienteExcluir.Size = new System.Drawing.Size(188, 55);

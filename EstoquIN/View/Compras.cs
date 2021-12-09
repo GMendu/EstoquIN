@@ -208,11 +208,15 @@ namespace EstoquIN.View
         // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnCompraExcluir_Click(object sender, EventArgs e)
         {
-            var t = context.DBcompras.Find((int)dataCompra.SelectedCells[0].Value);
-            context.DBcompras.Remove(t);
-            context.SaveChanges();
-            RefreshGrid();
-            ClearBoxes();
+            if (MessageBox.Show("TEM CERTEZA QUE DESEJA EXCLUIR?, ESTA AÇÃO É IRREVERSÍVEL", "EXCLUIR", MessageBoxButtons.OKCancel) == DialogResult.OK)
+
+            {
+                var t = context.DBcompras.Find((int)dataCompra.SelectedCells[0].Value);
+                context.DBcompras.Remove(t);
+                context.SaveChanges();
+                RefreshGrid();
+                ClearBoxes();
+            }
         }
 
         private void btnCompraCancelar_Click(object sender, EventArgs e)

@@ -79,7 +79,7 @@ namespace EstoquIN
             this.btnRelatorios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRelatorios.FlatAppearance.BorderSize = 0;
             this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelatorios.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnRelatorios.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelatorios.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnRelatorios.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
             this.btnRelatorios.IconColor = System.Drawing.Color.Gainsboro;
@@ -101,7 +101,7 @@ namespace EstoquIN
             this.btnCompras.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCompras.FlatAppearance.BorderSize = 0;
             this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompras.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnCompras.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompras.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
             this.btnCompras.IconColor = System.Drawing.Color.Gainsboro;
@@ -123,7 +123,7 @@ namespace EstoquIN
             this.btnMaterial.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMaterial.FlatAppearance.BorderSize = 0;
             this.btnMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaterial.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnMaterial.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaterial.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMaterial.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
             this.btnMaterial.IconColor = System.Drawing.Color.Gainsboro;
@@ -145,7 +145,7 @@ namespace EstoquIN
             this.btnFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFornecedores.FlatAppearance.BorderSize = 0;
             this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecedores.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnFornecedores.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecedores.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnFornecedores.IconChar = FontAwesome.Sharp.IconChar.Truck;
             this.btnFornecedores.IconColor = System.Drawing.Color.Gainsboro;
@@ -167,7 +167,7 @@ namespace EstoquIN
             this.btnVendas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnVendas.FlatAppearance.BorderSize = 0;
             this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendas.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnVendas.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnVendas.IconChar = FontAwesome.Sharp.IconChar.ShoppingBasket;
             this.btnVendas.IconColor = System.Drawing.Color.Gainsboro;
@@ -189,7 +189,7 @@ namespace EstoquIN
             this.btnProdutos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProdutos.FlatAppearance.BorderSize = 0;
             this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProdutos.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnProdutos.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdutos.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnProdutos.IconChar = FontAwesome.Sharp.IconChar.Boxes;
             this.btnProdutos.IconColor = System.Drawing.Color.Gainsboro;
@@ -211,7 +211,7 @@ namespace EstoquIN
             this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnClientes.FlatAppearance.BorderSize = 0;
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnClientes.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnClientes.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
             this.btnClientes.IconColor = System.Drawing.Color.Gainsboro;
@@ -233,7 +233,7 @@ namespace EstoquIN
             this.btnConfiguracoes.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
             this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfiguracoes.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnConfiguracoes.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfiguracoes.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnConfiguracoes.IconChar = FontAwesome.Sharp.IconChar.Cog;
             this.btnConfiguracoes.IconColor = System.Drawing.Color.Gainsboro;
@@ -263,7 +263,7 @@ namespace EstoquIN
             // BtnHome
             // 
             this.BtnHome.Image = ((System.Drawing.Image)(resources.GetObject("BtnHome.Image")));
-            this.BtnHome.Location = new System.Drawing.Point(10, 21);
+            this.BtnHome.Location = new System.Drawing.Point(23, 12);
             this.BtnHome.Name = "BtnHome";
             this.BtnHome.Size = new System.Drawing.Size(152, 86);
             this.BtnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -47,12 +47,6 @@ namespace EstoquIN.View
             this.btnVendaAdicionar = new FontAwesome.Sharp.IconButton();
             this.btnVendaEditar = new FontAwesome.Sharp.IconButton();
             this.dataVenda = new System.Windows.Forms.DataGridView();
-            this.btnVendaCancelar = new FontAwesome.Sharp.IconButton();
-            this.btnVendaExcluir = new FontAwesome.Sharp.IconButton();
-            this.groupVendaStatus = new System.Windows.Forms.GroupBox();
-            this.btnVendaUpload = new FontAwesome.Sharp.IconButton();
-            this.checkVendaStatus = new System.Windows.Forms.CheckBox();
-            this.picVendaNotaFiscal = new System.Windows.Forms.PictureBox();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ColumnClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +57,12 @@ namespace EstoquIN.View
             this.ColumnFormPag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNotaFiscal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnVendaCancelar = new FontAwesome.Sharp.IconButton();
+            this.btnVendaExcluir = new FontAwesome.Sharp.IconButton();
+            this.groupVendaStatus = new System.Windows.Forms.GroupBox();
+            this.btnVendaUpload = new FontAwesome.Sharp.IconButton();
+            this.checkVendaStatus = new System.Windows.Forms.CheckBox();
+            this.picVendaNotaFiscal = new System.Windows.Forms.PictureBox();
             this.groupVendaInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataVenda)).BeginInit();
             this.groupVendaStatus.SuspendLayout();
@@ -89,23 +89,23 @@ namespace EstoquIN.View
             this.groupVendaInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupVendaInfo.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.groupVendaInfo.ForeColor = System.Drawing.Color.White;
-            this.groupVendaInfo.Location = new System.Drawing.Point(9, 9);
+            this.groupVendaInfo.Location = new System.Drawing.Point(9, 12);
             this.groupVendaInfo.Name = "groupVendaInfo";
-            this.groupVendaInfo.Size = new System.Drawing.Size(896, 418);
+            this.groupVendaInfo.Size = new System.Drawing.Size(746, 382);
             this.groupVendaInfo.TabIndex = 28;
             this.groupVendaInfo.TabStop = false;
             this.groupVendaInfo.Text = "Venda do Produto";
             // 
             // txtVendaFormaPagamento
             // 
-            this.txtVendaFormaPagamento.Location = new System.Drawing.Point(101, 299);
+            this.txtVendaFormaPagamento.Location = new System.Drawing.Point(41, 299);
             this.txtVendaFormaPagamento.Name = "txtVendaFormaPagamento";
             this.txtVendaFormaPagamento.Size = new System.Drawing.Size(216, 34);
             this.txtVendaFormaPagamento.TabIndex = 22;
             // 
             // txtVendaValorUnit
             // 
-            this.txtVendaValorUnit.Location = new System.Drawing.Point(579, 194);
+            this.txtVendaValorUnit.Location = new System.Drawing.Point(519, 194);
             this.txtVendaValorUnit.Name = "txtVendaValorUnit";
             this.txtVendaValorUnit.Size = new System.Drawing.Size(161, 34);
             this.txtVendaValorUnit.TabIndex = 20;
@@ -114,7 +114,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaValorUnit.AutoSize = true;
             this.lblVendaValorUnit.ForeColor = System.Drawing.Color.White;
-            this.lblVendaValorUnit.Location = new System.Drawing.Point(574, 161);
+            this.lblVendaValorUnit.Location = new System.Drawing.Point(514, 161);
             this.lblVendaValorUnit.Name = "lblVendaValorUnit";
             this.lblVendaValorUnit.Size = new System.Drawing.Size(133, 28);
             this.lblVendaValorUnit.TabIndex = 19;
@@ -123,7 +123,7 @@ namespace EstoquIN.View
             // dateVendaData
             // 
             this.dateVendaData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateVendaData.Location = new System.Drawing.Point(359, 297);
+            this.dateVendaData.Location = new System.Drawing.Point(299, 297);
             this.dateVendaData.Name = "dateVendaData";
             this.dateVendaData.Size = new System.Drawing.Size(143, 34);
             this.dateVendaData.TabIndex = 17;
@@ -132,7 +132,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaData.AutoSize = true;
             this.lblVendaData.ForeColor = System.Drawing.Color.White;
-            this.lblVendaData.Location = new System.Drawing.Point(354, 266);
+            this.lblVendaData.Location = new System.Drawing.Point(294, 266);
             this.lblVendaData.Name = "lblVendaData";
             this.lblVendaData.Size = new System.Drawing.Size(53, 28);
             this.lblVendaData.TabIndex = 16;
@@ -142,7 +142,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaQuantidade.AutoSize = true;
             this.lblVendaQuantidade.ForeColor = System.Drawing.Color.White;
-            this.lblVendaQuantidade.Location = new System.Drawing.Point(574, 63);
+            this.lblVendaQuantidade.Location = new System.Drawing.Point(514, 63);
             this.lblVendaQuantidade.Name = "lblVendaQuantidade";
             this.lblVendaQuantidade.Size = new System.Drawing.Size(115, 28);
             this.lblVendaQuantidade.TabIndex = 15;
@@ -150,7 +150,7 @@ namespace EstoquIN.View
             // 
             // txtVendaQuantidade
             // 
-            this.txtVendaQuantidade.Location = new System.Drawing.Point(579, 94);
+            this.txtVendaQuantidade.Location = new System.Drawing.Point(519, 94);
             this.txtVendaQuantidade.Name = "txtVendaQuantidade";
             this.txtVendaQuantidade.Size = new System.Drawing.Size(161, 34);
             this.txtVendaQuantidade.TabIndex = 14;
@@ -158,7 +158,7 @@ namespace EstoquIN.View
             // cbVendaProdutoCliente
             // 
             this.cbVendaProdutoCliente.FormattingEnabled = true;
-            this.cbVendaProdutoCliente.Location = new System.Drawing.Point(101, 190);
+            this.cbVendaProdutoCliente.Location = new System.Drawing.Point(41, 190);
             this.cbVendaProdutoCliente.Name = "cbVendaProdutoCliente";
             this.cbVendaProdutoCliente.Size = new System.Drawing.Size(381, 36);
             this.cbVendaProdutoCliente.TabIndex = 13;
@@ -167,7 +167,7 @@ namespace EstoquIN.View
             // 
             this.cbVendaCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbVendaCliente.FormattingEnabled = true;
-            this.cbVendaCliente.Location = new System.Drawing.Point(101, 92);
+            this.cbVendaCliente.Location = new System.Drawing.Point(41, 92);
             this.cbVendaCliente.Name = "cbVendaCliente";
             this.cbVendaCliente.Size = new System.Drawing.Size(378, 36);
             this.cbVendaCliente.TabIndex = 12;
@@ -176,7 +176,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaFornecedor.AutoSize = true;
             this.lblVendaFornecedor.ForeColor = System.Drawing.Color.White;
-            this.lblVendaFornecedor.Location = new System.Drawing.Point(101, 61);
+            this.lblVendaFornecedor.Location = new System.Drawing.Point(41, 61);
             this.lblVendaFornecedor.Name = "lblVendaFornecedor";
             this.lblVendaFornecedor.Size = new System.Drawing.Size(72, 28);
             this.lblVendaFornecedor.TabIndex = 0;
@@ -184,7 +184,7 @@ namespace EstoquIN.View
             // 
             // txtVendaValorTotal
             // 
-            this.txtVendaValorTotal.Location = new System.Drawing.Point(579, 299);
+            this.txtVendaValorTotal.Location = new System.Drawing.Point(519, 299);
             this.txtVendaValorTotal.Name = "txtVendaValorTotal";
             this.txtVendaValorTotal.Size = new System.Drawing.Size(161, 34);
             this.txtVendaValorTotal.TabIndex = 9;
@@ -193,7 +193,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaValorTotal.AutoSize = true;
             this.lblVendaValorTotal.ForeColor = System.Drawing.Color.White;
-            this.lblVendaValorTotal.Location = new System.Drawing.Point(574, 266);
+            this.lblVendaValorTotal.Location = new System.Drawing.Point(514, 266);
             this.lblVendaValorTotal.Name = "lblVendaValorTotal";
             this.lblVendaValorTotal.Size = new System.Drawing.Size(104, 28);
             this.lblVendaValorTotal.TabIndex = 8;
@@ -203,7 +203,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaProdutoFornecido.AutoSize = true;
             this.lblVendaProdutoFornecido.ForeColor = System.Drawing.Color.White;
-            this.lblVendaProdutoFornecido.Location = new System.Drawing.Point(104, 159);
+            this.lblVendaProdutoFornecido.Location = new System.Drawing.Point(44, 159);
             this.lblVendaProdutoFornecido.Name = "lblVendaProdutoFornecido";
             this.lblVendaProdutoFornecido.Size = new System.Drawing.Size(84, 28);
             this.lblVendaProdutoFornecido.TabIndex = 2;
@@ -213,7 +213,7 @@ namespace EstoquIN.View
             // 
             this.lblVendaFormaPagamento.AutoSize = true;
             this.lblVendaFormaPagamento.ForeColor = System.Drawing.Color.White;
-            this.lblVendaFormaPagamento.Location = new System.Drawing.Point(104, 268);
+            this.lblVendaFormaPagamento.Location = new System.Drawing.Point(44, 268);
             this.lblVendaFormaPagamento.Name = "lblVendaFormaPagamento";
             this.lblVendaFormaPagamento.Size = new System.Drawing.Size(199, 28);
             this.lblVendaFormaPagamento.TabIndex = 6;
@@ -221,16 +221,16 @@ namespace EstoquIN.View
             // 
             // btnVendaAdicionar
             // 
-            this.btnVendaAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnVendaAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(203)))), ((int)(((byte)(116)))));
             this.btnVendaAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendaAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnVendaAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendaAdicionar.ForeColor = System.Drawing.Color.White;
             this.btnVendaAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnVendaAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnVendaAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaAdicionar.Location = new System.Drawing.Point(911, 316);
+            this.btnVendaAdicionar.Location = new System.Drawing.Point(761, 342);
             this.btnVendaAdicionar.Name = "btnVendaAdicionar";
-            this.btnVendaAdicionar.Size = new System.Drawing.Size(224, 52);
+            this.btnVendaAdicionar.Size = new System.Drawing.Size(144, 52);
             this.btnVendaAdicionar.TabIndex = 31;
             this.btnVendaAdicionar.Text = "Adicionar";
             this.btnVendaAdicionar.UseVisualStyleBackColor = false;
@@ -240,14 +240,14 @@ namespace EstoquIN.View
             // 
             this.btnVendaEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnVendaEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendaEditar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnVendaEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendaEditar.ForeColor = System.Drawing.Color.White;
             this.btnVendaEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnVendaEditar.IconColor = System.Drawing.Color.Black;
             this.btnVendaEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaEditar.Location = new System.Drawing.Point(1141, 315);
+            this.btnVendaEditar.Location = new System.Drawing.Point(911, 342);
             this.btnVendaEditar.Name = "btnVendaEditar";
-            this.btnVendaEditar.Size = new System.Drawing.Size(224, 53);
+            this.btnVendaEditar.Size = new System.Drawing.Size(143, 53);
             this.btnVendaEditar.TabIndex = 32;
             this.btnVendaEditar.Text = "Editar";
             this.btnVendaEditar.UseVisualStyleBackColor = false;
@@ -273,99 +273,14 @@ namespace EstoquIN.View
             this.ColumnFormPag,
             this.ColumnData,
             this.ColumnNotaFiscal});
-            this.dataVenda.Location = new System.Drawing.Point(9, 433);
+            this.dataVenda.Location = new System.Drawing.Point(9, 400);
             this.dataVenda.Name = "dataVenda";
             this.dataVenda.RowHeadersVisible = false;
             this.dataVenda.RowHeadersWidth = 51;
             this.dataVenda.RowTemplate.Height = 25;
             this.dataVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataVenda.Size = new System.Drawing.Size(1356, 327);
+            this.dataVenda.Size = new System.Drawing.Size(1356, 360);
             this.dataVenda.TabIndex = 30;
-            // 
-            // btnVendaCancelar
-            // 
-            this.btnVendaCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.btnVendaCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendaCancelar.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.btnVendaCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnVendaCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnVendaCancelar.IconColor = System.Drawing.Color.Black;
-            this.btnVendaCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaCancelar.Location = new System.Drawing.Point(911, 374);
-            this.btnVendaCancelar.Name = "btnVendaCancelar";
-            this.btnVendaCancelar.Size = new System.Drawing.Size(224, 53);
-            this.btnVendaCancelar.TabIndex = 33;
-            this.btnVendaCancelar.Text = "Cancelar";
-            this.btnVendaCancelar.UseVisualStyleBackColor = false;
-            this.btnVendaCancelar.Click += new System.EventHandler(this.btnVendaCancelar_Click);
-            // 
-            // btnVendaExcluir
-            // 
-            this.btnVendaExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.btnVendaExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendaExcluir.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.btnVendaExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnVendaExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnVendaExcluir.IconColor = System.Drawing.Color.Black;
-            this.btnVendaExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaExcluir.Location = new System.Drawing.Point(1141, 374);
-            this.btnVendaExcluir.Name = "btnVendaExcluir";
-            this.btnVendaExcluir.Size = new System.Drawing.Size(224, 53);
-            this.btnVendaExcluir.TabIndex = 34;
-            this.btnVendaExcluir.Text = "Excluir";
-            this.btnVendaExcluir.UseVisualStyleBackColor = false;
-            this.btnVendaExcluir.Click += new System.EventHandler(this.btnVendaExcluir_Click);
-            // 
-            // groupVendaStatus
-            // 
-            this.groupVendaStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.groupVendaStatus.Controls.Add(this.btnVendaUpload);
-            this.groupVendaStatus.Controls.Add(this.checkVendaStatus);
-            this.groupVendaStatus.Controls.Add(this.picVendaNotaFiscal);
-            this.groupVendaStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupVendaStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupVendaStatus.ForeColor = System.Drawing.Color.White;
-            this.groupVendaStatus.Location = new System.Drawing.Point(911, 12);
-            this.groupVendaStatus.Name = "groupVendaStatus";
-            this.groupVendaStatus.Size = new System.Drawing.Size(454, 297);
-            this.groupVendaStatus.TabIndex = 35;
-            this.groupVendaStatus.TabStop = false;
-            this.groupVendaStatus.Text = "Status da Venda";
-            // 
-            // btnVendaUpload
-            // 
-            this.btnVendaUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendaUpload.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnVendaUpload.IconColor = System.Drawing.Color.Black;
-            this.btnVendaUpload.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVendaUpload.Location = new System.Drawing.Point(346, 242);
-            this.btnVendaUpload.Name = "btnVendaUpload";
-            this.btnVendaUpload.Size = new System.Drawing.Size(92, 39);
-            this.btnVendaUpload.TabIndex = 37;
-            this.btnVendaUpload.Text = "Upload";
-            this.btnVendaUpload.UseVisualStyleBackColor = true;
-            this.btnVendaUpload.Click += new System.EventHandler(this.btnVendaUpload_Click);
-            // 
-            // checkVendaStatus
-            // 
-            this.checkVendaStatus.AutoSize = true;
-            this.checkVendaStatus.Location = new System.Drawing.Point(14, 24);
-            this.checkVendaStatus.Name = "checkVendaStatus";
-            this.checkVendaStatus.Size = new System.Drawing.Size(142, 25);
-            this.checkVendaStatus.TabIndex = 0;
-            this.checkVendaStatus.Text = "Venda finalizada";
-            this.checkVendaStatus.UseVisualStyleBackColor = true;
-            // 
-            // picVendaNotaFiscal
-            // 
-            this.picVendaNotaFiscal.BackColor = System.Drawing.Color.DodgerBlue;
-            this.picVendaNotaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picVendaNotaFiscal.Location = new System.Drawing.Point(14, 55);
-            this.picVendaNotaFiscal.Name = "picVendaNotaFiscal";
-            this.picVendaNotaFiscal.Size = new System.Drawing.Size(326, 226);
-            this.picVendaNotaFiscal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picVendaNotaFiscal.TabIndex = 36;
-            this.picVendaNotaFiscal.TabStop = false;
             // 
             // ColumnId
             // 
@@ -443,6 +358,92 @@ namespace EstoquIN.View
             this.ColumnNotaFiscal.Name = "ColumnNotaFiscal";
             this.ColumnNotaFiscal.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ColumnNotaFiscal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // btnVendaCancelar
+            // 
+            this.btnVendaCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnVendaCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendaCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendaCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnVendaCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnVendaCancelar.IconColor = System.Drawing.Color.Black;
+            this.btnVendaCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVendaCancelar.Location = new System.Drawing.Point(1060, 342);
+            this.btnVendaCancelar.Name = "btnVendaCancelar";
+            this.btnVendaCancelar.Size = new System.Drawing.Size(152, 53);
+            this.btnVendaCancelar.TabIndex = 33;
+            this.btnVendaCancelar.Text = "Cancelar";
+            this.btnVendaCancelar.UseVisualStyleBackColor = false;
+            this.btnVendaCancelar.Click += new System.EventHandler(this.btnVendaCancelar_Click);
+            // 
+            // btnVendaExcluir
+            // 
+            this.btnVendaExcluir.BackColor = System.Drawing.Color.Maroon;
+            this.btnVendaExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendaExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendaExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnVendaExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnVendaExcluir.IconColor = System.Drawing.Color.Black;
+            this.btnVendaExcluir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVendaExcluir.Location = new System.Drawing.Point(1218, 342);
+            this.btnVendaExcluir.Name = "btnVendaExcluir";
+            this.btnVendaExcluir.Size = new System.Drawing.Size(147, 53);
+            this.btnVendaExcluir.TabIndex = 34;
+            this.btnVendaExcluir.Text = "Excluir";
+            this.btnVendaExcluir.UseVisualStyleBackColor = false;
+            this.btnVendaExcluir.Click += new System.EventHandler(this.btnVendaExcluir_Click);
+            // 
+            // groupVendaStatus
+            // 
+            this.groupVendaStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupVendaStatus.Controls.Add(this.btnVendaUpload);
+            this.groupVendaStatus.Controls.Add(this.checkVendaStatus);
+            this.groupVendaStatus.Controls.Add(this.picVendaNotaFiscal);
+            this.groupVendaStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupVendaStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.groupVendaStatus.ForeColor = System.Drawing.Color.White;
+            this.groupVendaStatus.Location = new System.Drawing.Point(761, 12);
+            this.groupVendaStatus.Name = "groupVendaStatus";
+            this.groupVendaStatus.Size = new System.Drawing.Size(604, 324);
+            this.groupVendaStatus.TabIndex = 35;
+            this.groupVendaStatus.TabStop = false;
+            this.groupVendaStatus.Text = "Status da Venda";
+            // 
+            // btnVendaUpload
+            // 
+            this.btnVendaUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendaUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendaUpload.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnVendaUpload.IconColor = System.Drawing.Color.Black;
+            this.btnVendaUpload.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVendaUpload.Location = new System.Drawing.Point(6, 247);
+            this.btnVendaUpload.Name = "btnVendaUpload";
+            this.btnVendaUpload.Size = new System.Drawing.Size(150, 65);
+            this.btnVendaUpload.TabIndex = 37;
+            this.btnVendaUpload.Text = "Upload";
+            this.btnVendaUpload.UseVisualStyleBackColor = true;
+            this.btnVendaUpload.Click += new System.EventHandler(this.btnVendaUpload_Click);
+            // 
+            // checkVendaStatus
+            // 
+            this.checkVendaStatus.AutoSize = true;
+            this.checkVendaStatus.Location = new System.Drawing.Point(14, 24);
+            this.checkVendaStatus.Name = "checkVendaStatus";
+            this.checkVendaStatus.Size = new System.Drawing.Size(142, 25);
+            this.checkVendaStatus.TabIndex = 0;
+            this.checkVendaStatus.Text = "Venda finalizada";
+            this.checkVendaStatus.UseVisualStyleBackColor = true;
+            // 
+            // picVendaNotaFiscal
+            // 
+            this.picVendaNotaFiscal.BackColor = System.Drawing.Color.DodgerBlue;
+            this.picVendaNotaFiscal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picVendaNotaFiscal.Location = new System.Drawing.Point(162, 24);
+            this.picVendaNotaFiscal.Name = "picVendaNotaFiscal";
+            this.picVendaNotaFiscal.Size = new System.Drawing.Size(436, 294);
+            this.picVendaNotaFiscal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picVendaNotaFiscal.TabIndex = 36;
+            this.picVendaNotaFiscal.TabStop = false;
             // 
             // Vendas
             // 

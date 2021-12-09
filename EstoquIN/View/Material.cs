@@ -100,11 +100,15 @@ namespace EstoquIN.View
 
         private void btnMaterialExcluir_Click(object sender, EventArgs e)
         {
-            var t = context.DBinsumos.Find((int)dataMaterial.SelectedCells[0].Value);
-            context.DBinsumos.Remove(t);
-            context.SaveChanges();
-            RefreshGrid();
-            ClearBoxes();
+            if (MessageBox.Show("TEM CERTEZA QUE DESEJA EXCLUIR?, ESTA AÇÃO É IRREVERSÍVEL", "EXCLUIR", MessageBoxButtons.OKCancel) == DialogResult.OK)
+
+            {
+                var t = context.DBinsumos.Find((int)dataMaterial.SelectedCells[0].Value);
+                context.DBinsumos.Remove(t);
+                context.SaveChanges();
+                RefreshGrid();
+                ClearBoxes();
+            }
         }
     }
 }

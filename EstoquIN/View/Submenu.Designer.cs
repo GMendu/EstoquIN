@@ -101,9 +101,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(55, 408);
+            this.picLogo.Location = new System.Drawing.Point(56, 421);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(414, 313);
+            this.picLogo.Size = new System.Drawing.Size(450, 300);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 5;
             this.picLogo.TabStop = false;

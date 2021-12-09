@@ -107,14 +107,14 @@ namespace EstoquIN.View
             // 
             // btnMaterialAdicionar
             // 
-            this.btnMaterialAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnMaterialAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(203)))), ((int)(((byte)(116)))));
             this.btnMaterialAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaterialAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnMaterialAdicionar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaterialAdicionar.ForeColor = System.Drawing.Color.White;
             this.btnMaterialAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialAdicionar.IconColor = System.Drawing.Color.Black;
             this.btnMaterialAdicionar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaterialAdicionar.Location = new System.Drawing.Point(1179, 12);
+            this.btnMaterialAdicionar.Location = new System.Drawing.Point(1181, 15);
             this.btnMaterialAdicionar.Name = "btnMaterialAdicionar";
             this.btnMaterialAdicionar.Size = new System.Drawing.Size(186, 92);
             this.btnMaterialAdicionar.TabIndex = 21;
@@ -126,7 +126,7 @@ namespace EstoquIN.View
             // 
             this.btnMaterialEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnMaterialEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaterialEditar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnMaterialEditar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaterialEditar.ForeColor = System.Drawing.Color.White;
             this.btnMaterialEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialEditar.IconColor = System.Drawing.Color.Black;
@@ -143,7 +143,7 @@ namespace EstoquIN.View
             // 
             this.btnMaterialCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnMaterialCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaterialCancelar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnMaterialCancelar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaterialCancelar.ForeColor = System.Drawing.Color.White;
             this.btnMaterialCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialCancelar.IconColor = System.Drawing.Color.Black;
@@ -158,9 +158,9 @@ namespace EstoquIN.View
             // 
             // btnMaterialExcluir
             // 
-            this.btnMaterialExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnMaterialExcluir.BackColor = System.Drawing.Color.Maroon;
             this.btnMaterialExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaterialExcluir.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnMaterialExcluir.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaterialExcluir.ForeColor = System.Drawing.Color.White;
             this.btnMaterialExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaterialExcluir.IconColor = System.Drawing.Color.Black;

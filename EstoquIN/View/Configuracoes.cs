@@ -63,11 +63,15 @@ namespace EstoquIN.View
 
         private void btnConfigExcluir_Click(object sender, EventArgs e)
         {
-            var t = context.DBusuario.Find((int)dataConfigUsuario.SelectedCells[0].Value);
-            context.DBusuario.Remove(t);
-            context.SaveChanges();
-            RefreshGrid();
-            ClearBoxes();
+            if (MessageBox.Show("TEM CERTEZA QUE DESEJA EXCLUIR?, ESTA AÇÃO É IRREVERSÍVEL", "EXCLUIR", MessageBoxButtons.OKCancel) == DialogResult.OK)
+
+            {
+                var t = context.DBusuario.Find((int)dataConfigUsuario.SelectedCells[0].Value);
+                context.DBusuario.Remove(t);
+                context.SaveChanges();
+                RefreshGrid();
+                ClearBoxes();
+            }
         }
 
         private void btnConfigAdicionar_Click(object sender, EventArgs e)

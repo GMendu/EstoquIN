@@ -203,11 +203,16 @@ namespace EstoquIN.View
 
         private void btnVendaExcluir_Click(object sender, EventArgs e)
         {
-            var t = context.DBvendas.Find((int)dataVenda.SelectedCells[0].Value);
-            context.DBvendas.Remove(t);
-            context.SaveChanges();
-            RefreshGrid();
-            ClearBoxes();
+            if (MessageBox.Show("TEM CERTEZA QUE DESEJA EXCLUIR?, ESTA AÇÃO É IRREVERSÍVEL", "EXCLUIR", MessageBoxButtons.OKCancel) == DialogResult.OK)
+
+            {
+                var t = context.DBvendas.Find((int)dataVenda.SelectedCells[0].Value);
+                context.DBvendas.Remove(t);
+                context.SaveChanges();
+                RefreshGrid();
+                ClearBoxes();
+            }
+            
         }
 
         private void btnVendaUpload_Click(object sender, EventArgs e)

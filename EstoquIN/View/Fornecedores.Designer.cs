@@ -197,9 +197,9 @@ namespace EstoquIN.View
             // 
             // btnFornecAdicionar
             // 
-            this.btnFornecAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnFornecAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(203)))), ((int)(((byte)(116)))));
             this.btnFornecAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnFornecAdicionar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecAdicionar.ForeColor = System.Drawing.Color.White;
             this.btnFornecAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecAdicionar.IconColor = System.Drawing.Color.Black;
@@ -216,7 +216,7 @@ namespace EstoquIN.View
             // 
             this.btnFornecEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnFornecEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecEditar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnFornecEditar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecEditar.ForeColor = System.Drawing.Color.White;
             this.btnFornecEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecEditar.IconColor = System.Drawing.Color.Black;
@@ -251,7 +251,7 @@ namespace EstoquIN.View
             // 
             this.btnFornecCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnFornecCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecCancelar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnFornecCancelar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecCancelar.ForeColor = System.Drawing.Color.White;
             this.btnFornecCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecCancelar.IconColor = System.Drawing.Color.Black;
@@ -339,9 +339,9 @@ namespace EstoquIN.View
             // 
             // btnFornecExcluir
             // 
-            this.btnFornecExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnFornecExcluir.BackColor = System.Drawing.Color.Maroon;
             this.btnFornecExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecExcluir.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnFornecExcluir.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecExcluir.ForeColor = System.Drawing.Color.White;
             this.btnFornecExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFornecExcluir.IconColor = System.Drawing.Color.Black;

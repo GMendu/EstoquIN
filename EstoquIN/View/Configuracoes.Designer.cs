@@ -46,6 +46,8 @@ namespace EstoquIN.View
             this.groupConfigLogo = new System.Windows.Forms.GroupBox();
             this.btnUpload = new FontAwesome.Sharp.IconButton();
             this.picLogoMenu = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupConfigUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConfigUsuario)).BeginInit();
             this.groupConfigLogo.SuspendLayout();
@@ -154,9 +156,9 @@ namespace EstoquIN.View
             // 
             // btnConfigExcluir
             // 
-            this.btnConfigExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnConfigExcluir.BackColor = System.Drawing.Color.Maroon;
             this.btnConfigExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfigExcluir.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnConfigExcluir.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfigExcluir.ForeColor = System.Drawing.Color.White;
             this.btnConfigExcluir.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfigExcluir.IconColor = System.Drawing.Color.Black;
@@ -171,9 +173,9 @@ namespace EstoquIN.View
             // 
             // btnConfigAdicionar
             // 
-            this.btnConfigAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnConfigAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(203)))), ((int)(((byte)(116)))));
             this.btnConfigAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfigAdicionar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnConfigAdicionar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfigAdicionar.ForeColor = System.Drawing.Color.White;
             this.btnConfigAdicionar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfigAdicionar.IconColor = System.Drawing.Color.Black;
@@ -190,7 +192,7 @@ namespace EstoquIN.View
             // 
             this.btnConfigEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnConfigEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfigEditar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnConfigEditar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfigEditar.ForeColor = System.Drawing.Color.White;
             this.btnConfigEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfigEditar.IconColor = System.Drawing.Color.Black;
@@ -207,7 +209,7 @@ namespace EstoquIN.View
             // 
             this.btnConfigCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnConfigCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfigCancelar.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnConfigCancelar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfigCancelar.ForeColor = System.Drawing.Color.White;
             this.btnConfigCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfigCancelar.IconColor = System.Drawing.Color.Black;
@@ -240,6 +242,8 @@ namespace EstoquIN.View
             // groupConfigLogo
             // 
             this.groupConfigLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.groupConfigLogo.Controls.Add(this.label2);
+            this.groupConfigLogo.Controls.Add(this.label1);
             this.groupConfigLogo.Controls.Add(this.btnUpload);
             this.groupConfigLogo.Controls.Add(this.picLogoMenu);
             this.groupConfigLogo.Font = new System.Drawing.Font("Segoe UI", 15F);
@@ -255,14 +259,14 @@ namespace EstoquIN.View
             // 
             this.btnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpload.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.btnUpload.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpload.ForeColor = System.Drawing.Color.White;
             this.btnUpload.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnUpload.IconColor = System.Drawing.Color.Black;
             this.btnUpload.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpload.Location = new System.Drawing.Point(611, 221);
+            this.btnUpload.Location = new System.Drawing.Point(676, 33);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(257, 98);
+            this.btnUpload.Size = new System.Drawing.Size(225, 300);
             this.btnUpload.TabIndex = 42;
             this.btnUpload.Text = "Upload";
             this.btnUpload.UseVisualStyleBackColor = false;
@@ -271,12 +275,30 @@ namespace EstoquIN.View
             // picLogoMenu
             // 
             this.picLogoMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picLogoMenu.Location = new System.Drawing.Point(21, 33);
+            this.picLogoMenu.Location = new System.Drawing.Point(208, 33);
             this.picLogoMenu.Name = "picLogoMenu";
-            this.picLogoMenu.Size = new System.Drawing.Size(535, 300);
+            this.picLogoMenu.Size = new System.Drawing.Size(450, 300);
             this.picLogoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogoMenu.TabIndex = 0;
             this.picLogoMenu.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(47, 277);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 28);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "formato padrão:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(105, 305);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 28);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "450 x 300";
             // 
             // Configuracoes
             // 
@@ -297,6 +319,7 @@ namespace EstoquIN.View
             this.groupConfigUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConfigUsuario)).EndInit();
             this.groupConfigLogo.ResumeLayout(false);
+            this.groupConfigLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoMenu)).EndInit();
             this.ResumeLayout(false);
 
@@ -321,5 +344,7 @@ namespace EstoquIN.View
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.PictureBox picLogoMenu;
         private FontAwesome.Sharp.IconButton btnUpload;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
