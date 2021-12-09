@@ -185,7 +185,7 @@ namespace EstoquIN.View
             this.btnProdutoEditar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProdutoEditar.IconColor = System.Drawing.Color.Black;
             this.btnProdutoEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutoEditar.Location = new System.Drawing.Point(714, 346);
+            this.btnProdutoEditar.Location = new System.Drawing.Point(358, 344);
             this.btnProdutoEditar.Name = "btnProdutoEditar";
             this.btnProdutoEditar.Size = new System.Drawing.Size(335, 73);
             this.btnProdutoEditar.TabIndex = 32;
@@ -271,7 +271,7 @@ namespace EstoquIN.View
             this.btnProdutoCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProdutoCancelar.IconColor = System.Drawing.Color.Black;
             this.btnProdutoCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProdutoCancelar.Location = new System.Drawing.Point(358, 344);
+            this.btnProdutoCancelar.Location = new System.Drawing.Point(699, 345);
             this.btnProdutoCancelar.Name = "btnProdutoCancelar";
             this.btnProdutoCancelar.Size = new System.Drawing.Size(350, 74);
             this.btnProdutoCancelar.TabIndex = 33;
