@@ -40,6 +40,8 @@ namespace EstoquIN.View
             txtValorAtacado.Text = null;
             txtValorVarejo.Text = null;
             txtProdutoObs.Text = null;
+            btnProdutoAdicionar.Text = "Adicionar";
+            btnProdutoEditar.Text = "Editar";
         }
 
         private void btnProdutoAdicionar_Click(object sender, EventArgs e)
@@ -57,8 +59,7 @@ namespace EstoquIN.View
                 };
                 context.DBprodutos.Add(produto);
                 context.SaveChanges();
-                btnProdutoAdicionar.Text = "Adicionar";
-                btnProdutoEditar.Text = "Editar";
+
                 RefreshGrid();
                 ClearBoxes();
             }
@@ -79,6 +80,7 @@ namespace EstoquIN.View
                 txtValorAtacado.Text = dataProduto.SelectedCells[4].Value.ToString();
                 txtProdutoObs.Text = dataProduto.SelectedCells[6].Value.ToString();
                 txtProdutosCodBar.Text = dataProduto.SelectedCells[5].Value.ToString();
+                btnProdutoAdicionar.Text = "Duplicar";
                 btnProdutoEditar.Text = "Salvar";
             }
             else if (btnProdutoEditar.Text == "Salvar")
@@ -94,8 +96,6 @@ namespace EstoquIN.View
 
                 context.SaveChanges();
                 RefreshGrid();
-
-                btnProdutoEditar.Text = "Editar";
                 ClearBoxes();
 
 
@@ -106,8 +106,6 @@ namespace EstoquIN.View
         // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnProdutoCancelar_Click(object sender, EventArgs e)
         {
-            btnProdutoAdicionar.Text = "Adicionar";
-            btnProdutoEditar.Text = "Editar";
             ClearBoxes();
         }
 

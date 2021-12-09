@@ -62,6 +62,8 @@ namespace EstoquIN.View
             txtVendaValorUnit.Text = null;
             checkVendaStatus.Checked = false;
             picVendaNotaFiscal.Image = null;
+            btnVendaAdicionar.Text = "Adicionar";
+            btnVendaEditar.Text = "Editar";
 
         }
         private int SalvarImg()
@@ -138,8 +140,6 @@ namespace EstoquIN.View
                 };
                 context.DBvendas.Add(venda);
                 context.SaveChanges();
-                btnVendaAdicionar.Text = "Adicionar";
-                btnVendaEditar.Text = "Editar";
                 RefreshGrid();
                 ClearBoxes();
             }
@@ -181,12 +181,8 @@ namespace EstoquIN.View
                 editarVendas.ValorUnit = txtVendaValorUnit.Text;
                 editarVendas.Status = checkVendaStatus.Checked;
                 editarVendas.DadosImagesId = SalvarImg();
-
                 context.SaveChanges();
                 RefreshGrid();
-
-                btnVendaAdicionar.Text = "Adicionar";
-                btnVendaEditar.Text = "Editar";
                 ClearBoxes();
 
             }
@@ -196,8 +192,6 @@ namespace EstoquIN.View
         // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnVendaCancelar_Click(object sender, EventArgs e)
         {
-            btnVendaAdicionar.Text = "Adicionar";
-            btnVendaEditar.Text = "Editar";
             ClearBoxes();
         }
 

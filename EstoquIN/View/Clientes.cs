@@ -44,6 +44,8 @@ namespace EstoquIN.View
             txtClienteNomeFantasia.Text = null;
             txtClienteObs.Text = null;
             txtClienteRazao.Text = null;
+            btnClienteAdicionar.Text = "Adicionar";
+            btnClienteEditar.Text = "Editar";
         }
 
         private void btnClienteAdicionar_Click(object sender, EventArgs e)
@@ -64,8 +66,6 @@ namespace EstoquIN.View
                 };
                 context.DBclientes.Add(cliente);
                 context.SaveChanges();
-                btnClienteAdicionar.Text = "Adicionar";
-                btnClienteEditar.Text = "Editar";
                 RefreshGrid();
                 ClearBoxes();
             }
@@ -108,8 +108,6 @@ namespace EstoquIN.View
                 context.SaveChanges();
 
                 RefreshGrid();
-                btnClienteEditar.Text = "Editar";
-                btnClienteAdicionar.Text = "Adicionar";
                 ClearBoxes();
 
 
@@ -121,8 +119,6 @@ namespace EstoquIN.View
         // adicionar  btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         {
             ClearBoxes();
-            btnClienteEditar.Text = "Editar";
-            btnClienteAdicionar.Text = "Adicionar";
         }
 
         private void btnClienteExcluir_Click(object sender, EventArgs e)

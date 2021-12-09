@@ -44,6 +44,8 @@ namespace EstoquIN.View
         private void ClearBoxes()
         {
             txtMaterialNome.Text = null;
+            btnMaterialAdicionar.Text = "Adicionar";
+            btnMaterialEditar.Text = "Editar";
         }
 
         private void btnMaterialAdicionar_Click(object sender, EventArgs e)
@@ -56,8 +58,6 @@ namespace EstoquIN.View
                 };
                 context.DBinsumos.Add(material);
                 context.SaveChanges();
-                btnMaterialAdicionar.Text = "Adicionar";
-                btnMaterialEditar.Text = "Editar";
                 RefreshGrid();
                 ClearBoxes();
             }
@@ -71,8 +71,6 @@ namespace EstoquIN.View
         // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnMaterialCancelar_Click(object sender, EventArgs e)
         {
-            btnMaterialAdicionar.Text = "Adicionar";
-            btnMaterialEditar.Text = "Editar";
             ClearBoxes();
         }
 
@@ -92,8 +90,7 @@ namespace EstoquIN.View
 
                 context.SaveChanges();
                 RefreshGrid();
-                btnMaterialAdicionar.Text = "Adicionar";
-                btnMaterialEditar.Text = "Editar";
+
                 ClearBoxes();
             }
         }

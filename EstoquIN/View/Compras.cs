@@ -64,6 +64,8 @@ namespace EstoquIN.View
             txtCompraValorUnit.Text = null;
             checkCompraStatus.Checked = false;
             picNotaFiscal.Image = null;
+            btnCompraAdicionar.Text = "Adicionar";
+            btnCompraEditar.Text = "Editar";
         }
 
         private int SalvarImg()
@@ -143,8 +145,6 @@ namespace EstoquIN.View
                 context.SaveChanges();
                 RefreshGrid();
                 ClearBoxes();
-                btnCompraAdicionar.Text = "Adicionar";
-                btnCompraEditar.Text = "Editar";
             }
             else
             {
@@ -168,15 +168,6 @@ namespace EstoquIN.View
                     picNotaFiscal.ImageLocation = dataCompra.SelectedCells[7].Value.ToString();
                 cbCompraProdutoFornecido.Text = dataCompra.SelectedCells[8].Value.ToString();
                 cbCompraFornecedor.Text = dataCompra.SelectedCells[9].Value.ToString();
-                
-                
-                
-                
-            
-                
-                
-                
-
                 btnCompraAdicionar.Text = "Duplicar";
                 btnCompraEditar.Text = "Salvar";
             }
@@ -196,9 +187,6 @@ namespace EstoquIN.View
 
                 context.SaveChanges();
                 RefreshGrid();
-
-                btnCompraAdicionar.Text = "Adicionar";
-                btnCompraEditar.Text = "Editar";
                 ClearBoxes();
 
             }
@@ -221,8 +209,6 @@ namespace EstoquIN.View
 
         private void btnCompraCancelar_Click(object sender, EventArgs e)
         {
-            btnCompraAdicionar.Text = "Adicionar";
-            btnCompraEditar.Text = "Editar";
             ClearBoxes();
         }
         private void btnCompraUpload_Click(object sender, EventArgs e)

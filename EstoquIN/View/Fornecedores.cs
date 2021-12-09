@@ -50,6 +50,8 @@ namespace EstoquIN.View
             txtFornecNomeFantasia.Text = null;
             txtFornecObs.Text = null;
             txtFornecRazao.Text = null;
+            btnFornecAdicionar.Text = "Adicionar";
+            btnFornecEditar.Text = "Editar";
         }
 
         private void btnFornecAdicionar_Click(object sender, EventArgs e)
@@ -71,8 +73,7 @@ namespace EstoquIN.View
                 };
                 context.DBfornec.Add(fornecedor);
                 context.SaveChanges();
-                btnFornecAdicionar.Text = "Adicionar";
-                btnFornecEditar.Text = "Editar";
+
                 RefreshGrid();
                 ClearBoxes();
             }
@@ -115,8 +116,6 @@ namespace EstoquIN.View
 
                 context.SaveChanges();
                 RefreshGrid();
-                btnFornecAdicionar.Text = "Duplicar";
-                btnFornecEditar.Text = "Editar";
                 ClearBoxes();
 
 
@@ -127,8 +126,6 @@ namespace EstoquIN.View
         // adicionar btnClienteAdicionar.Text = "Duplicar"; ao botão editar
         private void btnFornecCancelar_Click(object sender, EventArgs e)
         {
-            btnFornecAdicionar.Text = "Adicionar";
-            btnFornecEditar.Text = "Editar";
             ClearBoxes();
         }
 
