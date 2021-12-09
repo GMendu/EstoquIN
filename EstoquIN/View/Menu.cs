@@ -21,9 +21,11 @@ namespace EstoquIN
         private Panel leftBorderBtn;
         private System.Windows.Forms.Form currentChildForm;
         private string username;
+        private int hierarquia;
         //Constructor
-        public FormMainMenu(string nomeusuario)
+        public FormMainMenu(string nomeusuario, int tipousuario)
         {
+            hierarquia = tipousuario;
             username = nomeusuario;
             InitializeComponent();
             OpenChildForm(new Submenu(nomeusuario));
@@ -37,8 +39,13 @@ namespace EstoquIN
             this.BringToFront();
             lblTitleChildForm.Text = "Home";
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-
-
+            
+            
+            if (hierarquia == 2)
+            {
+                btnRelatorios.Visible = false;
+                btnConfiguracoes.Visible = false;
+            }
         }
 
         //Structs
@@ -115,25 +122,25 @@ namespace EstoquIN
         private void btnClientes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Clientes());
+            OpenChildForm(new Clientes(hierarquia));
         }
 
         private void btnVendas_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new Vendas());
+            OpenChildForm(new Vendas(hierarquia));
         }
 
         private void btnProdutos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new Produtos());
+            OpenChildForm(new Produtos(hierarquia));
         }
 
         private void btnFornecedores_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new Fornecedores());
+            OpenChildForm(new Fornecedores(hierarquia));
         }
 
         private void btnRelatorios_Click(object sender, EventArgs e)
@@ -144,20 +151,21 @@ namespace EstoquIN
 
         private void btnConfiguracoes_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new Configuracoes());
+           
+                ActivateButton(sender, RGBColors.color6);
+                OpenChildForm(new Configuracoes());
         }
 
         private void btnMaterial_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new Material());
+            OpenChildForm(new Material(hierarquia));
         }
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new Compras());
+            OpenChildForm(new Compras(hierarquia));
         }
 
         private void BtnHome_Click(object sender, EventArgs e)

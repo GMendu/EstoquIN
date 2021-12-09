@@ -16,9 +16,15 @@ namespace EstoquIN.View
     public partial class Vendas : System.Windows.Forms.Form
     {
         private EstoqDBContext context;
-        public Vendas()
+        public Vendas(int hierarquia)
         {
             InitializeComponent();
+            if (hierarquia == 2)
+            {
+                btnVendaExcluir.Enabled = false;
+                btnVendaExcluir.BackColor = Color.FromArgb(52, 52, 52);
+            }
+            
             context = new EstoqDBContext();
             RefreshGrid();
         }

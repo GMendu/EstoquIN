@@ -165,64 +165,6 @@ namespace EstoquIN.View
         {
             ClearBoxes();
         }
-
-
-        private int SalvarImg()
-        {
-            if (picLogoMenu.Image != null)
-            {
-                Random r = new Random();
-                string pathstring = "C:";
-                do
-                {
-                    int idrand = r.Next(2147483646);
-                    string fotoNome = "img_menu" + idrand + ".jpg";
-                    string folder = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\";
-                    pathstring = Path.Combine(folder, fotoNome);
-                } while (File.Exists(pathstring));
-                Image a = picLogoMenu.Image;
-                a.Save(pathstring);
-                var newImg = new DadosImages
-                {
-                    Path = pathstring,
-                    Categoria = "menu"
-                };
-                context.DBImage.Add(newImg);
-                context.SaveChanges();
-                RefreshGrid();
-                return newImg.Id;
-
-            }
-            else
-            {
-                int noimg = 0;
-                if (File.Exists(@"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_menu0.jpg"))
-                {
-                    bool verif = true;
-                    var imgs = context.DBImage.ToList();
-                    foreach (DadosImages img in imgs)
-                    {
-                        if (img.Path == @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_menu0.jpg")
-                        {
-                            noimg = img.Id;
-                            verif = false;
-                        }
-                    }
-                    if (verif)
-                    {
-                        var newImg = new DadosImages
-                        {
-                            Path = @"C:\Users\bielm\source\repos\GMendu\abbbbbb\EstoquIN\Images\img_menu0.jpg",
-                            Categoria = "placeholder"
-                        };
-                        context.DBImage.Add(newImg);
-                        noimg = newImg.Id;
-                    }
-                }
-                return noimg;
-            }
-
-        }
         private void btnUpload_Click(object sender, EventArgs e)
         {
             

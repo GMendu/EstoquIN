@@ -15,9 +15,14 @@ namespace EstoquIN.View
     public partial class Clientes : System.Windows.Forms.Form
     {
         private EstoqDBContext context;
-        public Clientes()
+        public Clientes(int hierarquia)
         {
             InitializeComponent();
+            if (hierarquia == 2)
+            {
+                btnClienteExcluir.Enabled = false;
+                btnClienteExcluir.BackColor = Color.FromArgb(52, 52, 52);
+            }
             context = new EstoqDBContext();
             RefreshGrid();
         }

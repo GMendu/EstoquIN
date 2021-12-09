@@ -17,9 +17,15 @@ namespace EstoquIN.View
     {
         private EstoqDBContext context;
         
-        public Compras()
+        public Compras(int hierarquia)
         {
             InitializeComponent();
+            if (hierarquia == 2)
+            {
+                btnCompraExcluir.Enabled = false;
+                btnCompraExcluir.BackColor = Color.FromArgb(52, 52, 52);
+            }
+            
             context = new EstoqDBContext();
             RefreshGrid();
         }

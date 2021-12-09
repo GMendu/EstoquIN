@@ -15,9 +15,15 @@ namespace EstoquIN.View
     public partial class Material : System.Windows.Forms.Form
     {
         private EstoqDBContext context;
-        public Material()
+        public Material(int hierarquia)
         {
             InitializeComponent();
+            if (hierarquia == 2)
+            {
+                btnMaterialExcluir.Enabled = false;
+                btnMaterialExcluir.BackColor = Color.FromArgb(52, 52, 52);
+            }
+            
             context = new EstoqDBContext();
             RefreshGrid();
         }

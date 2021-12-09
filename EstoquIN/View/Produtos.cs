@@ -15,9 +15,15 @@ namespace EstoquIN.View
     public partial class Produtos : System.Windows.Forms.Form
     {
         private EstoqDBContext context;
-        public Produtos()
+        public Produtos(int hierarquia)
         {
             InitializeComponent();
+            if (hierarquia == 2)
+            {
+                btnProdutoExcluir.Enabled = false;
+                btnProdutoExcluir.BackColor = Color.FromArgb(52, 52, 52);
+            }
+            
             context = new EstoqDBContext();
             RefreshGrid();
         }
@@ -26,7 +32,7 @@ namespace EstoquIN.View
             BindingSource bi = new BindingSource();
             var query = from e in context.DBprodutos
                         orderby e.Id descending
-                        select new { e.Id, e.Nome, e.Peso, e.ValorAtacado, e.ValorVarejo, e.Obs};
+                        select new { e.Id, e.Nome, e.Peso, e.ValorAtacado, e.ValorVarejo,e.CodBarras, e.Obs};
             bi.DataSource = query.ToList();
             dataProduto.DataSource = bi;
             dataProduto.Refresh();
@@ -78,8 +84,8 @@ namespace EstoquIN.View
                 txtProdutoPeso.Text = dataProduto.SelectedCells[2].Value.ToString();
                 txtValorVarejo.Text = dataProduto.SelectedCells[3].Value.ToString();
                 txtValorAtacado.Text = dataProduto.SelectedCells[4].Value.ToString();
-                txtProdutoObs.Text = dataProduto.SelectedCells[6].Value.ToString();
                 txtProdutosCodBar.Text = dataProduto.SelectedCells[5].Value.ToString();
+                txtProdutoObs.Text = dataProduto.SelectedCells[6].Value.ToString();
                 btnProdutoAdicionar.Text = "Duplicar";
                 btnProdutoEditar.Text = "Salvar";
             }

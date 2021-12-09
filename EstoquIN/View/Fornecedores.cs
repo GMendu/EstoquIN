@@ -15,9 +15,15 @@ namespace EstoquIN.View
     public partial class Fornecedores : System.Windows.Forms.Form
     {
         private EstoqDBContext context;
-        public Fornecedores()
+        public Fornecedores(int hierarquia)
         {
             InitializeComponent();
+            if (hierarquia == 2)
+            {
+                btnFornecExcluir.Enabled = false;
+                btnFornecExcluir.BackColor = Color.FromArgb(52, 52, 52);
+            }
+            
             context = new EstoqDBContext();
             RefreshGrid();
         }

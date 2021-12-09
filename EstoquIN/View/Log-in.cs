@@ -63,7 +63,7 @@ namespace EstoquIN.View
                     if (user.Senha == txtLoginSenha.Text)
                     {
                         //MessageBox.Show("Login efetuado com sucesso");
-                        FormMainMenu fmm = new FormMainMenu(user.Login);
+                        FormMainMenu fmm = new FormMainMenu(user.Login, user.TipoUsuarioId);
                         this.Hide();
                         fmm.Show();
                         check = 1;
