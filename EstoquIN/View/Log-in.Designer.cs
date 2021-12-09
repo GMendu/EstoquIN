@@ -38,6 +38,7 @@ namespace EstoquIN.View
             this.labelLoginSenha = new System.Windows.Forms.Label();
             this.labelLoginUser = new System.Windows.Forms.Label();
             this.labelLoginLogin = new System.Windows.Forms.Label();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -56,11 +57,13 @@ namespace EstoquIN.View
             // panel6
             // 
             this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.btnFechar);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(590, 368);
             this.panel6.TabIndex = 4;
+            this.panel6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel6_MouseDown);
             // 
             // panel7
             // 
@@ -145,15 +148,32 @@ namespace EstoquIN.View
             this.labelLoginLogin.TabIndex = 0;
             this.labelLoginLogin.Text = "Login";
             // 
+            // btnFechar
+            // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.ForeColor = System.Drawing.Color.DarkCyan;
+            this.btnFechar.Location = new System.Drawing.Point(560, 3);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(27, 32);
+            this.btnFechar.TabIndex = 5;
+            this.btnFechar.Text = "X";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 368);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Log_in";
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -173,5 +193,6 @@ namespace EstoquIN.View
         private System.Windows.Forms.Label labelLoginSenha;
         private System.Windows.Forms.Label labelLoginUser;
         private System.Windows.Forms.Label labelLoginLogin;
+        private System.Windows.Forms.Button btnFechar;
     }
 }
